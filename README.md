@@ -14,7 +14,7 @@
 
 ## 1. Preámbulo
 
-[React](https://reactjs.org/), [Angular](https://angular.io/) y [Vue](https://vuejs.org/)
+[React](https://reactjs.org/), [Angular](https://angular.io/) y [Vue](https://vuejs.org/) 
 son algunos de los _frameworks_ y _librerías_ de JavaScript más utilizados por
 lxs desarrolladorxs alrededor del mundo, y hay una razón para eso.
 En el contexto del navegador, [_mantener la interfaz sincronizada con el estado
@@ -89,7 +89,7 @@ Tópicos: _react_, _angular_, _vue_, _pwa_, _offline-first_, _service-worker_.
 
 - Entender cómo se realizan los pedidos en Pan D'Monium y cuáles son las necesidades del personal de cocina y del personal de atención al público (meser@s y cajer@s).
   - Ideal si dentro de la investigación toman fotos de las formas en que se toman pedidos actualmente.
-- Diseñar la versión para tablets de esta aplicación, teniendo en cuenta el modo de uso de esta tablet (por ej. El uso de la     pantalla táctil) y los distintos tipos de usuarios.
+- Diseñar la versión para tablets de esta aplicación, teniendo en cuenta el modo de uso de esta tablet (por ej. El uso de la pantalla táctil) y los distintos tipos de usuarios.
   - El diseño se debe adaptar a dos tamaños de tablets 9.7 y 7 pulgadas.
   - Crear un ícono para poder agregar la pantalla al home de la tablet. Puedes usar [appicon](https://appicon.co/#app-icon) y     agregar las especificaciones para   el equipo de desarrollo.
 - El estado actual del pedido siempre visible mientras tomamos un pedido.
@@ -103,11 +103,11 @@ Tópicos: _react_, _angular_, _vue_, _pwa_, _offline-first_, _service-worker_.
 ### Momentos Importantes
 
 - Kick off del proyecto en el que conocerás a tu squad integrado por UX Designers y FE Developers, tendrás que coordinarte con ellas y establecer flujos de trabajo.
-- Establecer contacto con el restaurante.
-- Al final de la primer semana hay un check in con el cliente.
-- Al final de la segunda semana hay una demo de soluciones y prototipos.
+- [UX] Establecer contacto con el restaurante.
+- [UX] Al final de la primer semana hay un check in con el cliente.
+- [UX] Al final de la segunda semana hay una demo de soluciones y prototipos.
 - Al final de la tercer y cuarta semana hacer check in del alcance técnico con tu squad de FE Developers.
-- Al final de la cuarta semana será lde Demo Final de la totalidad del proyecto.
+- Al final de la quinta semana será la de Demo Final de la totalidad del proyecto.
 
 ------
 
@@ -117,9 +117,6 @@ a la cocina para que se preparen ordenada y eficientemente (a través de un
   _backend_ del que nos darán detalles más adelante).
 
 ![burger-queen](https://user-images.githubusercontent.com/110297/42118136-996b4a52-7bc6-11e8-8a03-ada078754715.jpg)
-
-
-![out](https://user-images.githubusercontent.com/110297/45984241-b8b51c00-c025-11e8-8fa4-a390016bee9d.gif)
 
 
 ## 4. Consideraciones generales
