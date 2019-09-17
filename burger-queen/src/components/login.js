@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import './App.css';
-import { Button, Form, FormGroup, Label, Imput } from 'reacttrap';
+import React from 'react';
+import './styles/login.css';
+import logodemonium from '../img/logodemonium.png';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap'; // componente de botones de red social
 
 /*import withFirebaseAuth from 'react-with-firebase-auth';
 import * as firebase from 'firebase/app';
@@ -11,29 +12,33 @@ import firebaseConfig from '../firebase';*/
 import { GoogleLoginButton } from 'react-social-login-buttons';
 import { FacebookLoginButton } from 'react-social-login-buttons';
 
-function App() {
-  return (
+class Login extends React.Component {
+  render() {
+  return ( 
       <Form className="App">
+        <div><img className="login_header" src={logodemonium} alt="Logo de la compañia"/></div>
         <h1>
-          <span className="font-weight-blod">Pan D'Monium</span>
+          <span className="font-weight-blod">D'Monium</span>
         </h1>
-        <h2 className="text-center">Bienvenido</h2>
+        <h2 className="text-center">Bienvenid@</h2>
         <FormGroup>
-          <Label>Nuemro Celular</Label>
-          <Imput type="number" placeholder="Ingresa tu nuero de telefono"></Imput>
+          <Label>Número Celular</Label>
+          <Input type="number" placeholder="Ingresa tu nuero de telefono"></Input>
         </FormGroup>
         <Button className="btn-lg btn-warning btn-block">Login</Button>
           <div className="text-center pt-3">
-             O logeate con tus redes 
+             Ó  logeate con tus Redes Sociales 
           </div>
         <div>
           <GoogleLoginButton className="mt-3 mb-3"/>
         </div>
         <FacebookLoginButton className="mt-3 mb-3"/>
       </Form>
-  );
+   );
+ }
 }
-export default App;
+export default Login;
+
 //comienza los componentes para el logeo con firebase
 /*const firebaseApp = firebase.initializaApp(firebaseConfig);
 class Login extends Component {
