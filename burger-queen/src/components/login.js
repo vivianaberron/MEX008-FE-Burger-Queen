@@ -9,30 +9,22 @@ import 'firebase/auth';
 import firebaseConfig from '../firebase';*/
 
 //comienza diseño con bootstrap
-import { GoogleLoginButton } from 'react-social-login-buttons';
-import { FacebookLoginButton } from 'react-social-login-buttons';
+
 
 class Login extends React.Component {
   render() {
   return ( 
       <Form className="App">
         <div><img className="login_header" src={logodemonium} alt="Logo de la compañia"/></div>
-        <h1>
+        <h1 className="text-center">Te damos la bienvenida</h1>
+        <h2>
           <span className="font-weight-blod">D'Monium</span>
-        </h1>
-        <h2 className="text-center">Bienvenid@</h2>
+        </h2>
         <FormGroup>
-          <Label>Número Celular</Label>
-          <Input type="number" placeholder="Ingresa tu nuero de telefono"></Input>
+          <Label>Inicia tu sesión</Label>
+          <Input type="number" placeholder="Ingresa tu número de teléfono"></Input>
         </FormGroup>
-        <Button className="btn-lg btn-warning btn-block">Login</Button>
-          <div className="text-center pt-3">
-             Ó  logeate con tus Redes Sociales 
-          </div>
-        <div>
-          <GoogleLoginButton className="mt-3 mb-3"/>
-        </div>
-        <FacebookLoginButton className="mt-3 mb-3"/>
+        <Button className="btn-lg btn-warning btn-block">Iniciar</Button>
       </Form>
    );
  }

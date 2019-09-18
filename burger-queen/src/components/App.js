@@ -2,18 +2,26 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Login from './login';//para logearse con firebase
-import Layout from './Layout'; // para el siseño de nuestra pagina
+//import Layout from './Layout'; // para el siseño de nuestra pagina
+//import Button from './Button';
 //import Home from '../Home'; //para la pagina principal
+
 
 function App() {
   return (
+    
     <BrowserRouter>
-      <Layout>
+     
         <Switch>
           <Route exact path="/" component={Login} />
         </Switch>
-      </Layout>
+      
     </BrowserRouter> 
+    // <div>
+    //   <Button text = 'Servicio'/>
+    //   <Button text = 'Cocina'/>
+    // </div>
+    
   );
 }
 export default App;
