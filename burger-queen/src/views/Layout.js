@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 
 function Layout(props) {
   // const children = props.children;

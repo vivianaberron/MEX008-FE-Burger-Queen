@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/login.css';
 import logodemonium from '../img/logodemonium.png';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap'; // componente de botones de red social
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 /*import withFirebaseAuth from 'react-with-firebase-auth';
 import * as firebase from 'firebase/app';
@@ -26,7 +27,7 @@ class Login extends React.Component {
           <Input type="number" placeholder="Ingresa tu número de empleado"></Input>
 
         </FormGroup>
-        <Button className="btn-lg btn-warning btn-block">Iniciar</Button>
+        <Link to="/Areas" className="btn-lg btn-warning btn-block">Iniciar</Link>
       </Form>
    );
  }

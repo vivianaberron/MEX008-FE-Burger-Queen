@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 import Login from './login';//para logearse con firebase
 
-import Layout from './Layout'; // para el siseño de nuestra pagina
-import Button from './Button';
+import Layout from '../views/Layout'; // para el siseño de nuestra pagina
+import Areas from '../views/Areas';
 //import Home from '../Home'; //para la pagina principal
 
 
@@ -16,7 +16,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Login} />
         <Layout>
-          <Route exact path="/Button" component={Button} />
+          <Route exact path="/Areas" component={Areas} />
         </Layout>
       </Switch>
     </BrowserRouter>
