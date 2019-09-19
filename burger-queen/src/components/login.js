@@ -20,9 +20,9 @@ class Login extends React.Component {
         <h2>
           <span className="font-weight-blod">D'Monium</span>
         </h2>
-        <FormGroup>
-          <Label>Inicia tu sesión</Label>
-          <Input type="number" placeholder="Ingresa tu número de teléfono"></Input>
+        <FormGroup className="form">
+          <Label className="text-center">Inicia tu sesión</Label>
+          <Input type="number" placeholder="Ingresa tu número de empleado"></Input>
         </FormGroup>
         <Button className="btn-lg btn-warning btn-block">Iniciar</Button>
       </Form>
