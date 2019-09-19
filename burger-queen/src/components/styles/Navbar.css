@@ -1,1 +1,23 @@
-/* diseño de la barra de navegación
+/* diseño de la barra de navegación*/
+
+.Navbar {
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color:  #FFFFFF;
+}
+
+.Navbar__brand {
+    color: #ffffff;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .Navbar__brand:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .Navbar__brand-logo {
+    margin-right: 0.5rem;
+  }
