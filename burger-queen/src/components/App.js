@@ -5,6 +5,7 @@ import Login from './login';//para logearse con firebase
 import Layout from './Layout'; // para el siseño de nuestra pagina
 import Button from './Button';
 //import Home from '../Home'; //para la pagina principal
+//prueba para ver sis si funciona
 
 
 function App() {
