@@ -23,19 +23,19 @@ class FlowStepper extends React.Component {
     return (
       <div>
         
-        <div id="stepper1" class="bs-stepper">
-          <div class="bs-stepper-header">
-            <div class="step" data-target="#test-l-1">
-              <button class="step-trigger">
-                <span class="bs-stepper-circle">1</span>
-                <span class="bs-stepper-label">Email</span>
+        <div id="stepper1" class="bs-stepper" >
+          <div className="bs-stepper-header">
+            <div className="step" data-target="#test-l-1">
+              <button className="step-trigger" color = "danger">
+                <span className="bs-stepper-circle">1</span>
+                <span className="bs-stepper-label">Email</span>
               </button>
             </div>
-            <div class="line"></div>
-            <div class="step" data-target="#test-l-2">
-              <button class="step-trigger">
-                <span class="bs-stepper-circle">2</span>
-                <span class="bs-stepper-label">Password</span>
+            <div className="line"></div>
+            <div className="step" data-target="#test-l-2">
+              <button className="step-trigger">
+                <span className="bs-stepper-circle">2</span>
+                <span className="bs-stepper-label">Password</span>
               </button>
             </div>
             <div class="line"></div>
@@ -71,21 +71,21 @@ class FlowStepper extends React.Component {
               </div>
               <div id="test-l-2" class="content">
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
+                  <label >Password</label>
                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
                 </div>
                 <button class="btn btn-primary" onClick={() => this.stepper.next()}>Next</button>
               </div>
               <div id="test-l-3" class="content">
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Form</label>
+                  <label >Form</label>
                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="placeholder" />
                 </div>
                 <button class="btn btn-primary" onClick={() => this.stepper.next()}>Next</button>
               </div>
               <div id="test-l-4" class="content">
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Form</label>
+                  <label >Form</label>
                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="placeholder" />
                 </div>
                 <button class="btn btn-primary" onClick={() => this.stepper.next()}>Next</button>
