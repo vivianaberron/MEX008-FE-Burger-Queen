@@ -21,3 +21,10 @@
   font-size: 20px;
   
 }
+
+.btn-lg {
+  border: 1px shadow grey;
+  -webkit-box-shadow: 6px 6px 9px 1px rgb(185, 178, 185);
+  -moz-box-shadow: 6px 6px 9px 1px rgb(172, 164, 172);
+  box-shadow: 6px 6px 9px 1px rgb(163, 156, 163);
+}
