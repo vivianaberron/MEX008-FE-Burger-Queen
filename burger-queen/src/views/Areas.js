@@ -1,10 +1,13 @@
 import React from 'react';
 import Button from '../components/Button';
+import { Link } from 'react-router-dom';
 
 class Areas extends React.Component {
     render() {
         return <div>
-            <Button text = "Servicio" />
+            <Link to="/Stepper">
+                <Button text = "Servicio" />
+            </Link>
             <Button text = "Cocina" />
         </div>
     }
