@@ -16,9 +16,9 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={Login} />
-          <Route exact path="/Areas" component={Areas} />
         <Layout>
-          <Route exact path="/Stepper" component={FlowStepper} />
+          <Route path="/Areas" component={Areas} />
+          <Route path="/Stepper" component={FlowStepper} />
         </Layout>
       </Switch>
     </BrowserRouter>
