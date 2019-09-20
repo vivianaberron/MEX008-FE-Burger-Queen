@@ -1,13 +1,10 @@
 import React from 'react';
-
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
-
 import Login from './login';//para logearse con firebase
-
 import Layout from '../views/Layout'; // para el siseño de nuestra pagina
 import Areas from '../views/Areas';
 import FlowStepper from './Stepper';
+
 //import Home from '../Home'; //para la pagina principal
 
 
@@ -21,6 +18,7 @@ function App() {
         <Layout>
           <Route path="/Areas" component={Areas} />
           <Route path="/Stepper" component={FlowStepper} />
+
         </Layout>
       </Switch>
     </BrowserRouter>
@@ -28,8 +26,8 @@ function App() {
     //   <Button text = 'Servicio'/>
     // <Button text = 'Cocina'/>
     //</div>
-
-
   );
 }
 export default App;
+
+
