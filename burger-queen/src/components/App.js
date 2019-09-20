@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 
 import Login from './login';//para logearse con firebase
 
@@ -26,6 +28,7 @@ function App() {
     //   <Button text = 'Servicio'/>
     // <Button text = 'Cocina'/>
     //</div>
+
 
   );
 }
