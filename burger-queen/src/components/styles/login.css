@@ -9,4 +9,17 @@
 
 .login_header {
   margin: auto;
+
 }
+
+.text-center {
+  padding: 20px;
+  bottom: 20px;
+}
+
+.form {
+  padding: 10px;
+  font-size: 20px;
+  
+}
+
