@@ -6,6 +6,10 @@ import Areas from '../views/Areas';
 import FlowStepper from './Stepper';
 import ModalApp.js from './modalApp';
 
+import Home from '../Home';
+import Menu from '../views/Menu';
+
+
 //import Home from '../Home'; //para la pagina principal
 
 
@@ -18,7 +22,12 @@ function App() {
         <Route exact path="/" component={Login} />
         <Layout>
           <Route path="/Areas" component={Areas} />
+          <Route path="/Home" component={Home} />
           <Route path="/Stepper" component={FlowStepper} />
+
+
+          <Route path="/Menu" component={Menu} />
+
 
         </Layout>
       </Switch>
