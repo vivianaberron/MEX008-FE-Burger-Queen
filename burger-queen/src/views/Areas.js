@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 
-import '../components/styles/Areas.css';
+//import '../components/styles/Areas.css';
 
 class Areas extends React.Component {
     render() {
@@ -10,7 +10,7 @@ class Areas extends React.Component {
         return <div className="areas-container">
           
             <div className = "btn-areas">
-                <Link to="/Stepper" >
+                <Link to="/Home" >
                     <Button  text = "Servicio" />
                 </Link>
             </div>

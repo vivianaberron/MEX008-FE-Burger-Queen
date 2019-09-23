@@ -17,13 +17,13 @@ class Login extends React.Component {
   return ( 
       <Form className="App">
         <div><img className="login_header" src={logodemonium} alt="Logo de la compañia"/></div>
-        <h1 className="text-center">Te damos la bienvenida</h1>
+        <h1 className="text-center">Inicia sesión</h1>
         <h2>
-          <span className="font-weight-blod"> No. D'Monium</span>
+          <span className="font-weight-blod">Ingresa tu No. D'Monium</span>
         </h2>
 
         <FormGroup className="form">
-          <Label className="text-center">Inicia tu sesión</Label>
+          <Label className="text-center"></Label>
           <Input className="input" type="number" placeholder="Ingresa tu número de empleado"></Input>
         </FormGroup>
         <Button className="btn" color="warning" block>
