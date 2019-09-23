@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class Areas extends React.Component {
     render() {
         return <div>
-            <Link to="/Stepper">
+            <Link to="/Home">
                 <Button text = "Servicio" />
             </Link>
             <Button text = "Cocina" />
