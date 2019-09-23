@@ -8,6 +8,7 @@ import Login from './login';//para logearse con firebase
 import Layout from '../views/Layout'; // para el siseño de nuestra pagina
 import Areas from '../views/Areas';
 import FlowStepper from './Stepper';
+import Menu from '../views/Menu';
 //import Home from '../Home'; //para la pagina principal
 
 
@@ -21,6 +22,7 @@ function App() {
         <Layout>
           <Route path="/Areas" component={Areas} />
           <Route path="/Stepper" component={FlowStepper} />
+          <Route path="/Menu" component={Menu} />
         </Layout>
       </Switch>
     </BrowserRouter>
