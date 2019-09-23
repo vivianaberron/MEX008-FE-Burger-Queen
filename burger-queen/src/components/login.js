@@ -19,15 +19,14 @@ class Login extends React.Component {
         <div><img className="login_header" src={logodemonium} alt="Logo de la compañia"/></div>
         <h1 className="text-center">Te damos la bienvenida</h1>
         <h2>
-          <span className="font-weight-blod">D'Monium</span>
+          <span className="font-weight-blod"> No. D'Monium</span>
         </h2>
 
         <FormGroup className="form">
           <Label className="text-center">Inicia tu sesión</Label>
-          <Input type="number" placeholder="Ingresa tu número de empleado"></Input>
-
+          <Input className="input" type="number" placeholder="Ingresa tu número de empleado"></Input>
         </FormGroup>
-        <Button color="warning">
+        <Button className="btn" color="warning" block>
           <Link to="/Areas">Iniciar</Link>
         </Button>
       </Form>
