@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/textTips.css';
+import '../styles/textTips.css';
 
 
 class Textips extends React.Component {
