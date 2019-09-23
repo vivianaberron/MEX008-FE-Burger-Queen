@@ -2,13 +2,23 @@ import React from 'react';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 
+import '../components/styles/Areas.css';
+
 class Areas extends React.Component {
     render() {
-        return <div>
-            <Link to="/Home">
-                <Button text = "Servicio" />
-            </Link>
-            <Button text = "Cocina" />
+
+        return <div className="areas-container">
+          
+            <div className = "btn-areas">
+                <Link to="/Stepper" >
+                    <Button  text = "Servicio" />
+                </Link>
+            </div>
+      
+            <div className = "btn-areas">
+                <Button text = "Cocina" />
+            </div>
+
         </div>
     }
 }
