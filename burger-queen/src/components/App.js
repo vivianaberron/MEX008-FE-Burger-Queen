@@ -4,6 +4,7 @@ import Login from './login';//para logearse con firebase
 import Layout from '../views/Layout'; // para el siseño de nuestra pagina
 import Areas from '../views/Areas';
 import FlowStepper from './Stepper';
+import ModalApp.js from './modalApp';
 
 //import Home from '../Home'; //para la pagina principal
 
