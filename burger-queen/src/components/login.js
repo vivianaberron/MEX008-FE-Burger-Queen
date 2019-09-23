@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/login.css';
 import logodemonium from '../img/logodemonium.png';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap'; // componente de botones de red social
+import {  Link  } from "react-router-dom";
 
 /*import withFirebaseAuth from 'react-with-firebase-auth';
 import * as firebase from 'firebase/app';
@@ -18,13 +19,16 @@ class Login extends React.Component {
         <div><img className="login_header" src={logodemonium} alt="Logo de la compañia"/></div>
         <h1 className="text-center">Te damos la bienvenida</h1>
         <h2>
-          <span className="font-weight-blod">D'Monium</span>
+          <span className="font-weight-blod"> No. D'Monium</span>
         </h2>
+
         <FormGroup className="form">
           <Label className="text-center">Inicia tu sesión</Label>
-          <Input type="number" placeholder="Ingresa tu número de empleado"></Input>
+          <Input className="input" type="number" placeholder="Ingresa tu número de empleado"></Input>
         </FormGroup>
-        <Button className="btn-lg btn-warning btn-block">Iniciar</Button>
+        <Button className="btn" color="warning" block>
+          <Link to="/Areas">Iniciar</Link>
+        </Button>
       </Form>
    );
  }
