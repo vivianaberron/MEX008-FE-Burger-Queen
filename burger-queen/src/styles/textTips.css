@@ -1,8 +1,8 @@
-.Areas {
+#text{
     width: 150%;
     max-width: 500px;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
     height: 150%;
-    text-align: center;
+    text-align: left;
 }
