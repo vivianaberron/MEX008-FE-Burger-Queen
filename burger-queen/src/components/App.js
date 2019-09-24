@@ -6,7 +6,6 @@ import Areas from '../views/Areas';
 import FlowStepper from './Stepper';
 import Home from '../Home';
 
-//import Home from '../Home'; //para la pagina principal
 //prueba para ver sis si funciona
 
 
