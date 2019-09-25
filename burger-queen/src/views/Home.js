@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import menuLogo from "../src/img/menu.png";
-import menuClock from "../src/img/clock.png";
-import menuBill from "../src/img/bill.png";
-import menuSurvey from "../src/img/survey.png";
+import menuLogo from "../img/menu.png";
+import menuClock from "../img/clock.png";
+import menuBill from '../img/bill.png'
+import menuSurvey from "../img/survey.png";
 
-import "./Home.css";
+import "../styles/Home.css";
 
 class Home extends React.Component {
   render() {
@@ -18,18 +18,18 @@ class Home extends React.Component {
           <div className="row">
             <div className="Home_col1 col-6 col-md-6">
               <div className="menuLogo">
-                <Link className="text" to="/Stepper">
+                <Link className="text" to="/Menu">
                   <img className="Home_logo-Menu" src={menuLogo} alt="Logo del menu"/>
-               
-                </Link></div>
+               </Link>
+              </div>
                 <h3 className="text-center">Tomar una Orden</h3>
             </div>
             <div className="Home_col col-6 col-md-6">
             <div className="ordenLogo">
-                <Link className="text" to="/Stepper">
-                  <img className="Home_logo-Pendientes" src={menuClock} alt="Logo de Ordenes Pendientes"/>
-                </Link>
-              </div>
+              <Link className="text" to="/Stepper">
+                <img className="Home_logo-Pendientes" src={menuClock} alt="Logo de Ordenes Pendientes"/>
+              </Link>
+            </div>
               <h3 className="text-center">Ordenes pendientes</h3>
             </div>
             </div>
