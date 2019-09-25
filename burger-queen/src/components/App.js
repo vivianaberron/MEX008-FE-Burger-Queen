@@ -11,6 +11,9 @@ import Menu from '../views/Menu';
 import Registro from '../views/Registro';
 import EnvioOrden from '../views/EnvioOrden';
 
+import Promo from '../views/Promo';
+
+
 
 
 function App() {
@@ -23,8 +26,12 @@ function App() {
           <Route path="/Tips" component={Tips} />
           <Route path="/Home" component={Home} />
           <Route path="/Menu" component={Menu} />
+
           <Route path="/Registro" component={Registro} />
           <Route path="/EnvioOrden" component={EnvioOrden} />
+
+          <Route path="/Promo" component={Promo} />
+
         </Layout>
       </Switch>
     </BrowserRouter>
