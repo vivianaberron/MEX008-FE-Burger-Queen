@@ -2,11 +2,12 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/Button.css';
 
-class Button extends React.Component {
+
+class Buttons extends React.Component {
     render() {
         return (
             <div className="Areas">
-                <button className="btn" color="btn-outline-secondary btn-lg" block>
+                <button className="btns">
                     {this.props.text}
                 </button>
             </div>
@@ -14,7 +15,7 @@ class Button extends React.Component {
     }
 }
 
-export default Button;
+export default Buttons;
 
 
 
