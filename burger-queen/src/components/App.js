@@ -8,6 +8,7 @@ import FlowStepper from './Stepper';
 
 import Home from '../views/Home';
 import Menu from '../views/Menu';
+import Promo from '../views/Promo';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Home" component={Home} />
           <Route path="/Stepper" component={FlowStepper} />
           <Route path="/Menu" component={Menu} />
+          <Route path="/Promo" component={Promo} />
         </Layout>
       </Switch>
     </BrowserRouter>
