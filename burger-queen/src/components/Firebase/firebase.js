@@ -1,5 +1,5 @@
 import React from 'react';
-import * as firebase from 'firebase';
+import firebase from 'firebase';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCLlk-GkqfTdbwuMkN4fjBpfSeHdh8MymI",
@@ -10,11 +10,11 @@ const firebaseConfig = {
     messagingSenderId: "695733133789",
     appId: "1:695733133789:web:db492bc86f14044da91634"
   };
-  // Initialize Firebase
  
-  
+  // Initialize Firebase
   class configFirebase extends React.Component {
       constructor () {
+        super();
         firebase.initializeApp(firebaseConfig);
       }
   }
