@@ -1,5 +1,4 @@
 .Areas {
-    width: 150%;
     max-width: 500px;
     padding: 15px;
     margin: auto;
@@ -9,6 +8,8 @@
 }
 
 .btns {
+  border-radius: 5px;
+  color: none;
   width: 70%;
   margin: 1em 17em 0.3em 18em;
   display: flex;
