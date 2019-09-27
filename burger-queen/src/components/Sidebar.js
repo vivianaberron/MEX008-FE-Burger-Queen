@@ -3,7 +3,7 @@ import MenuEnsaladas from '../components/menuEnsalada';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import '../styles/Sidebar.css';
 import burger from '../img/burger.png';
-import pizza from '../img/pizza.png';
+import pizza from '../img/pizzaicon.png';
 import salad from '../img/salad.png';
 import hotdog from '../img/hot-dog.png';
 import drinks from '../img/lemonade.png'; 
@@ -79,6 +79,7 @@ class Sidebar extends Component {
           <Tab tabFor="vertical-tab-five"><img className="Sidebar_img" src={drinks} alt="Bebidas"></img>Bebidas</Tab>
         </div>
         </TabList>
+        <div className="desktop_tabs">
         <TabPanel tabId="vertical-tab-one-desktop">
           <p>Hola aquí van las hamburguesas</p>
         </TabPanel>
@@ -102,6 +103,7 @@ class Sidebar extends Component {
         <TabPanel tabId="vertical-tab-five-desktop">
           <p>Hola aquí van las bebidas</p>
         </TabPanel>
+        </div>
         </div>
       </Tabs>
     );

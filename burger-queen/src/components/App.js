@@ -9,7 +9,7 @@ import FlowStepper from './Stepper';
 import Sidebar from './Sidebar';
 
 import Home from '../views/Home';
-// import Menu from '../views/Menu';
+import Menu from '../views/Menu';
 
 
 
@@ -24,7 +24,8 @@ function App() {
           <Route path="/Tips" component={Tips} />
           <Route path="/Home" component={Home} />
           <Route path="/Stepper" component={FlowStepper} />
-          <Route path="/Menu" component={Sidebar} />
+          <Route path="/Menu" component={Menu} />
+          <Route path="/Sidebar" component={Sidebar} />
         </Layout>
       </Switch>
     </BrowserRouter>
