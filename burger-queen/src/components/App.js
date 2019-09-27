@@ -5,10 +5,11 @@ import Layout from '../views/Layout'; // para el siseño de nuestra pagina
 import Areas from '../views/Areas';
 import Tips from '../views/Tips';
 import FlowStepper from './Stepper';
-import ModalApp.js from './modalApp';
+// import ModalApp.js from './modalApp';
+import Sidebar from './Sidebar';
 
 import Home from '../views/Home';
-import Menu from '../views/Menu';
+// import Menu from '../views/Menu';
 
 
 
@@ -23,7 +24,7 @@ function App() {
           <Route path="/Tips" component={Tips} />
           <Route path="/Home" component={Home} />
           <Route path="/Stepper" component={FlowStepper} />
-          <Route path="/Menu" component={Menu} />
+          <Route path="/Menu" component={Sidebar} />
         </Layout>
       </Switch>
     </BrowserRouter>
