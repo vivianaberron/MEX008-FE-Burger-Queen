@@ -1,13 +1,18 @@
 import React from 'react';
-import Input from '../components/Input';
-import Buttons from '../components/Buttons';
+import Form from '../components/Form';
 
 
 class Registro extends React.Component {
+    //state = {
+    //     clients : [],
+    // }
+    // handleSubmit = client => {
+    //     this.setState({ characters: [...this.state.clients, client]})
+    // }
+    
     render() {
         return <div>
-            <Input labelName = "Orden a nombre de:"  />
-            <Buttons text = "Registrar" />
+            <Form agregarClientes={this.agregarClientes}/>
         </div>
     }
 }
