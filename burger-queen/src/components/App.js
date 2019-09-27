@@ -10,6 +10,7 @@ import Home from '../views/Home';
 import Menu from '../views/Menu';
 import Registro from '../views/Registro';
 import EnvioOrden from '../views/EnvioOrden';
+import TablaComanda from '../views/TablaComanda';
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Menu" component={Menu} />
           <Route path="/Registro" component={Registro} />
           <Route path="/EnvioOrden" component={EnvioOrden} />
+          <Route path="/TablaComanda" component={TablaComanda} />
         </Layout>
       </Switch>
     </BrowserRouter>
