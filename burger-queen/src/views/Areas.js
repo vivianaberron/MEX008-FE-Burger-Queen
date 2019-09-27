@@ -1,6 +1,9 @@
 import React from 'react';
-import Button from '../components/Button';
+import 'bootstrap/dist/css/bootstrap.css';
+import Buttons from '../components/Buttons';
 import { Link } from 'react-router-dom';
+
+
 
 //import '../components/styles/Areas.css';
 
@@ -10,13 +13,13 @@ class Areas extends React.Component {
         return <div className="areas-container">
           
             <div className = "btn-areas">
-                <Link to="/Home" >
-                    <Button  text = "Servicio" />
+                <Link to="/Tips" >
+                    <Buttons  className="btn btn-outline-secondary" text = "Servicio" />
                 </Link>
             </div>
       
             <div className = "btn-areas">
-                <Button text = "Cocina" />
+                <Buttons text = "Cocina" />
             </div>
 
         </div>
