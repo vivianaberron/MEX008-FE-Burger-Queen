@@ -14,7 +14,7 @@ class Registro extends React.Component {
     render() {
         return <div className="Registro">
             <div className="Registro_header">
-              <h3>Esta orden estará a nombre de: </h3>
+              <h3 className="text-center">Esta orden estará a nombre de: </h3>
             </div>
             <div className="Container">
             <Form  agregarClientes={this.agregarClientes}/>

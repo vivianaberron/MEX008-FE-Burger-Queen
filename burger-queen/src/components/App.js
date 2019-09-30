@@ -15,6 +15,7 @@ import EnvioOrden from '../views/EnvioOrden';
 import TablaComanda from '../views/TablaComanda';
 
 import Promo from '../views/Promo';
+import Footer from './Footer';
 
 
 
@@ -34,7 +35,6 @@ function App() {
           <Route path="/Registro" component={Registro} />
           <Route path="/EnvioOrden" component={EnvioOrden} />
           <Route path="/TablaComanda" component={TablaComanda} />
-
 
           <Route path="/Promo" component={Promo} />
 

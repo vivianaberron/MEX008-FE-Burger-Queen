@@ -1,6 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { Button, Label, Input } from 'reactstrap'; 
+
+import { InputGroup, Input, Label, Button } from 'reactstrap';
+import '../styles/Form.css';
 
 class Form extends React.Component {
     state = {
@@ -23,23 +25,28 @@ class Form extends React.Component {
         
         return(
             <form onSubmit={this.onSubmit}>
-                <Label className="text-center">Orden a nombre de:</Label>
+                <Label className="text-center">
+                <h4>
+                <span className="font-weight-blod"></span>
+                </h4></Label>
                 <br />
-                <Input className="input"
+               
+                <InputGroup className="InputGroup" size="lg"
                 name="name"
                 type="text" 
                 placeholder="Nombre"
                 value={this.state.name} 
-                onChange={this.onChange}></Input>
+                onChange={this.onChange}><Input/></InputGroup>
                 <br />
                 <br />
-                
-                    <Button className="btn-lg btn-warning btn-block" 
+                    <Button className="button"
+                         size="lg"
+                        color="warning" 
                         type="submit"
-                        onSubmit={this.onSubmit}>
+                        onSubmit={this.onSubmit} block>
                           Registrar
                     </Button>
-                
+             
             </form>
         )
     }

@@ -1,10 +1,12 @@
 .Registro_header {
     margin: auto;
-    padding: 50px;
-    bottom: 60px;
+    padding: 20px;
+    bottom: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
+    justify-content: center;
+    flex-wrap:wrap;
   }
 
   .Container {
@@ -14,4 +16,7 @@
     margin: auto;
     height: 150%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
