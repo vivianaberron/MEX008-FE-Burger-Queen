@@ -4,7 +4,7 @@ import logodemonium from '../img/logodemonium.png';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap'; // componente de botones de red social
 import {  Link  } from "react-router-dom";
 
-import * as ROUTES from '../../constants/routes';
+
 
 class Login extends React.Component {
 //comienzo con la conexion con firebase
