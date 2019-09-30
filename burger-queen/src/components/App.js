@@ -14,7 +14,11 @@ import TablaComanda from '../views/TablaComanda';
 import EnvioOrden from '../views/EnvioOrden';
 
 import Promo from '../views/Promo';
+
 import Sidebar from './Sidebar';
+
+import Footer from './Footer';
+
 
 
 
@@ -35,7 +39,6 @@ function App() {
           <Route path="/Registro" component={Registro} />
           <Route path="/EnvioOrden" component={EnvioOrden} />
           <Route path="/TablaComanda" component={TablaComanda} />
-
 
           <Route path="/Promo" component={Promo} />
 
