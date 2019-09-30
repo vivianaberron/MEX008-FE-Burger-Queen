@@ -30,7 +30,6 @@ function App() {
 
           <Route path="/Registro" component={Registro} />
           <Route path="/EnvioOrden" component={EnvioOrden} />
-
           <Route path="/TablaComanda" component={TablaComanda} />
 
 

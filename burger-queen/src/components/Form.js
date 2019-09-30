@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 class Form extends React.Component {
     state = {
@@ -8,6 +9,7 @@ class Form extends React.Component {
         console.log('Holi');
         e.preventDefault();
         localStorage.setItem('clientes', JSON.stringify(this.state));
+        this.props.history.push('/Menu');
         //console.log(JSON.parse(localStorage.getItem('clientes')));
         //this.props.agregarClientes(this.state.name);
     }
@@ -30,14 +32,16 @@ class Form extends React.Component {
                 onChange={this.onChange}/>
                 <br />
                 <br />
-                <button 
-                type="submit"
-                onSubmit={this.onSubmit}>
-                    Registrar
-                </button>
+                
+                    <button 
+                        type="submit"
+                        onSubmit={this.onSubmit}>
+                          Registrar
+                    </button>
+                
             </form>
         )
     }
 }
 
-export default Form;
+export default withRouter(Form);
