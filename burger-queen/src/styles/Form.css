@@ -1,0 +1,21 @@
+.text-center {
+    padding: 20px;
+    bottom: 20px;
+    justify-content: center;
+  }
+
+  .input {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+    -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+    box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+  }
+
+  .btn-lg {
+   
+    -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+    -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+    box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+  }
