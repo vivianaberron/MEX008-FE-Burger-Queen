@@ -333,7 +333,7 @@ class Sidebar extends Component {
                     
                     </div> 
         </TabPanel>
-        <div><Footer/></div>
+
       </div>
       </div>
       

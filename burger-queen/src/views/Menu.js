@@ -5,7 +5,8 @@ import Footer from '../components/Footer';
 
 class Menu extends React.Component {
     render () {
-        return  <div className="menu">
+        return  (
+        <div className="menu">
 
                     <div className="ensalada"> 
                     
@@ -135,6 +136,7 @@ class Menu extends React.Component {
                     </div>  
                     <Footer />
              </div> 
+        );
     }
 }
 
