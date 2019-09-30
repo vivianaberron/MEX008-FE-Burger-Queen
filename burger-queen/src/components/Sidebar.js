@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MenuEnsaladas from '../components/menuEnsalada';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
+import { Input } from 'reactstrap'; 
 import '../styles/Sidebar.css';
 import burger from '../img/burger.png';
 import pizza from '../img/pizzaicon.png';
@@ -8,6 +9,7 @@ import salad from '../img/salad.png';
 import hotdog from '../img/hot-dog.png';
 import drinks from '../img/lemonade.png'; 
 import 'react-web-tabs/dist/react-web-tabs.css';
+import Footer from '../components/Footer';
 
 
 
@@ -37,29 +39,147 @@ class Sidebar extends Component {
         </div>
         <div className="mobile_tabs">
         <TabPanel tabId="vertical-tab-one">
-          <p>Hola aquí van las hamburguesas</p>
+        <div className="hamburguesa">
+                        <div className="hamburguesa1">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'MALICIA'/> 
+                                <MenuEnsaladas text1 = '$50 sencilla  $65 combo' />
+                        </div>
+                        <div className="hamburguesa2">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'SOBERBIA'/> 
+                                <MenuEnsaladas text1 = '$50 sencilla  $65 combo' />
+                        </div>
+                        <div className="hamburguesa3">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'GULA'/> 
+                                <MenuEnsaladas text1 = '$50 sencilla  $65 combo' />
+                        </div>
+                        <div className="hamburguesa4">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'ALMA EN PENA'/> 
+                                <MenuEnsaladas text1 = '$65 sencilla  $80 combo' />
+                        </div>
+                        <div className="hamburguesa5">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'ENCARNACIÓN'/> 
+                                <MenuEnsaladas text1 = '$65 sencilla  $80 combo' />
+                        </div>
+                        <div className="hamburguesa6">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'BANANA LIMBO'/> 
+                                <MenuEnsaladas text1 = '$65 sencilla  $80 combo' />
+                        </div>
+
+                    </div>
         </TabPanel>
         <TabPanel tabId="vertical-tab-two">
-          <p>Hola aquí van las pizzas</p>
+        <div className="pizza">
+                        <div className="pizza1">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'CHANEQUE'/> 
+                                <MenuEnsaladas text1 = 'M $150   G $180  F $210' />
+                        </div>
+                        <div className="pizza2">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'SODOMA'/> 
+                                <MenuEnsaladas text1 = 'M $130   G $160  F $190' />
+                        </div>
+                        <div className="pizza3">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'LUJURIA'/> 
+                                <MenuEnsaladas text1 = 'M $150   G $180  F $210' />
+                        </div>
+                        <div className="pizza4">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'ÁNGEL CAÍDO'/> 
+                                <MenuEnsaladas text1 = 'M $130   G $160  F $190' />
+                        </div>
+                        <div className="pizza5">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'PURGATORIO'/> 
+                                <MenuEnsaladas text1 = 'M $150   G $180  F $210' />
+                        </div>
+                        <div className="pizza6">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'TIKI-HAWAIANA'/> 
+                                <MenuEnsaladas text1 = 'M $140   G $170  F $200' />
+                        </div>
+                    
+                    </div> 
         </TabPanel>
         <TabPanel tabId="vertical-tab-three">
-        <div>
-            <MenuEnsaladas texto = 'DELIRIUM'/>
-            <MenuEnsaladas text = 'Lechuga romana, col morada, Manzana, arandanos, nuez, limon y miel de maguey. '/>
-            <MenuEnsaladas text1 = '$50'/>
-            <MenuEnsaladas texto = 'PARAÍSO PERDIDO'/>
-            <MenuEnsaladas text = 'Mix de lechugas frescas, quinoa, frijoles negros,aguacate, cilantro, jitomate, cebolla morada.'/>
-            <MenuEnsaladas text1 = '$70'/>
+        
+                    <div className="ensalada"> 
+                    
+                        <div className="ensalada1">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'DELIRIUM'/> 
+                                <MenuEnsaladas text1 = '$50 '/>
+                        </div>
+                        
+                        <div className="ensalada2">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'PARAÍSO PERDIDO'/>
+                                <MenuEnsaladas text1 = '$70'/>
+                        </div>
 
-        </div> 
+                    </div>
+                  
+                  
         </TabPanel>
         <TabPanel tabId="vertical-tab-four">
-          <p>Hola aquí van los hot-dogs </p>
+        <div className="jochos">
+                        <div className="jocho1">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'JOCHOSLAW'/> 
+                                <MenuEnsaladas text1 = '$50 sencilla  $65 combo' />
+                        </div>
+                        <div className="jocho2">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'XOLOESCUINTLE'/> 
+                                <MenuEnsaladas text1 = '$65 sencilla  $80 combo' />
+                        </div>
+                        <div className="jocho3">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'PIT BULL'/> 
+                                <MenuEnsaladas text1 = '$65 sencilla  $80 combo' />
+                        </div>
+                        <div className="jocho4">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'HACHIKO'/> 
+                                <MenuEnsaladas text1 = '$70 sencilla  $85 combo' />
+                        </div>
+                        <div className="jocho5">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'PASTOR ALEMÁN'/> 
+                                <MenuEnsaladas text1 = '$80 sencilla  $95 combo' />
+                        </div>
+                    
+                    </div> 
+
         </TabPanel>
         <TabPanel tabId="vertical-tab-five">
-          <p>Hola aquí van las bebidas</p>
+        <div className="bebidas">
+                        <div className="malteada">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'MALTEADA'/> 
+                                <MenuEnsaladas text1 = '$50' />
+                        </div>
+                        <div className="soda">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'SODA ITALIANA'/> 
+                                <MenuEnsaladas text1 = '$45' />
+                        </div>
+                    
+                    </div>  
         </TabPanel>
+        <div>
+        <Footer/>
         </div>
+        </div>
+        
+             
          {/* Desktop */}
          <div className="desktop_tabs">
         <TabList>
@@ -80,31 +200,143 @@ class Sidebar extends Component {
         </div>
         </TabList>
         <div className="desktop_tabs">
-        <TabPanel tabId="vertical-tab-one-desktop">
-          <p>Hola aquí van las hamburguesas</p>
-        </TabPanel>
-        <TabPanel tabId="vertical-tab-two-desktop">
-          <p>Hola aquí van las pizzas</p>
-        </TabPanel>
-        <TabPanel tabId="vertical-tab-three-desktop">
-        <div id="salads_menu">
-            <MenuEnsaladas texto = 'DELIRIUM'/>
-            <MenuEnsaladas text = 'Lechuga romana, col morada, Manzana, arandanos, nuez, limon y miel de maguey. '/>
-            <MenuEnsaladas text1 = '$50'/>
-            <MenuEnsaladas texto = 'PARAÍSO PERDIDO'/>
-            <MenuEnsaladas text = 'Mix de lechugas frescas, quinoa, frijoles negros,aguacate, cilantro, jitomate, cebolla morada.'/>
-            <MenuEnsaladas text1 = '$70'/>
+        <TabPanel tabId="vertical-tab-one">
+        <div className="hamburguesa">
+                        <div className="hamburguesa1">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'MALICIA'/> 
+                                <MenuEnsaladas text1 = '$50 sencilla  $65 combo' />
+                        </div>
+                        <div className="hamburguesa2">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'SOBERBIA'/> 
+                                <MenuEnsaladas text1 = '$50 sencilla  $65 combo' />
+                        </div>
+                        <div className="hamburguesa3">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'GULA'/> 
+                                <MenuEnsaladas text1 = '$50 sencilla  $65 combo' />
+                        </div>
+                        <div className="hamburguesa4">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'ALMA EN PENA'/> 
+                                <MenuEnsaladas text1 = '$65 sencilla  $80 combo' />
+                        </div>
+                        <div className="hamburguesa5">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'ENCARNACIÓN'/> 
+                                <MenuEnsaladas text1 = '$65 sencilla  $80 combo' />
+                        </div>
+                        <div className="hamburguesa6">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'BANANA LIMBO'/> 
+                                <MenuEnsaladas text1 = '$65 sencilla  $80 combo' />
+                        </div>
 
-        </div> 
+                    </div>
         </TabPanel>
-        <TabPanel tabId="vertical-tab-four-desktop">
-          <p>Hola aquí van los hot-dogs </p>
+        <TabPanel tabId="vertical-tab-two">
+        <div className="pizza">
+                        <div className="pizza1">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'CHANEQUE'/> 
+                                <MenuEnsaladas text1 = 'M $150   G $180  F $210' />
+                        </div>
+                        <div className="pizza2">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'SODOMA'/> 
+                                <MenuEnsaladas text1 = 'M $130   G $160  F $190' />
+                        </div>
+                        <div className="pizza3">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'LUJURIA'/> 
+                                <MenuEnsaladas text1 = 'M $150   G $180  F $210' />
+                        </div>
+                        <div className="pizza4">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'ÁNGEL CAÍDO'/> 
+                                <MenuEnsaladas text1 = 'M $130   G $160  F $190' />
+                        </div>
+                        <div className="pizza5">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'PURGATORIO'/> 
+                                <MenuEnsaladas text1 = 'M $150   G $180  F $210' />
+                        </div>
+                        <div className="pizza6">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'TIKI-HAWAIANA'/> 
+                                <MenuEnsaladas text1 = 'M $140   G $170  F $200' />
+                        </div>
+                    
+                    </div> 
         </TabPanel>
-        <TabPanel tabId="vertical-tab-five-desktop">
-          <p>Hola aquí van las bebidas</p>
+        <TabPanel tabId="vertical-tab-three">
+                    <div className="ensalada"> 
+                    
+                        <div className="ensalada1">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'DELIRIUM'/> 
+                                <MenuEnsaladas text1 = '$50 '/>
+                        </div>
+                        
+                        <div className="ensalada2">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'PARAÍSO PERDIDO'/>
+                                <MenuEnsaladas text1 = '$70'/>
+                        </div>
+
+                    </div>
         </TabPanel>
-        </div>
-        </div>
+        <TabPanel tabId="vertical-tab-four">
+        <div className="jochos">
+                        <div className="jocho1">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'JOCHOSLAW'/> 
+                                <MenuEnsaladas text1 = '$50 sencilla  $65 combo' />
+                        </div>
+                        <div className="jocho2">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'XOLOESCUINTLE'/> 
+                                <MenuEnsaladas text1 = '$65 sencilla  $80 combo' />
+                        </div>
+                        <div className="jocho3">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'PIT BULL'/> 
+                                <MenuEnsaladas text1 = '$65 sencilla  $80 combo' />
+                        </div>
+                        <div className="jocho4">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'HACHIKO'/> 
+                                <MenuEnsaladas text1 = '$70 sencilla  $85 combo' />
+                        </div>
+                        <div className="jocho5">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'PASTOR ALEMÁN'/> 
+                                <MenuEnsaladas text1 = '$80 sencilla  $95 combo' />
+                        </div>
+                    
+                    </div> 
+
+        </TabPanel>
+        <TabPanel tabId="vertical-tab-five">
+        <div className="bebidas">
+                        <div className="malteada">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'MALTEADA'/> 
+                                <MenuEnsaladas text1 = '$50' />
+                        </div>
+                        <div className="soda">
+                                <Input className="input2" type="number" placeholder="Cant."></Input>
+                                <MenuEnsaladas texto = 'SODA ITALIANA'/> 
+                                <MenuEnsaladas text1 = '$45' />
+                        </div>
+                    
+                    </div> 
+        </TabPanel>
+        <div><Footer/></div>
+      </div>
+      </div>
+      
       </Tabs>
     );
   }

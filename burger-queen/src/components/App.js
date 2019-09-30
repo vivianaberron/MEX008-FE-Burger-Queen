@@ -28,14 +28,11 @@ function App() {
           <Route path="/Areas" component={Areas} />
           <Route path="/Tips" component={Tips} />
           <Route path="/Home" component={Home} />
-          <Route path="/Menu" component={Menu} />
-
-          <Route path="/Sidebar" component={Sidebar} />
+          <Route path="/Menu" component={Sidebar} />
 
 
           <Route path="/Registro" component={Registro} />
           <Route path="/EnvioOrden" component={EnvioOrden} />
-
           <Route path="/TablaComanda" component={TablaComanda} />
 
 

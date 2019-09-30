@@ -1,9 +1,8 @@
-.ensalada, .jochos, .pizza, .hamburguesa, .bebidas{
+.ensalada, .jochos, .pizza, .hamburguesa, .bebidas {
     width: 150%;
     max-width: 450px;
     padding: 10px;
     margin: auto;
-    height: 150%;
     text-align: left;
     border-radius: 10px;
     background-color: #53BE78;
@@ -48,7 +47,7 @@
  }
 
  .pizza, .hamburguesa, .jochos {
-     font-size: x-small;
+     font-size: medium;
  }
  
 
