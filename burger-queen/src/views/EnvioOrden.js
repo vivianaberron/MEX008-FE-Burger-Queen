@@ -11,10 +11,10 @@ class EnvioOrden extends React.Component {
             <Notificacion className="text-center" content = "Tu pedido se ha enviado a cocina exitosamente" />
             </div>
             <div>
-            <Link to="/TablaComanda">
-            <Buttons text = "Continuar con orden" />
+            <Link to="/Sidebar">
+            <Buttons text = "Continuar con la orden" />
             </Link>
-            <Link to="/Menu">
+            <Link to="/Home">
             <Buttons text = "Menu principal" />
             </Link>
             </div>
