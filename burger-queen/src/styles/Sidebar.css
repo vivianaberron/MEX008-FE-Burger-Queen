@@ -21,11 +21,6 @@
     
     #salad_tab, #vertical-tab-three {
         background-color: #53BE78;
-        height: 15vh;
-        font-size: 5rem;
-    }
-    #texto {
-        font-size: 5rem;
     }
     
     #Hot-dogs_tab, #vertical-tab-four {
@@ -34,7 +29,6 @@
     
     #drinks_tab, #vertical-tab-five {
         background-color: #7B79D9;
-        height: 15vh;
      }
 
      .desktop_tabs {
@@ -53,7 +47,6 @@ background-color: #E8EC42;
 
 #salad_tab-desktop, #vertical-tab-three-desktop {
     background-color: #53BE78;
-    height: 15vh;
 }
 
 #Hot-dogs_tab-desktop, #vertical-tab-four-desktop {
@@ -62,7 +55,6 @@ background-color: #E8EC42;
 
 #drinks_tab-desktop, #vertical-tab-five-desktop {
     background-color: #7B79D9;
-    height: 15vh;
  }
 
 .mobile_tabs {
