@@ -3,13 +3,14 @@ import MenuEnsaladas from '../components/menuEnsalada';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import { Input } from 'reactstrap'; 
 import '../styles/Sidebar.css';
+import offer from '../img/offer.png';
 import burger from '../img/burger.png';
 import pizza from '../img/pizzaicon.png';
 import salad from '../img/salad.png';
 import hotdog from '../img/hot-dog.png';
 import drinks from '../img/lemonade.png'; 
 import 'react-web-tabs/dist/react-web-tabs.css';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 
 
 
@@ -20,6 +21,9 @@ class Sidebar extends Component {
         {/* Mobile */}
          <div className="mobile_tabs">
         <TabList>
+        <div id="promo_tab">
+          <Tab tabFor="vertical-tab-promo"><img className="Sidebar_img" src={offer} alt="promo"></img></Tab>
+          </div>
           <div id="burger_tab">
           <Tab tabFor="vertical-tab-one"><img className="Sidebar_img" src={burger} alt="salads"></img></Tab>
           </div>
@@ -38,6 +42,14 @@ class Sidebar extends Component {
         </TabList>
         </div>
         <div className="mobile_tabs">
+        <TabPanel tabId="vertical-tab-promo">
+        <div className="promo">
+                <figure>
+                <img className="promo_img" src={pizza} alt="Promos"></img>
+                </figure>
+                <h1>Miércoles pizza 2x1</h1>
+        </div>
+        </TabPanel>
         <TabPanel tabId="vertical-tab-one">
         <div className="hamburguesa">
                         <div className="hamburguesa1">
@@ -116,8 +128,12 @@ class Sidebar extends Component {
                                 <Input className="input2" type="number" placeholder="Cant."></Input>
                                 <MenuEnsaladas texto = 'DELIRIUM'/> 
                                 <MenuEnsaladas text1 = '$50 '/>
+                        
                         </div>
                         
+                       
+                       
+                       
                         <div className="ensalada2">
                                 <Input className="input2" type="number" placeholder="Cant."></Input>
                                 <MenuEnsaladas texto = 'PARAÍSO PERDIDO'/>
@@ -175,7 +191,7 @@ class Sidebar extends Component {
                     </div>  
         </TabPanel>
         <div>
-        <Footer/>
+       
         </div>
         </div>
         
@@ -183,6 +199,9 @@ class Sidebar extends Component {
          {/* Desktop */}
          <div className="desktop_tabs">
         <TabList>
+        <div id="promo_tab">
+          <Tab tabFor="vertical-tab-promo"><img className="Sidebar_img" src={offer} alt="promo"></img>Promos</Tab>
+          </div>
           <div id="burger_tab-desktop">
           <Tab tabFor="vertical-tab-one"><img className="Sidebar_img" src={burger} alt="salads"></img>Hamburguesas</Tab>
           </div>
@@ -200,6 +219,15 @@ class Sidebar extends Component {
         </div>
         </TabList>
         <div className="desktop_tabs">
+        <TabPanel tabId="vertical-tab-promo">
+        <div className="promo">
+        <figure>
+                        <img className="promo_img" src={pizza} alt="Promos"></img>
+                </figure>
+                <h1>Miércoles pizza 2x1</h1>
+
+                        </div>
+        </TabPanel>
         <TabPanel tabId="vertical-tab-one">
         <div className="hamburguesa">
                         <div className="hamburguesa1">
@@ -333,6 +361,7 @@ class Sidebar extends Component {
                     
                     </div> 
         </TabPanel>
+      
 
       </div>
       </div>
