@@ -1,0 +1,38 @@
+[  
+    {
+    "id": 1,
+    "name": "Malicia",
+    "price": 50,
+    "combo": 65
+    },
+    {
+    "id": 2,
+    "name": "Soberbia",
+    "price": 50,
+    "combo": 65
+},
+    {
+    "id": 3,
+    "name": "Gula",
+    "price": 50,
+    "combo": 65
+},
+    {
+    "id": 4,
+    "name": "Alma en Pena",
+    "price": 50,
+    "combo": 80
+},
+    {
+    "id": 5,
+    "name": "Encarnación",
+    "price": 50,
+    "combo": 80
+},
+    {
+    "id": 6,
+    "name": "Banana Limbo",
+    "price": 50,
+    "combo": 80
+}
+]
