@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import 'react-web-tabs/dist/react-web-tabs.css';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
-import { Input } from 'reactstrap';
+
+
 
 import MenuData from '../Data/menu.json';
 import MenuEnsaladas from '../components/menuEnsalada';
+
+import { Input } from 'reactstrap'; 
+import '../styles/Sidebar.css';
+import offer from '../img/offer.png';
+
 import burger from '../img/burger.png';
 import pizza from '../img/pizzaicon.png';
 import salad from '../img/salad.png';
@@ -22,26 +28,39 @@ class Sidebar extends Component {
         <>
         <Tabs defaultTab="vertical-tab-one" vertical>
         {/* Mobile */}
-                <div className="mobile_tabs">
-                        <TabList className="myTab">
-                                <div id="burger_tab">
-                                        <Tab tabFor="vertical-tab-one" ><img className="Sidebar_img" src={burger} alt="salads"></img></Tab>
-                                </div>
-                                <div id="pizza_tab">
-                                        <Tab tabFor="vertical-tab-two"><img className="Sidebar_img" src={pizza} alt="salads"></img></Tab>
-                                </div>
-                                <div id="salad_tab">
-                                        <Tab tabFor="vertical-tab-three"><img className="Sidebar_img" src={salad} alt="Ensaladas"></img></Tab>
-                                </div>
-                                <div id="Hot-dogs_tab">
-                                        <Tab tabFor="vertical-tab-four"><img className="Sidebar_img" src={hotdog} alt="Hot-dogs"></img></Tab>
-                                </div>
-                                <div id="drinks_tab">
-                                        <Tab tabFor="vertical-tab-five"><img className="Sidebar_img" src={drinks} alt="Bebidas"></img></Tab>
-                                </div>
-                        </TabList>
-                </div>
+
+         <div className="mobile_tabs">
+        <TabList>
+        <div id="promo_tab">
+          <Tab tabFor="vertical-tab-promo"><img className="Sidebar_img" src={offer} alt="promo"></img></Tab>
+          </div>
+          <div id="burger_tab">
+          <Tab tabFor="vertical-tab-one"><img className="Sidebar_img" src={burger} alt="salads"></img></Tab>
+          </div>
+          <div id="pizza_tab">
+          <Tab tabFor="vertical-tab-two"><img className="Sidebar_img" src={pizza} alt="salads"></img></Tab>
+          </div>
+          <div id="salad_tab">
+          <Tab tabFor="vertical-tab-three"><img className="Sidebar_img" src={salad} alt="Ensaladas"></img></Tab>
+          </div>
+          <div id="Hot-dogs_tab">
+          <Tab tabFor="vertical-tab-four"><img className="Sidebar_img" src={hotdog} alt="Hot-dogs"></img></Tab>
+          </div>
+          <div id="drinks_tab">
+          <Tab tabFor="vertical-tab-five"><img className="Sidebar_img" src={drinks} alt="Bebidas"></img></Tab>
+        </div>
+        </TabList>
+        </div>
+
         <div className="mobile_tabs">
+        <TabPanel tabId="vertical-tab-promo">
+        <div className="promo">
+                <figure>
+                <img className="promo_img" src={pizza} alt="Promos"></img>
+                </figure>
+                <h1>Miércoles pizza 2x1</h1>
+        </div>
+        </TabPanel>
         <TabPanel tabId="vertical-tab-one">
         <div className="hamburguesa">
                 {MenuData.map((menuElement, index) =>{
@@ -141,7 +160,10 @@ class Sidebar extends Component {
              
          {/* Desktop */}
          <div className="desktop_tabs">
-        <TabList>
+         <TabList>
+        <div id="promo_tab">
+          <Tab tabFor="vertical-tab-promo"><img className="Sidebar_img" src={offer} alt="promo"></img>Promos</Tab>
+          </div>
           <div id="burger_tab-desktop">
           <Tab tabFor="vertical-tab-one"><img className="Sidebar_img" src={burger} alt="salads"></img>Hamburguesas</Tab>
           </div>
@@ -159,6 +181,15 @@ class Sidebar extends Component {
         </div>
         </TabList>
         <div className="desktop_tabs">
+        <TabPanel tabId="vertical-tab-promo">
+        <div className="promo">
+        <figure>
+                        <img className="promo_img" src={pizza} alt="Promos"></img>
+                </figure>
+                <h1>Miércoles pizza 2x1</h1>
+
+                        </div>
+        </TabPanel>
         <TabPanel tabId="vertical-tab-one">
         <div className="hamburguesa">
                         <div className="hamburguesa1">

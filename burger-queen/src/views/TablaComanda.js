@@ -11,9 +11,13 @@ class TablaComanda extends React.Component {
         return(
             <div>
                 <h1>Confirma la orden de:</h1>
-                <h2>{this.state.name}</h2>
-                <Link to="EnvioOrden">
-                    <Buttons text="Enviar a Cocina" />
+               
+
+                <h1>{this.state.name}</h1>
+                <h1>{this.state.number}</h1>
+                <Link to="/EnvioOrden">
+                <Buttons text="Enviar a Cocina" />
+
                 </Link>
             </div>
         );
