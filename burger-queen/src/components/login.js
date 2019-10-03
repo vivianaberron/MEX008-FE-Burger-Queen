@@ -21,7 +21,7 @@ class Login extends React.Component {
 
         <FormGroup className="form">
           <Label className="text-center"></Label>
-          <Input className="input" type="number" placeholder="Ingresa tu número de empleado"></Input>
+          <Input className="input" type="password" placeholder="Ingresa tu número de empleado"></Input>
         </FormGroup>
         <Button className="btn" color="warning" block>
           <Link to="/Areas">Iniciar</Link>

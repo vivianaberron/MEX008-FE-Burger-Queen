@@ -10,13 +10,13 @@
   }
 
   .Container {
-    width: 150%;
-    max-width: 500px;
-    padding: 20px;
-    margin: auto;
-    height: 150%;
+    /* width: 150%;
+    max-width: 500px; */
+    /* padding: 20px; */
+    /* margin: auto;
+    height: 150%; */
     text-align: center;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }

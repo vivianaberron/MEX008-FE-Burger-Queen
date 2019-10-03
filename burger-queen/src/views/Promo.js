@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 
 import "../styles/Promo.css";
 import pizza from "../img/pizza.png";
-import Sidebar from "../components/Sidebar";
+//import Sidebar from "../components/Sidebar";
 
 class Promo extends React.Component {
   render() {

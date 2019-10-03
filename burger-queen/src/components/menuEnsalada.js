@@ -6,8 +6,10 @@ class MenuEnsalada extends React.Component {
     render (){
         return (
             <div className="menuEnsalada">
-                <h6> {this.props.texto}  </h6> 
-                   <p>{this.props.text1}</p>
+                <h6> {this.props.name}  </h6> 
+                   <p>{this.props.price}</p>
+                   <p>{this.props.combo}</p>
+
 
             </div>
         )

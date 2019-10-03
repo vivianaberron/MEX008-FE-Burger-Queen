@@ -31,12 +31,14 @@ class Form extends React.Component {
                 </h4></Label>
                 <br />
                
-                <InputGroup className="InputGroup" size="lg"
-                name="name"
-                type="text" 
-                placeholder="Nombre"
-                value={this.state.name} 
-                onChange={this.onChange}><Input/></InputGroup>
+                <InputGroup className="InputGroup" size="lg">
+                    <Input
+                    name="name"
+                    type="text" 
+                    placeholder="Nombre"
+                    value={this.state.name} 
+                    onChange={this.onChange}/>
+                </InputGroup>
                 <br />
                 <br />
                     <Button className="button"
