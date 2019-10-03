@@ -68,7 +68,12 @@ background-color: #E8EC42;
 .desktop_tabs {
     display: inline-flex;
 }
-.hamburguesas {
+.hamburguesas,
+.pizza,
+.ensalada,
+.jochos,
+.bebidas
+ {
     width: 100%;
 }
 }

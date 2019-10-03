@@ -1,6 +1,7 @@
 import React from 'react';
+import { Input } from 'reactstrap';
 
-class Ensaladas extends React.Component {
+class Pizzas extends React.Component {
     render(){
         return(
             <div>
@@ -9,14 +10,14 @@ class Ensaladas extends React.Component {
                         <tr>
                             <td></td>
                             <td></td>
-                            <td>Mediana</td>
-                            <td>Grande</td>
-                            <td>Familiar</td>
+                            <td>M</td>
+                            <td>G</td>
+                            <td>F</td>
 
                         </tr>
                         <tr>
                         <td className="cant">
-                            <Input type="number" placeholder="Cant."></Input>
+                            <Input type="number" placeholder="0"></Input>
                         </td>
                         <td className="name">
                             {this.props.name}
@@ -38,3 +39,5 @@ class Ensaladas extends React.Component {
         )
     }
 }
+
+export default Pizzas;

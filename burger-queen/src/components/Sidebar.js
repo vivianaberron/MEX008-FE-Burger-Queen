@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import 'react-web-tabs/dist/react-web-tabs.css';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
-import { Input } from 'reactstrap'; 
 import '../styles/Sidebar.css';
 
 
 
-import HamburguesasData from '../Data/hamburguesas.json';
-import PizzasData from '../Data/pizzas.json';
-import PostresData from '..Data/postres.json';
-import MalteadasData from '..Data/malteadas.json';
-import EnsaladasData from '..Data/ensaldas.json';
+import HamburguesasData from '../Data/menu/hamburguesas.json';
+import PizzasData from '../Data/menu/pizzas.json';
+//import PostresData from '../Data/menu/postres.json';
+import MalteadasData from '../Data/menu/malteadas.json';
+import EnsaladasData from '../Data/menu/ensaladas.json';
+import JochosData from '../Data/menu/jochos.json';
 
 
 import HamburguesasJochos from './HamburgesasJochos';
-import Pizzas from '.Pizzas'
+import Pizzas from './Pizzas'
+import Ensaladas from './Ensaladas';
 
 import offer from '../img/offer.png';
 import burger from '../img/burger.png';
@@ -67,76 +68,61 @@ class Sidebar extends Component {
         </div>
         </TabPanel>
         <TabPanel tabId="vertical-tab-one">
-        <div className="hamburguesas">
-                {HamburguesasData.map((menuElement, index) =>{
-                        return(    
-                                <HamburguesasJochos name = {menuElement.name} price={menuElement.price} combo={menuElement.combo} key={menuElement.id}/>
-                        )
-                })}
-                    </div>
+                <div className="hamburguesas">
+                        {HamburguesasData.map((menuElement, index) =>{
+                                return(    
+                                        <HamburguesasJochos name = {menuElement.name} price={menuElement.price} combo={menuElement.combo} key={menuElement.id}/>
+                                )
+                        })}
+                </div>
         </TabPanel>
         <TabPanel tabId="vertical-tab-two">
-        <div className="pizza">
-        {PizzasData.map((menuElement, index) =>{
-                        return(    
-                                <Pizzas 
-                                name = {menuElement.name} 
-                                priceMed={menuElement.price.mediana}
-                                priceGran={menuElement.price.grande} 
-                                priceFam={menuElement.price.familiar}   
-                                key={menuElement.id}/>
-                        )
-                })}
-                    </div>
-                       
+                <div className="pizza">
+                        {PizzasData.map((menuElement, index) =>{
+                                return(    
+                                        <Pizzas 
+                                        name = {menuElement.name} 
+                                        priceMed={menuElement.price.mediana}
+                                        priceGran={menuElement.price.grande} 
+                                        priceFam={menuElement.price.familiar}   
+                                        key={menuElement.id}/>
+                                )
+                        })}
+                </div>
+                        
         </TabPanel>
         <TabPanel tabId="vertical-tab-three">
-        <div className="ensalada"> 
-                {EnsaladasData.map((menuElement, index) =>{
+                <div className="ensalada"> 
+                        {EnsaladasData.map((menuElement, index) =>{
+                                        return(    
+                                                <Ensaladas
+                                                name={menuElement.name}
+                                                price={menuElement.price}
+                                                key={menuElement.id} />
+                                        )
+                        })}
+                    </div>        
+        </TabPanel>
+        <TabPanel tabId="vertical-tab-four">
+                <div className="jochos">
+                        {JochosData.map((menuElement, index) =>{
+                                return(    
+                                        <HamburguesasJochos name = {menuElement.name} price={menuElement.price} combo={menuElement.combo} key={menuElement.id}/>
+                                )
+                        })}
+                </div> 
+
+        </TabPanel>
+        <TabPanel tabId="vertical-tab-five">
+                <div className="bebidas">
+                        {MalteadasData.map((menuElement, index) =>{
                                 return(    
                                         <Ensaladas
                                         name={menuElement.name}
                                         price={menuElement.price}
                                         key={menuElement.id} />
                                 )
-                })}
-                    </div>        
-        </TabPanel>
-        <TabPanel tabId="vertical-tab-four">
-        <div className="jochos">
-                        <div className="jocho1">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'JOCHOSLAW' text1 = '$50 sencilla  $65 combo'/> 
-                        </div>
-                        <div className="jocho2">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'XOLOESCUINTLE' text1 = '$65 sencilla  $80 combo'/> 
-                        </div>
-                        <div className="jocho3">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'PIT BULL' text1 = '$65 sencilla  $80 combo'/> 
-                        </div>
-                        <div className="jocho4">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'HACHIKO' text1 = '$70 sencilla  $85 combo'/> 
-                        </div>
-                        <div className="jocho5">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'PASTOR ALEMÁN' text1 = '$80 sencilla  $95 combo'/> 
-                        </div>
-                    </div> 
-
-        </TabPanel>
-        <TabPanel tabId="vertical-tab-five">
-        <div className="bebidas">
-                        <div className="malteada">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'MALTEADA' text1 = '$50'/> 
-                        </div>
-                        <div className="soda">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'SODA ITALIANA' text1 = '$45'/> 
-                        </div>
+                        })}
                     </div>  
         </TabPanel>
         <div>
@@ -177,119 +163,61 @@ class Sidebar extends Component {
                         </div>
         </TabPanel>
         <TabPanel tabId="vertical-tab-one">
-        <div className="hamburguesa">
-                        <div className="hamburguesa1">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'MALICIA' text1='$50 sencilla  $65 combo'/> 
-                        </div>
-                        <div className="hamburguesa2">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'SOBERBIA' text1 = '$50 sencilla  $65 combo'/>
-                        </div>
-                        <div className="hamburguesa3">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'GULA' text1 = '$50 sencilla  $65 combo'/>  
-                        </div>
-                        <div className="hamburguesa4">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'ALMA EN PENA' text1 = '$65 sencilla  $80 combo'/> 
-                        </div>
-                        <div className="hamburguesa5">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'ENCARNACIÓN' text1 = '$65 sencilla  $80 combo'/> 
-                        </div>
-                        <div className="hamburguesa6">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'BANANA LIMBO' text1 = '$65 sencilla  $80 combo'/> 
-                        </div>
-
-                    </div>
+        <div className="hamburguesas">
+                        {HamburguesasData.map((menuElement, index) =>{
+                                return(    
+                                        <HamburguesasJochos name = {menuElement.name} price={menuElement.price} combo={menuElement.combo} key={menuElement.id}/>
+                                )
+                        })}
+                </div>
         </TabPanel>
         <TabPanel tabId="vertical-tab-two">
-        <div className="pizza">
-                        <div className="pizza1">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'CHANEQUE' text1 = 'M $150   G $180  F $210'/>
-                        </div>
-                        <div className="pizza2">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'SODOMA' text1 = 'M $130   G $160  F $190'/> 
-                        </div>
-                        <div className="pizza3">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'LUJURIA' text1 = 'M $150   G $180  F $210'/>
-                        </div>
-                        <div className="pizza4">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'ÁNGEL CAÍDO' text1 ='M $130   G $160  F $190'/> 
-                        </div>
-                        <div className="pizza5">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'PURGATORIO' text1 = 'M $150   G $180  F $210'/> 
-                        </div>
-                        <div className="pizza6">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'TIKI-HAWAIANA' text1 = 'M $140   G $170  F $200'/>
-                        </div>
-                    
-                    </div> 
+                <div className="pizza">
+                        {PizzasData.map((menuElement, index) =>{
+                                return(    
+                                        <Pizzas 
+                                        name = {menuElement.name} 
+                                        priceMed={menuElement.price.mediana}
+                                        priceGran={menuElement.price.grande} 
+                                        priceFam={menuElement.price.familiar}   
+                                        key={menuElement.id}/>
+                                )
+                        })}
+                </div>
+                     
         </TabPanel>
         <TabPanel tabId="vertical-tab-three">
-                    <div className="ensalada"> 
-                    
-                        <div className="ensalada1">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'DELIRIUM' text1 = '$50'/>
-                        </div>
-                        
-                        <div className="ensalada2">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'PARAÍSO PERDIDO' text1 = '$70'/>
-                        </div>
-
-                    </div>
+                <div className="ensalada"> 
+                        {EnsaladasData.map((menuElement, index) =>{
+                                return(    
+                                        <Ensaladas
+                                        name={menuElement.name}
+                                        price={menuElement.price}
+                                        key={menuElement.id} />
+                                )
+                        })}
+                </div>      
         </TabPanel>
         <TabPanel tabId="vertical-tab-four">
-        <div className="jochos">
-                        <div className="jocho1">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'JOCHOSLAW' text1 = '$50 sencilla  $65 combo'/> 
-                        </div>
-                        <div className="jocho2">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'XOLOESCUINTLE' text1 = '$65 sencilla  $80 combo'/> 
-                        </div>
-                        <div className="jocho3">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'PIT BULL' text1 = '$65 sencilla  $80 combo'/>
-                        </div>
-                        <div className="jocho4">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'HACHIKO' text1 = '$70 sencilla  $85 combo'/> 
-                        </div>
-                        <div className="jocho5">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'PASTOR ALEMÁN' text1 = '$80 sencilla  $95 combo'/> 
-
-                        </div>
-                    
-                    </div> 
-
+                <div className="jochos">
+                        {JochosData.map((menuElement, index) =>{
+                                return(    
+                                        <HamburguesasJochos name = {menuElement.name} price={menuElement.price} combo={menuElement.combo} key={menuElement.id}/>
+                                )
+                        })}
+                </div> 
         </TabPanel>
         <TabPanel tabId="vertical-tab-five">
-        <div className="bebidas">
-                        <div className="malteada">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'MALTEADA' text1 = '$50'/> 
-
-                        </div>
-                        <div className="soda">
-                                <Input className="input2" type="number" placeholder="Cant."></Input>
-                                <MenuEnsaladas texto = 'SODA ITALIANA' text1 = '$45'/> 
-
-                        </div>
-                    
-                    </div> 
+                <div className="bebidas">
+                        {MalteadasData.map((menuElement, index) =>{
+                                return(    
+                                        <Ensaladas
+                                        name={menuElement.name}
+                                        price={menuElement.price}
+                                        key={menuElement.id} />
+                                )
+                        })}
+                </div>  
         </TabPanel>
 
       </div>

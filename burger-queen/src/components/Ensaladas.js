@@ -1,4 +1,5 @@
 import React from 'react';
+import { Input } from 'reactstrap';
 
 class Ensaladas extends React.Component{
     render(){
@@ -7,24 +8,16 @@ class Ensaladas extends React.Component{
                 <table>
                     <tbody>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td>Precio</td>
+                            <td className="cant">
+                                <Input type="number" placeholder="0"></Input>
+                            </td>
+                            <td className="name">
+                                {this.props.name}
+                            </td>
+                            <td className="price">
+                                {this.props.price}
+                            </td>
                         </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td>Precio</td>
-                        </tr>
-                        <td className="cant">
-                            <Input type="number" placeholder="Cant."></Input>
-                        </td>
-                        <td className="name">
-                            {this.props.name}
-                        </td>
-                        <td className="price">
-                            {this.props.price}
-                        </td>
                         
                     </tbody>
                 </table>
@@ -32,3 +25,5 @@ class Ensaladas extends React.Component{
         )
     }
 }
+
+export default Ensaladas;

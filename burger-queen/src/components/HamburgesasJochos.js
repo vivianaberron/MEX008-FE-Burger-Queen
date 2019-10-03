@@ -12,21 +12,22 @@ class MenuEnsalada extends React.Component {
                     <tr>
                         <td></td>
                         <td></td>
-                        <td>Sencilla</td>
-                        <td>Combo</td>
+                        <td>S</td>
+                        <td>C</td>
                     </tr>
+                   
                     <tr>
                         <td className="cant">
-                            <Input type="number" placeholder="Cant."></Input>
+                            <Input type="number" placeholder="0"></Input>
                         </td>
                         <td className="name">
                             {this.props.name}
                         </td>
                         <td className="price">
-                            <Input type="checkbox"/><label>{this.props.price}</label>
+                            <Input type="checkbox"/><label>$ {this.props.price}</label>
                         </td>
                         <td className="combo">
-                        <Input type="checkbox"/><label>{this.props.combo}</label>
+                        <Input type="checkbox"/><label>$ {this.props.combo}</label>
                         </td>
                         
                     </tr>
