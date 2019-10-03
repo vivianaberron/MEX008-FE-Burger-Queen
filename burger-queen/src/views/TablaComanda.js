@@ -1,5 +1,6 @@
 import React from 'react';
 import Buttons from '../components/Buttons';
+import { Link } from 'react-router-dom';
 
 class TablaComanda extends React.Component {
     state = JSON.parse(localStorage.getItem('clientes'));
@@ -10,7 +11,10 @@ class TablaComanda extends React.Component {
         return(
             <div>
                 <h1>{this.state.name}</h1>
+                <h1>{this.state.number}</h1>
+                <Link to="/EnvioOrden">
                 <Buttons text="Enviar a Cocina" />
+                </Link>
             </div>
         );
     }
