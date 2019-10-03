@@ -10,10 +10,14 @@ class TablaComanda extends React.Component {
         //this.props.agregarClientes(this.state.name);
         return(
             <div>
+                <h1>Confirma la orden de:</h1>
+               
+
                 <h1>{this.state.name}</h1>
                 <h1>{this.state.number}</h1>
                 <Link to="/EnvioOrden">
                 <Buttons text="Enviar a Cocina" />
+
                 </Link>
             </div>
         );

@@ -37,6 +37,7 @@ class Form extends React.Component {
                
                 <InputGroup className="InputGroup" size="lg">
                     <Input
+
                         name="name"
                         type="text" 
                         placeholder="Nombre"
@@ -47,6 +48,7 @@ class Form extends React.Component {
                         placeholder="Mesa"
                         value={this.state.type} 
                         onChange={this.onChange}/>
+
                 </InputGroup>
                 <br />
                 <br />
