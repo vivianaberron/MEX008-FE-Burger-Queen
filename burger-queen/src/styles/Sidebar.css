@@ -68,6 +68,9 @@ background-color: #E8EC42;
 .desktop_tabs {
     display: inline-flex;
 }
+.hamburguesas {
+    width: 100%;
+}
 }
 
 
