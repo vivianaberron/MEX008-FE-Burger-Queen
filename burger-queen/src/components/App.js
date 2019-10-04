@@ -19,6 +19,10 @@ import Sidebar from './Sidebar';
 
 import Footer from './Footer';
 
+import  TipsCocina from '../views/TipsCocina';
+import Limpieza from '../views/Limpieza';
+import Requisiciones from  '../views/Requisicion';
+import ListaIngredientes from '../views/ListaIngredientes';
 
 
 
@@ -42,7 +46,10 @@ function App() {
 
           <Route path="/Promo" component={Promo} />
 
-
+          <Route path="/TipsCocina" component={TipsCocina} />
+          <Route path="/Limpieza" component={Limpieza} />
+          <Route path="/Requisiciones" component={Requisiciones} />
+          <Route path="/ListaIngredientes"  component={ListaIngredientes} />
         </Layout>
       </Switch>
     </BrowserRouter>

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 //import '../components/styles/Areas.css';
 
 class Areas extends React.Component {
@@ -19,8 +20,22 @@ class Areas extends React.Component {
             </div>
       
             <div className = "btn-areas">
-                <Buttons text = "Cocina" />
-            </div>
+                <Buttons text = "Cocina"/>
+            </div> 
+
+                <input list= "cocina"  className="selec"/>
+                    <datalist id="cocina">
+                        <option value="Plancha"/>
+                        <option value="Fría"/>
+                        <option value="Pizza"/>
+                        <option value="Bebidas"/>
+
+                    </datalist>    
+
+                
+            
+
+            
 
         </div>
     }
