@@ -1,0 +1,14 @@
+[ {
+    "ingredientes": {
+        "frutas y verduras": ["hojuelas de pimiento","piña", "elote congelado", "aceitunas", "aguacate", "cilantro", "pimiento verde", "pimiento amarillo", "perejil fresco", "arúgula", "naranja", "elote desgranado", "pimiento verde", "brócoli", "cebolla morada", "lechuga", "cebolla natural", "jitomate", "zanahoria", "jícama", "apio", "champiñones", "pepinillo", "germinado de alfalfa", "flor de jamaica", "hongos cremini", "alga marina en trozos"],
+        "salsas": ["salsa padilla", "pico de gallo", "salsa bbq", "salsa frijol", "salsa agridulce"],
+        "aderezos": ["veganesa", "chimichurri", "crema ácida"], 
+        "guarniciones": ["tinga de zetas con cebolla", "ensalada slow", "guacamole", "chucrut", "chiles chipotle", "chiles jalapeños", "frijoles", "tortillas en tiras", "ajonjolí"],
+        "pan": ["pan de trigo", "pan de avena", "pan integral", "pan de hot-dog"],
+        "quesos": ["queso gud", "queso americano", "queso de papa", "queso mozzarella", "queso cheddar", "queso manchego"],
+        "vuélvela hawaiana": ["piña", "jamón"],
+        "combo": ["90 grs. de papas a la francesa", "bastones de vegetales a elegir", "agua fresca del día"]
+    },
+    "utensilios": ["la estufa", "la espátula", "las ganas de vivir", "dale a tu cuerpo alegria macarena"]
+}]
+    

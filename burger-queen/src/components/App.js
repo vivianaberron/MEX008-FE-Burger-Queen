@@ -8,16 +8,15 @@ import Tips from '../views/Tips';
 import Areas from '../views/Areas';
 import Home from '../views/Home';
 import Registro from '../views/Registro';
-//import Sidebar from './Sidebar';
+import Sidebar from './Sidebar';
 import Menu from '../views/Menu';
 import TablaComanda from '../views/TablaComanda';
 import EnvioOrden from '../views/EnvioOrden';
 
 import Promo from '../views/Promo';
 
-import Sidebar from './Sidebar';
 
-import Footer from './Footer';
+//import Footer from './Footer';
 
 
 
@@ -25,7 +24,7 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={Login} />
         <Layout>
@@ -49,5 +48,4 @@ function App() {
   );
 }
 export default App;
-
 

@@ -1,5 +1,5 @@
 .ensalada, .jochos, .pizza, .hamburguesa, .bebidas {
-    width: 150%;
+
     max-width: 450px;
     padding: 10px;
     margin: auto;
@@ -8,11 +8,16 @@
     background-color: #53BE78;
 }
 
-.input2{
+.cant{
     width: 19%;
     height:2%;
     font-size: x-small;
 }
+.name{
+    width: 50%;
+}
+
+
  .ensalada1, .ensalada2, .hamburguesa1, 
  .hamburguesa2, .hamburguesa3, .hamburguesa4, 
  .hamburguesa5, .hamburguesa6, .pizza1, .pizza2, .pizza3, 
