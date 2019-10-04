@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuEnsaladas from '../components/menuEnsalada';
+import MenuEnsaladas from '../components/HamburgesasJochos';
 import { Input } from 'reactstrap'; 
 import Footer from '../components/Footer';
 
