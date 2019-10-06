@@ -1,10 +1,20 @@
+.conteiner{
+    margin: 0%;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+.TipsCocina{
+    padding: 20px;
+    margin: auto;
+    height: auto;
+}
 #text{
-    width: 150%;
+    width: auto;
     max-width: 500px;
     padding: 10px;
     margin: auto;
     height: 150%;
-    /* text-align: left; */
     display: flex;
     justify-content: space-between;
     border-bottom: 3px solid #848280;
@@ -26,4 +36,20 @@ justify-content: space-between;
     display: inline-block;
     align-items: center;
 
+}
+
+.next{
+    width: 50px;
+    height: 50px;
+    justify-content: flex-end;
+    display: flex;
+
+}
+.textoCocina{
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: auto;
+    height: 150%;
+    justify-content: flex-start;
 }

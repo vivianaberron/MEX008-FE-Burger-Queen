@@ -6,7 +6,7 @@ class Requisiciones extends React.Component{
     render (){
         return (
             <div className="requisiciones">
-                <Textips titulo="Requisiciones"/>
+                <h2>Requisiciones</h2>
 
                 <Textips texto=""/>
 

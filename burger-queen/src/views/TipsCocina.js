@@ -1,6 +1,8 @@
 import React from 'react';
 import Textips from '../components/textTips.js';
-// import '../styles/textTips.css';
+import next from '../img/next.png';
+import { Link } from "react-router-dom";
+import '../styles/textTips.css';
 
 class  TipsCocina extends React.Component {
     constructor (props) {
@@ -17,14 +19,24 @@ class  TipsCocina extends React.Component {
         console.log(this.state.tips);
         
         return( 
-            <div className="textoCocina">
-                 <div id="titulo"> 
-                        <h2>Alistémonos D'Monium</h2>
-                 </div>    
-                {
-                    this.state.tips.map((item, index) => <Textips key={index} id={`element${index}`} texto={item}/>)
-                }  
-            </div>
+            <div className="TipsCocina">
+                
+                    <div id="titulo"> 
+                            <h2>Alistémonos D'Monium</h2>
+                    </div>  
+                <div className="textoCocina">     
+                    {
+                        this.state.tips.map((item, index) => <Textips key={index} id={`element${index}`} texto={item}/>)
+                    }  
+                </div>
+
+                <div className="Boton-siguiente">
+                    <Link className="boton" to="/ListaIngredientes">
+                        <img className="next" src={next} alt="Boton siguiente"/>
+                    </Link>
+                </div>
+            
+            </div>   
         )
     }
 }

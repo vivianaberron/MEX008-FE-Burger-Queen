@@ -11,7 +11,8 @@ import { Link } from 'react-router-dom';
 class Areas extends React.Component {
     render() {
 
-        return <div className="areas-container">
+        return (
+        <div className="areas-container">
           
             <div className = "btn-areas">
                 <Link to="/Home" >
@@ -20,24 +21,21 @@ class Areas extends React.Component {
             </div>
       
             <div className = "btn-areas">
-                <Buttons text = "Cocina"/>
-            </div> 
-
-                <input list= "cocina"  className="selec"/>
+                <Link to= "/TipsCocina">
+                    
+                    <input list= "cocina"  className="selec"/>
                     <datalist id="cocina">
+                        <option value="COCINA"/>   
                         <option value="Plancha"/>
                         <option value="Fría"/>
                         <option value="Pizza"/>
                         <option value="Bebidas"/>
 
-                    </datalist>    
-
-                
-            
-
-            
-
+                    </datalist>   
+                </Link>
+            </div>    
         </div>
+        )
     }
 }
 

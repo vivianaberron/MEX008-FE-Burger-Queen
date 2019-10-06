@@ -22,6 +22,8 @@ import  TipsCocina from '../views/TipsCocina';
 import Limpieza from '../views/Limpieza';
 import Requisiciones from  '../views/Requisicion';
 import ListaIngredientes from '../views/ListaIngredientes';
+import OrdenCocina from '../views/OrdenCocina';
+import ListaDeOrdenes from '../views/ListaDeOrdenes';
 
 
 
@@ -49,6 +51,8 @@ function App() {
           <Route path="/Limpieza" component={Limpieza} />
           <Route path="/Requisiciones" component={Requisiciones} />
           <Route path="/ListaIngredientes"  component={ListaIngredientes} />
+          <Route path="/OrdenCocina" component={OrdenCocina}/>
+          <Route path="/ListaDeOrdenes" component={ListaDeOrdenes}/>
         </Layout>
       </Switch>
     </BrowserRouter>
