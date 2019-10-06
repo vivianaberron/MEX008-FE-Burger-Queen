@@ -14,17 +14,17 @@ import TablaComanda from '../views/TablaComanda';
 import EnvioOrden from '../views/EnvioOrden';
 
 import Promo from '../views/Promo';
+import IfOffLine from './ifOffline';
 
 
 //import Footer from './Footer';
 
-
-
-
-
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <header>
+        <IfOffLine>offLine</IfOffLine>
+        </header>     
       <Switch>
         <Route exact path="/" component={Login} />
         <Layout>
