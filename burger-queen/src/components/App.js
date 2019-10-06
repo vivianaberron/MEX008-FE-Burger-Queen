@@ -2,34 +2,37 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
-import Login from './login';//para logearse con firebase
 import Layout from '../views/Layout'; // para el siseño de nuestra pagina
-import Areas from '../views/Areas';
+import Login from './login';//para logearse con firebase
 import Tips from '../views/Tips';
-import Sidebar from './Sidebar';
-
+import Areas from '../views/Areas';
 import Home from '../views/Home';
-import Menu from '../views/Menu';
 import Registro from '../views/Registro';
-import EnvioOrden from '../views/EnvioOrden';
+import Sidebar from './Sidebar';
+import Menu from '../views/Menu';
 import TablaComanda from '../views/TablaComanda';
+import EnvioOrden from '../views/EnvioOrden';
 
 import Promo from '../views/Promo';
-import Footer from './Footer';
+import IfOffLine from './ifOffline';
 
 
-
+//import Footer from './Footer';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <header>
+        <IfOffLine>offLine</IfOffLine>
+        </header>     
       <Switch>
         <Route exact path="/" component={Login} />
         <Layout>
           <Route path="/Areas" component={Areas} />
           <Route path="/Tips" component={Tips} />
           <Route path="/Home" component={Home} />
-          <Route path="/Menu" component={Sidebar} />
+          <Route path="/Menu" component={Menu} />
+          <Route path="/Sidebar" component={Sidebar} />
 
 
           <Route path="/Registro" component={Registro} />
@@ -39,12 +42,10 @@ function App() {
           <Route path="/Promo" component={Promo} />
 
 
-
         </Layout>
       </Switch>
     </BrowserRouter>
   );
 }
 export default App;
-
 
