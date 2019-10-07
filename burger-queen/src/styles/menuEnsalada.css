@@ -1,7 +1,7 @@
 .ensalada, .jochos, .pizza, .hamburguesa, .bebidas {
 
     max-width: 450px;
-    padding: 10px;
+    padding: 5px;
     margin: auto;
     text-align: left;
     border-radius: 10px;
@@ -9,12 +9,25 @@
 }
 
 .cant{
-    width: 19%;
+    width: 15%;
     height:2%;
     font-size: x-small;
 }
 .name{
-    width: 50%;
+    width: 40%;
+    display: flex;
+}
+.price,
+.combo{
+    width: 18%;
+}
+.add {
+    width: 5%
+}
+.price-gran,
+.price-med,
+.price-fam{
+    width: 16%;
 }
 
 

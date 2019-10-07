@@ -4,6 +4,10 @@ import '../styles/menuEnsalada.css';
 
 
 class MenuEnsalada extends React.Component {
+
+    clickHandler(e){
+        this.props.onClick()
+    }
     render (){
         return (
             <div className="menuEnsalada">
@@ -27,7 +31,10 @@ class MenuEnsalada extends React.Component {
                             <Input type="checkbox"/><label>$ {this.props.price}</label>
                         </td>
                         <td className="combo">
-                        <Input type="checkbox"/><label>$ {this.props.combo}</label>
+                            <Input type="checkbox"/><label>$ {this.props.combo}</label>
+                        </td>
+                        <td className="add">
+                            <i className="fas fa-plus-square" onClick={this.props.onClick}></i>
                         </td>
                         
                     </tr>

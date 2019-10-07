@@ -3,9 +3,9 @@
      "id": 1,
      "name": "Chaneque",
      "price": {
-         "Mediana": 150,
-         "Grande": 180,
-         "Familiar": 210
+         "mediana": 150,
+         "grande": 180,
+         "familiar": 210
      },
      "combo": null
     },
@@ -13,9 +13,9 @@
         "id": 2,
         "name": "Sodoma",
         "price": {
-            "Mediana": 130,
-            "Grande": 160,
-            "Familiar": 190
+            "mediana": 130,
+            "grande": 160,
+            "familiar": 190
         },
         "combo": null
        },
@@ -23,9 +23,9 @@
         "id": 3,
         "name": "Lujuria",
         "price": {
-            "Mediana": 150,
-            "Grande": 180,
-            "Familiar": 210
+            "mediana": 150,
+            "grande": 180,
+            "familiar": 210
         },
         "combo": null
        },
@@ -33,9 +33,9 @@
         "id": 4,
         "name": "Ángel caído",
         "price": {
-            "Mediana": 130,
-            "Grande": 160,
-            "Familiar": 190
+            "mediana": 130,
+            "grande": 160,
+            "familiar": 190
         },
         "combo": null
        },
@@ -43,9 +43,9 @@
         "id": 6,
         "name": "Tiki-Hawaiana",
         "price": {
-            "Mediana": 140,
-            "Grande": 170,
-            "Familiar": 200
+            "mediana": 140,
+            "grande": 170,
+            "familiar": 200
         },
         "combo": null
        }
