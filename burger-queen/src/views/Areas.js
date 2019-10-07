@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom';
 //import '../components/styles/Areas.css';
 
 class Areas extends React.Component {
+    
+
     render() {
 
         return (
@@ -33,6 +35,7 @@ class Areas extends React.Component {
 
                     </datalist>   
                 </Link>
+                
             </div>    
         </div>
         )
