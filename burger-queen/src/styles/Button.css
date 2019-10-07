@@ -16,17 +16,20 @@
   -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
   -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
   box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+  
 }
 
 .selec {
-  background-color: rgba(255, 247, 62, 0.93);
+  background-color: #e0a800;
   border-style: none;
   border-radius: 5px; 
-  width: 460px; 
+  width: 93%; 
   height: 60px;
   margin-right:auto;
   display: flex;
   justify-content: center;
   color: white; 
   margin: 0 auto;
+  text-align: center;
+  padding: 20px;
  }

@@ -1,5 +1,5 @@
 .conteiner{
-    display: block;
+    display:block;
     justify-content: flex-end;
     padding: 20px;
     margin: auto;
@@ -11,12 +11,8 @@
 .ingredientes{
     width: 80%;
     height: 30%;
-    /* justify-content: space-around; */
     display: flex;
-    /* align-items: flex-end; */
-     
     justify-content:flex-start;  
-    flex-direction: column;
     text-align: center;
     max-width: 500px;
     padding: 10px;
@@ -29,16 +25,10 @@
 .tabla{
     width: 60%;
     height: 30%;
-
-    /* width: 150%;
-    max-width: 500px;
-    padding: 10px; */
     margin: auto;
     height: 150%;
-    /* text-align: left; */
     display: inline-block;
     justify-content: space-between;
-    /* border-bottom: 3px solid #848280; */
     flex-direction:row;
     align-items: center;
     border: 3px solid #848280;
@@ -56,8 +46,10 @@
     justify-content: space-around;
 }
 .tiempo{
-    width: 12%;
+    width: 18%;
     height: 30%;
+    margin: auto;
+    padding: 10px;
     border:3px solid #848280;
     border-radius: 10px;
 }
