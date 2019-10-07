@@ -29,17 +29,41 @@ import '../styles/Sidebar.css';
 
 
 class Sidebar extends Component {
-        setState = {
-                "cantidad": 0,
-                "elemento": "",
-                "precio": 0,
-                "sencillo": true,
-                "combo": false
-                }
-        onClickHandler = () => {
-                console.log("agregando...")
-        };
+        constructor(props){
+                super(props)
+                this.numberInputRef = React.createRef();
+                this.State = {
+                        cantidad: 0,
+                        elemento: "",
+                        precio: 0,
+                        }
+        }
         
+
+        onChangeHandler = e => {
+                console.log(e.target.value);
+
+                this.setState({
+                        cantidad: parseInt(e.target.value),
+                        elemento: e.target.name
+                       // [e.target.number]: e.target.value
+                });
+                
+                
+        }
+
+        checkHandler = e => {
+                console.log(e.target.value)
+                this.setState({
+                        precio: parseInt(e.target.value)
+                })
+        }
+
+        submitHandler = (e) => {
+                console.log("agregando...", this.state)
+                localStorage.setItem('ordenes', JSON.stringify(this.state));
+        };
+
         render() {
     return (
         <>
@@ -83,11 +107,14 @@ class Sidebar extends Component {
                         {HamburguesasData.map((menuElement, index) =>{
                                 return(    
                                         <HamburguesasJochos
-                                        onClick={this.onClickHandler} 
+                                        onChange={this.onChangeHandler}
+                                        submitHandler={this.submitHandler}
+                                        onClick={this.checkHandler} 
                                         name = {menuElement.name} 
                                         price={menuElement.price} 
                                         combo={menuElement.combo} 
-                                        key={menuElement.id}/>
+                                        key={menuElement.id}
+                                        ref={this.numberInputRef}/>
                                 )
                         })}
                 </div>

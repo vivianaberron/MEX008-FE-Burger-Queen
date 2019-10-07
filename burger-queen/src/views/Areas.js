@@ -25,15 +25,15 @@ class Areas extends React.Component {
             <div className = "btn-areas">
             {/* <Buttons  className="btn btn-outline-secondary" text = "Cocina" /> */}
 
-               <Link to="/TipsCocina">
-                    <select name="Cocina"  className="btn-lg" color="warning" block className="selec">
+               
+                    <select name="Cocina"  className="btn-lg selec" color="warning" block>
                         <option value="Plancha">COCINA</option>
                         <option value="Plancha">Plancha</option>
                         <option value="Fría">Fría</option>
                         <option value="Pizza">Pizza</option>
                         <option value="Bebidas">Bebidas</option>
                     </select>
-                </Link>
+                
                 
             </div>    
         </div>

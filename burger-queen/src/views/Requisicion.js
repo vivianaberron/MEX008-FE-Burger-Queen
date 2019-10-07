@@ -1,5 +1,4 @@
 import React from 'react';
-import Textips from '../components/textTips.js';
 import '../styles/textTips.css';
 
 class Requisiciones extends React.Component{
