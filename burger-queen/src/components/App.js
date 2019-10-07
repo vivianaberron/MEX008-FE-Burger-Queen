@@ -8,7 +8,7 @@ import Tips from '../views/Tips';
 import Areas from '../views/Areas';
 import Home from '../views/Home';
 import Registro from '../views/Registro';
-import Sidebarprueba from './sidebarprueba';
+import Sidebar from './Sidebar';
 import Menu from '../views/Menu';
 import TablaComanda from '../views/TablaComanda';
 import EnvioOrden from '../views/EnvioOrden';
@@ -38,7 +38,7 @@ function App() {
           <Route path="/Tips" component={Tips} />
           <Route path="/Home" component={Home} />
           <Route path="/Menu" component={Menu} />
-          <Route path="/Sidebar" component={Sidebarprueba} />
+          <Route path="/Sidebar" component={Sidebar} />
 
 
           <Route path="/Registro" component={Registro} />

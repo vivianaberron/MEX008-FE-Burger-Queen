@@ -73,7 +73,7 @@ class Sidebar extends Component {
         <TabPanel tabId="vertical-tab-promo">
         <div className="promo">
                 <figure>
-                <img className="promo_img" src={pizza} alt="Promos"></img>
+                <img id="promo_img" src={pizza} alt="Promos"></img>
                 </figure>
                 <h1>Miércoles pizza 2x1</h1>
         </div>
@@ -180,11 +180,11 @@ class Sidebar extends Component {
         <TabPanel tabId="vertical-tab-promo">
         <div className="promo">
         <figure>
-                        <img className="promo_img" src={pizza} alt="Promos"></img>
+                        <img id="promo_img" src={pizza} alt="Promos"></img>
                 </figure>
                 <h1>Miércoles pizza 2x1</h1>
 
-                        </div>
+        </div>
         </TabPanel>
         <TabPanel tabId="vertical-tab-one">
         <div className="hamburguesas">
