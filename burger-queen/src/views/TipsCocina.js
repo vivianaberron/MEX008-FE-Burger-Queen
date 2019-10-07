@@ -19,24 +19,26 @@ class  TipsCocina extends React.Component {
         console.log(this.state.tips);
         
         return( 
-            <div className="TipsCocina">
-                
-                    <div id="titulo"> 
-                            <h2>Alistémonos D'Monium</h2>
-                    </div>  
-                <div className="textoCocina">     
-                    {
-                        this.state.tips.map((item, index) => <Textips key={index} id={`element${index}`} texto={item}/>)
-                    }  
-                </div>
+    
+                <div className="TipsCocina">
+                    
+                        <div id="titulo"> 
+                                <h2>Alistémonos D'Monium</h2>
+                        </div>  
+                    <div className="textoCocina">     
+                        {
+                            this.state.tips.map((item, index) => <Textips key={index} id={`element${index}`} texto={item}/>)
+                        }  
+                    </div>
 
-                <div className="Boton-siguiente">
-                    <Link className="boton" to="/ListaIngredientes">
-                        <img className="next" src={next} alt="Boton siguiente"/>
-                    </Link>
-                </div>
-            
-            </div>   
+                    <div className="Boton-siguiente">
+                        <Link className="boton" to="/ListaIngredientes">
+                            <img className="next" src={next} alt="Boton siguiente"/>
+                        </Link>
+                    </div>
+                
+                </div>   
+        
         )
     }
 }

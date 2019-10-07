@@ -8,7 +8,7 @@ class Limpieza extends React.Component{
         return (
             <div>
                 <div className="limpeza">
-                    <h2>Limpieza</h2>
+                    <h2 id="titulo">Limpieza</h2>
 
                     <Textips texto="Plancha"/>
                     <Textips texto="Área de Pan"/>
