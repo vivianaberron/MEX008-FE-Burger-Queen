@@ -3,12 +3,7 @@ import { Input } from 'reactstrap';
 import '../styles/menuEnsalada.css';
 
 
-class MenuEnsalada extends React.Component {
-
-    clickHandler(e){
-        this.props.onClick()
-    }
-    render (){
+const MenuEnsalada = React.forwardRef((props, ref) => {
         return (
             <div className="menuEnsalada">
                 <table>
@@ -22,19 +17,22 @@ class MenuEnsalada extends React.Component {
                    
                     <tr>
                         <td className="cant">
-                            <Input type="number" placeholder="0"></Input>
+                            <Input name={props.name} type="number" placeholder="0" ref={ref} onChange={props.onChange}/>
                         </td>
                         <td className="name">
-                            {this.props.name}
+                            {props.name}
                         </td>
                         <td className="price">
-                            <Input type="checkbox"/><label>$ {this.props.price}</label>
+                            <Input value={props.price} type="checkbox"/><label>$ {props.price}</label>
                         </td>
                         <td className="combo">
-                            <Input type="checkbox"/><label>$ {this.props.combo}</label>
+                            <Input value={props.combo} type="checkbox" onClick={props.onClick}/><label>$ {props.combo}</label>
                         </td>
                         <td className="add">
-                            <i className="fas fa-plus-square" onClick={this.props.onClick}></i>
+                            <button type="submit" onClick={props.submitHandler}>
+                            <i className="fas fa-plus-square" ></i>
+                            </button>
+                            
                         </td>
                         
                     </tr>
@@ -44,7 +42,6 @@ class MenuEnsalada extends React.Component {
 
             </div>
         )
-    }
-}
+    });
 
 export default MenuEnsalada; 
