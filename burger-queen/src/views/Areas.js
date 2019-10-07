@@ -1,7 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Buttons from '../components/Buttons';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+
 
 
 
@@ -10,6 +11,9 @@ import { Link } from 'react-router-dom';
 
 class Areas extends React.Component {
     
+    // onClick = () => {
+    //     this.props.history.push('/TipsCocina');
+    // }
 
     render() {
 
@@ -26,9 +30,9 @@ class Areas extends React.Component {
             {/* <Buttons  className="btn btn-outline-secondary" text = "Cocina" /> */}
 
                
-                    <select name="Cocina"  className="btn-lg selec" color="warning" block>
+                    <select name="Cocina"  className="btn-lg selec" color="warning">
                         <option value="Plancha">COCINA</option>
-                        <option value="Plancha">Plancha</option>
+                        <option value="Plancha" >Plancha</option>
                         <option value="Fría">Fría</option>
                         <option value="Pizza">Pizza</option>
                         <option value="Bebidas">Bebidas</option>
@@ -41,4 +45,4 @@ class Areas extends React.Component {
     }
 }
 
-export default Areas
+export default withRouter(Areas);
