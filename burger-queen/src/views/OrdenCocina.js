@@ -1,5 +1,4 @@
 import React from 'react';
-import Buttons from '../components/Buttons';
 import { Link } from 'react-router-dom';
 import next from '../img/next.png';
 import '../styles/tabla.css';
