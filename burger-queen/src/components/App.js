@@ -19,8 +19,6 @@ import IfOffLine from './ifOffline';
 
 //import Footer from './Footer';
 
-<<<<<<< HEAD
-=======
 import  TipsCocina from '../views/TipsCocina';
 import Limpieza from '../views/Limpieza';
 import Requisiciones from  '../views/Requisicion';
@@ -31,7 +29,6 @@ import ListaDeOrdenes from '../views/ListaDeOrdenes';
 
 
 
->>>>>>> cafd42386b85697bd46ab1fd9c24f9cb456d403c
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -66,4 +63,5 @@ function App() {
   );
 }
 export default App;
+
 
