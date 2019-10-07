@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import { InputGroup, Input, Label, Button } from 'reactstrap';
+import { InputGroup, Input, Button } from 'reactstrap';
 import '../styles/Form.css';
 
 class Form extends React.Component {
@@ -10,43 +10,37 @@ class Form extends React.Component {
        number: '',
     }
     onSubmit = e => {
-        console.log('Holi');
         e.preventDefault();
-        console.log(this.state);
         localStorage.setItem('clientes', JSON.stringify(this.state));
         this.props.history.push('/Sidebar');
         //console.log(JSON.parse(localStorage.getItem('clientes')));
         //this.props.agregarClientes(this.state.name);
     }
     onChange = e => {
-        console.log(e.target);
+        console.log(e.target.name);
         this.setState({
-            [e.target.name]: e.target.value},
-            this.setState({[e.target.type]: e.target.value})
-        )}
+            [e.target.name]: e.target.value,
+            //[e.target.number]: e.target.value
+        })
+    }
     render(){
         //console.log(this.props);
         
         return(
             <form onSubmit={this.onSubmit}>
-                <Label className="text-center">
-                <h4>
-                <span className="font-weight-blod"></span>
-                </h4></Label>
-                <br />
                
                 <InputGroup className="InputGroup" size="lg">
                     <Input
-
                         name="name"
-                        type="text" 
+                        type="text"
                         placeholder="Nombre"
                         value={this.state.name} 
                         onChange={this.onChange}/>
-                        <Input
+                    <Input
+                        name="number"
                         type="number" 
                         placeholder="Mesa"
-                        value={this.state.type} 
+                        value={this.state.number} 
                         onChange={this.onChange}/>
 
                 </InputGroup>

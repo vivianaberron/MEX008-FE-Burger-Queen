@@ -15,7 +15,10 @@ class Ensaladas extends React.Component{
                                 {this.props.name}
                             </td>
                             <td className="price">
-                                {this.props.price}
+                               $ {this.props.price}
+                            </td>
+                            <td className="add">
+                                <i className="fas fa-plus-square" onClick={this.props.onClick}></i>
                             </td>
                         </tr>
                         

@@ -22,14 +22,17 @@ class Pizzas extends React.Component {
                         <td className="name">
                             {this.props.name}
                         </td>
-                        <td className="price">
+                        <td className="price-med">
                             <Input type="checkbox"/><label>{this.props.priceMed}</label>
                         </td>
-                        <td className="combo">
+                        <td className="price-gran">
                             <Input type="checkbox"/><label>{this.props.priceGran}</label>
                         </td>
-                        <td className="combo">
+                        <td className="price-fam">
                             <Input type="checkbox"/><label>{this.props.priceFam}</label>
+                        </td>
+                        <td className="add">
+                            <i className="fas fa-plus-square" onClick={this.props.onClick}></i>
                         </td>
                         
                     </tr>

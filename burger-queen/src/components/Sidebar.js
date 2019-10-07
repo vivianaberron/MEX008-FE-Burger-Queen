@@ -29,6 +29,17 @@ import '../styles/Sidebar.css';
 
 
 class Sidebar extends Component {
+        setState = {
+                "cantidad": 0,
+                "elemento": "",
+                "precio": 0,
+                "sencillo": true,
+                "combo": false
+                }
+        onClickHandler = () => {
+                console.log("agregando...")
+        };
+        
         render() {
     return (
         <>
@@ -71,16 +82,22 @@ class Sidebar extends Component {
                 <div className="hamburguesas">
                         {HamburguesasData.map((menuElement, index) =>{
                                 return(    
-                                        <HamburguesasJochos name = {menuElement.name} price={menuElement.price} combo={menuElement.combo} key={menuElement.id}/>
+                                        <HamburguesasJochos
+                                        onClick={this.onClickHandler} 
+                                        name = {menuElement.name} 
+                                        price={menuElement.price} 
+                                        combo={menuElement.combo} 
+                                        key={menuElement.id}/>
                                 )
                         })}
                 </div>
         </TabPanel>
         <TabPanel tabId="vertical-tab-two">
-                <div className="pizza">
+                <div className="pizza">                        
                         {PizzasData.map((menuElement, index) =>{
                                 return(    
                                         <Pizzas 
+                                        onClick={this.onClickHandler}
                                         name = {menuElement.name} 
                                         priceMed={menuElement.price.mediana}
                                         priceGran={menuElement.price.grande} 
@@ -96,6 +113,7 @@ class Sidebar extends Component {
                         {EnsaladasData.map((menuElement, index) =>{
                                         return(    
                                                 <Ensaladas
+                                                onClick={this.onClickHandler}
                                                 name={menuElement.name}
                                                 price={menuElement.price}
                                                 key={menuElement.id} />
@@ -107,7 +125,12 @@ class Sidebar extends Component {
                 <div className="jochos">
                         {JochosData.map((menuElement, index) =>{
                                 return(    
-                                        <HamburguesasJochos name = {menuElement.name} price={menuElement.price} combo={menuElement.combo} key={menuElement.id}/>
+                                        <HamburguesasJochos 
+                                        onClick={this.onClickHandler}
+                                        name = {menuElement.name} 
+                                        price={menuElement.price} 
+                                        combo={menuElement.combo} 
+                                        key={menuElement.id}/>
                                 )
                         })}
                 </div> 
@@ -118,6 +141,7 @@ class Sidebar extends Component {
                         {MalteadasData.map((menuElement, index) =>{
                                 return(    
                                         <Ensaladas
+                                        onClick={this.onClickHandler}
                                         name={menuElement.name}
                                         price={menuElement.price}
                                         key={menuElement.id} />
