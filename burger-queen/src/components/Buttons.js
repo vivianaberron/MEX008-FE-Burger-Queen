@@ -8,7 +8,7 @@ class Buttons extends React.Component {
     render() {
         return (
             <div className="Areas">
-                <Button className="btn-lg" color="warning" block>
+                <Button className="btn" color="warning" block>
                     {this.props.text}
                 </Button>
             </div>
