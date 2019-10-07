@@ -38,8 +38,6 @@ class Sidebar extends Component {
                         precio: 0,
                         }
         }
-        
-
         onChangeHandler = e => {
                 console.log(e.target.value);
 
@@ -48,8 +46,6 @@ class Sidebar extends Component {
                         elemento: e.target.name
                        // [e.target.number]: e.target.value
                 });
-                
-                
         }
 
         checkHandler = e => {
@@ -97,7 +93,7 @@ class Sidebar extends Component {
         <TabPanel tabId="vertical-tab-promo">
         <div className="promo">
                 <figure>
-                <img className="promo_img" src={pizza} alt="Promos"></img>
+                <img id="promo_img" src={pizza} alt="Promos"></img>
                 </figure>
                 <h1>Miércoles pizza 2x1</h1>
         </div>
@@ -107,9 +103,9 @@ class Sidebar extends Component {
                         {HamburguesasData.map((menuElement, index) =>{
                                 return(    
                                         <HamburguesasJochos
-                                        onChange={this.onChangeHandler}
+                                        onChangeHandler={this.onChangeHandler}
                                         submitHandler={this.submitHandler}
-                                        onClick={this.checkHandler} 
+                                        checkHandler={this.checkHandler} 
                                         name = {menuElement.name} 
                                         price={menuElement.price} 
                                         combo={menuElement.combo} 
@@ -207,11 +203,11 @@ class Sidebar extends Component {
         <TabPanel tabId="vertical-tab-promo">
         <div className="promo">
         <figure>
-                        <img className="promo_img" src={pizza} alt="Promos"></img>
+                        <img id="promo_img" src={pizza} alt="Promos"></img>
                 </figure>
                 <h1>Miércoles pizza 2x1</h1>
 
-                        </div>
+        </div>
         </TabPanel>
         <TabPanel tabId="vertical-tab-one">
         <div className="hamburguesas">

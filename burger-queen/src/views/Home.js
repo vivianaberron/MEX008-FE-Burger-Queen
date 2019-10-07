@@ -33,7 +33,7 @@ class Home extends React.Component {
               <h3 className="text-center">Ordenes pendientes</h3>
             </div>
             </div>
-
+<div className="menu_columns">
             <div className="row">
             <div className="Home_col col-6 col-md-6">
             <div className="cuentasLogo">
@@ -53,6 +53,7 @@ class Home extends React.Component {
             </div>
             </div>
         </div>
+      </div>
       </div>
     );
   }

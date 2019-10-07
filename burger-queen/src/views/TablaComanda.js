@@ -3,6 +3,7 @@ import Buttons from '../components/Buttons';
 import { Link } from 'react-router-dom';
 
 class TablaComanda extends React.Component {
+
     //state = JSON.parse(localStorage.getItem('clientes'));
     constructor(props){
         super(props)
@@ -22,11 +23,13 @@ class TablaComanda extends React.Component {
         this.setState({name, number,cantidad, elemento, precio})
      }
 
+
     render() {
         //console.log(this.state);
         //this.props.agregarClientes(this.state.name);
         return(
             <div>
+
                 
 
                 <div className="tablaCocina">
@@ -70,6 +73,7 @@ class TablaComanda extends React.Component {
                     
                     
                     </div>
+
 
                 <Link to="/EnvioOrden">
                 <Buttons text="Enviar a Cocina" />

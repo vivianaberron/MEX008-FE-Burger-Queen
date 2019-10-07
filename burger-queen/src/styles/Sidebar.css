@@ -5,12 +5,19 @@
 }
 
 #promo_tab, #vertical-tab-promo {
+    display: flex;
     background-color: #8EC4F6;
     text-align: center;
 }
+#vertical-tab-promo h1 { 
+    font-size: 1.2rem;
+}
 #promo_img {
-    width: 10vw;
-    height: 10vh;
+    display: flex;
+    width: 30%;
+    height: 25v%;
+    margin: 0 auto;
+    margin-top: 3rem;
 }
 #burger_tab, #vertical-tab-one {
     background-color: #E8EC42;
@@ -40,6 +47,21 @@
     }
 
 @media only screen and (min-width:768px) {
+    #promo_tab, #vertical-tab-promo {
+        display: flex;
+        background-color: #8EC4F6;
+        text-align: center;
+    }
+    #vertical-tab-promo { 
+        font-size: 1.5rem;
+    }
+    #promo_img {
+    display: flex;
+    width: 30%;
+    height: 25v%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    }
 #burger_tab-desktop, #vertical-tab-one-desktop {
 background-color: #E8EC42;
 }
