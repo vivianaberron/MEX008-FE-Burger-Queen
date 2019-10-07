@@ -23,7 +23,7 @@ class Areas extends React.Component {
             <div className = "btn-areas">
                 <Link to= "/TipsCocina">
                     
-                    <input list= "cocina"  className="selec"/>
+                    <input list= "cocina"  className="selec" color="warning" size="sm" block />
                     <datalist id="cocina">
                         <option value="COCINA"/>   
                         <option value="Plancha"/>
