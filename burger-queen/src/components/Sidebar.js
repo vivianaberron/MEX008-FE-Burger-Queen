@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import 'react-web-tabs/dist/react-web-tabs.css';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import '../styles/Sidebar.css';
@@ -43,7 +44,7 @@ class Sidebar extends Component {
                 }
         }
         onChangeHandler = e => {
-                // console.log(e.target.value)
+                console.log(e.target.name, e.target.value)
                 this.setState({
                         ordenActual:{
                         [e.target.name]: e.target.value,
@@ -63,18 +64,20 @@ class Sidebar extends Component {
         }
 
         submitHandler = () => {
-                console.log("agregando...", this.state)
-                localStorage.setItem('ordenes', JSON.stringify(this.state));
-        };
-
-        confirmHandler = () => {
-                console.log("confirmando orden")
+                //console.log("agregando...", this.state)
                 const orden = this.state.ordenActual;
                 // const newOrdenState = [orden];
                 // const ordenesActuales = this.state.ordenes;
                 this.setState({
                         ordenes: [...this.state.ordenes, orden]
                 })
+        };
+
+        confirmHandler = () => {
+                console.log("confirmando orden", this.state)
+                localStorage.setItem('ordenes', JSON.stringify(this.state));
+                this.props.history.push('/TablaComanda');
+
         };
 
         render() {
@@ -306,4 +309,4 @@ class Sidebar extends Component {
   }
 }
 
-export default Sidebar;
+export default withRouter(Sidebar);
