@@ -9,15 +9,19 @@
 }
 #tick_container {
   display: flex;
+  width: 10vw;
+  height: 10vh;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: center;
+  background-color: red;
 }
 #tick_img {
   display: flex;
   width: 30%;
   height: 25%;
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 3rem; 
+  
 }
 .Envio_header {
     margin: 0 auto;

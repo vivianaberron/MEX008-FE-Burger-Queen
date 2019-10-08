@@ -9,11 +9,14 @@ class EnvioOrden extends React.Component {
     render() {
         return <div className="App">
             <div className="Envio_header">
+                <div>
             <Notificacion className="text-center" content = "Tu pedido se ha enviado exitosamente" />
-            <div id="tick_container">
+            </div>
+            <box id="tick_container">
                 <img id="tick_img" src={tick} alt="Envio correcto"></img>
+            </box>
             </div>
-            </div>
+            
             <div>
             <Link to="/Sidebar">
 
