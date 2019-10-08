@@ -46,7 +46,7 @@ const MenuEnsalada = React.forwardRef((props, ref) => {
                         </td>
                         <td className="add">
                             <button type="submit" onClick={props.submitHandler}>
-                            <i className="fas fa-plus-square" ></i>
+                                <i className="fas fa-plus-square" ></i>
                             </button>
                             
                         </td>
