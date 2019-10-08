@@ -29,17 +29,37 @@ import '../styles/Sidebar.css';
 
 
 class Sidebar extends Component {
-        setState = {
-                "cantidad": 0,
-                "elemento": "",
-                "precio": 0,
-                "sencillo": true,
-                "combo": false
-                }
-        onClickHandler = () => {
-                console.log("agregando...")
+        constructor(props){
+                super(props)
+                this.numberInputRef = React.createRef();
+                this.State = {
+                        cantidad: 0,
+                        elemento: "",
+                        precio: 0,
+                        }
+        }
+        onChangeHandler = e => {
+                console.log(e.target.value);
+
+                this.setState({
+                        cantidad: parseInt(e.target.value),
+                        elemento: e.target.name
+                       // [e.target.number]: e.target.value
+                });
+        }
+
+        checkHandler = e => {
+                console.log(e.target.value)
+                this.setState({
+                        precio: parseInt(e.target.value)
+                })
+        }
+
+        submitHandler = (e) => {
+                console.log("agregando...", this.state)
+                localStorage.setItem('ordenes', JSON.stringify(this.state));
         };
-        
+
         render() {
     return (
         <>
@@ -73,7 +93,7 @@ class Sidebar extends Component {
         <TabPanel tabId="vertical-tab-promo">
         <div className="promo">
                 <figure>
-                <img className="promo_img" src={pizza} alt="Promos"></img>
+                <img id="promo_img" src={pizza} alt="Promos"></img>
                 </figure>
                 <h1>Miércoles pizza 2x1</h1>
         </div>
@@ -83,11 +103,14 @@ class Sidebar extends Component {
                         {HamburguesasData.map((menuElement, index) =>{
                                 return(    
                                         <HamburguesasJochos
-                                        onClick={this.onClickHandler} 
+                                        onChangeHandler={this.onChangeHandler}
+                                        submitHandler={this.submitHandler}
+                                        checkHandler={this.checkHandler} 
                                         name = {menuElement.name} 
                                         price={menuElement.price} 
                                         combo={menuElement.combo} 
-                                        key={menuElement.id}/>
+                                        key={menuElement.id}
+                                        ref={this.numberInputRef}/>
                                 )
                         })}
                 </div>
@@ -97,7 +120,9 @@ class Sidebar extends Component {
                         {PizzasData.map((menuElement, index) =>{
                                 return(    
                                         <Pizzas 
-                                        onClick={this.onClickHandler}
+                                        onChangeHandler={this.onChangeHandler}
+                                        submitHandler={this.submitHandler}
+                                        checkHandler={this.checkHandler}
                                         name = {menuElement.name} 
                                         priceMed={menuElement.price.mediana}
                                         priceGran={menuElement.price.grande} 
@@ -113,7 +138,9 @@ class Sidebar extends Component {
                         {EnsaladasData.map((menuElement, index) =>{
                                         return(    
                                                 <Ensaladas
-                                                onClick={this.onClickHandler}
+                                                onChangeHandler={this.onChangeHandler}
+                                                checkHandler={this.checkHandler}
+                                                submitHandler={this.submitHandler}
                                                 name={menuElement.name}
                                                 price={menuElement.price}
                                                 key={menuElement.id} />
@@ -124,9 +151,11 @@ class Sidebar extends Component {
         <TabPanel tabId="vertical-tab-four">
                 <div className="jochos">
                         {JochosData.map((menuElement, index) =>{
-                                return(    
+                                return(  
                                         <HamburguesasJochos 
-                                        onClick={this.onClickHandler}
+                                        onChangeHandler={this.onChangeHandler}
+                                        submitHandler={this.submitHandler}
+                                        checkHandler={this.checkHandler}
                                         name = {menuElement.name} 
                                         price={menuElement.price} 
                                         combo={menuElement.combo} 
@@ -141,7 +170,9 @@ class Sidebar extends Component {
                         {MalteadasData.map((menuElement, index) =>{
                                 return(    
                                         <Ensaladas
-                                        onClick={this.onClickHandler}
+                                        onChangeHandler={this.onChangeHandler}
+                                        submitHandler={this.submitHandler}
+                                        checkHandler={this.checkHandler}
                                         name={menuElement.name}
                                         price={menuElement.price}
                                         key={menuElement.id} />
@@ -180,11 +211,11 @@ class Sidebar extends Component {
         <TabPanel tabId="vertical-tab-promo">
         <div className="promo">
         <figure>
-                        <img className="promo_img" src={pizza} alt="Promos"></img>
+                        <img id="promo_img" src={pizza} alt="Promos"></img>
                 </figure>
                 <h1>Miércoles pizza 2x1</h1>
 
-                        </div>
+        </div>
         </TabPanel>
         <TabPanel tabId="vertical-tab-one">
         <div className="hamburguesas">
