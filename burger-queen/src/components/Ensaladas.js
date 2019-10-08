@@ -9,16 +9,28 @@ class Ensaladas extends React.Component{
                     <tbody>
                         <tr>
                             <td className="cant">
-                                <Input type="number" placeholder="0"></Input>
+                                <Input
+                                name={this.props.name}
+                                type="number" 
+                                placeholder="0"
+                                onChange={this.props.onChangeHandler}></Input>
                             </td>
                             <td className="name">
                                 {this.props.name}
                             </td>
                             <td className="price">
-                               $ {this.props.price}
+                                <Input
+                                value={this.props.price}
+                                type="checkbox"
+                                onClick={this.props.checkHandler}
+                                />
+                                <label>$ {this.props.price}</label>
+                               
                             </td>
                             <td className="add">
-                                <i className="fas fa-plus-square" onClick={this.props.onClick}></i>
+                            <button type="submit" onClick={this.props.submitHandler}>
+                                <i className="fas fa-plus-square" ></i>
+                            </button>
                             </td>
                         </tr>
                         
