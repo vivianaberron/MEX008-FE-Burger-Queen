@@ -4,6 +4,8 @@ import '../styles/menuEnsalada.css';
 
 
 const MenuEnsalada = React.forwardRef((props, ref) => {
+    
+    
         return (
             <div className="menuEnsalada">
                 <table>
@@ -17,16 +19,30 @@ const MenuEnsalada = React.forwardRef((props, ref) => {
                    
                     <tr>
                         <td className="cant">
-                            <Input name={props.name} type="number" placeholder="0" ref={ref} onChange={props.onChange}/>
+                            <Input 
+                            name={props.name} 
+                            type="number" 
+                            placeholder="0" 
+                            ref={ref} 
+                            onChange={props.onChangeHandler}/>
                         </td>
                         <td className="name">
                             {props.name}
                         </td>
                         <td className="price">
-                            <Input value={props.price} type="checkbox"/><label>$ {props.price}</label>
+                            <Input 
+                            value={props.price} 
+                            type="checkbox"
+                            onClick={props.checkHandler}/>
+                            <label>$ {props.price}</label>
                         </td>
                         <td className="combo">
-                            <Input value={props.combo} type="checkbox" onClick={props.onClick}/><label>$ {props.combo}</label>
+                            <Input 
+                            value={props.combo} 
+                            type="checkbox" 
+                            onClick={props.checkHandler}
+                                />
+                                <label>$ {props.combo}</label>
                         </td>
                         <td className="add">
                             <button type="submit" onClick={props.submitHandler}>

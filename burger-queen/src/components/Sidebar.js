@@ -38,8 +38,6 @@ class Sidebar extends Component {
                         precio: 0,
                         }
         }
-        
-
         onChangeHandler = e => {
                 console.log(e.target.value);
 
@@ -48,8 +46,6 @@ class Sidebar extends Component {
                         elemento: e.target.name
                        // [e.target.number]: e.target.value
                 });
-                
-                
         }
 
         checkHandler = e => {
@@ -107,9 +103,9 @@ class Sidebar extends Component {
                         {HamburguesasData.map((menuElement, index) =>{
                                 return(    
                                         <HamburguesasJochos
-                                        onChange={this.onChangeHandler}
+                                        onChangeHandler={this.onChangeHandler}
                                         submitHandler={this.submitHandler}
-                                        onClick={this.checkHandler} 
+                                        checkHandler={this.checkHandler} 
                                         name = {menuElement.name} 
                                         price={menuElement.price} 
                                         combo={menuElement.combo} 
@@ -151,13 +147,22 @@ class Sidebar extends Component {
         <TabPanel tabId="vertical-tab-four">
                 <div className="jochos">
                         {JochosData.map((menuElement, index) =>{
-                                return(    
+                                return(  
                                         <HamburguesasJochos 
                                         onClick={this.onClickHandler}
                                         name = {menuElement.name} 
                                         price={menuElement.price} 
                                         combo={menuElement.combo} 
                                         key={menuElement.id}/>
+                                        // <HamburguesasJochos
+                                        // onChangeHandler={this.onChangeHandler}
+                                        // submitHandler={this.submitHandler}
+                                        // checkHandler={this.checkHandler} 
+                                        // name = {menuElement.name} 
+                                        // price={menuElement.price} 
+                                        // combo={menuElement.combo} 
+                                        // key={menuElement.id}
+                                        // ref={this.numberInputRef}/>
                                 )
                         })}
                 </div> 
