@@ -32,35 +32,54 @@ class Sidebar extends Component {
         constructor(props){
                 super(props)
                 this.numberInputRef = React.createRef();
-                this.State = {
-                        cantidad: 0,
-                        elemento: "",
-                        precio: 0,
+                this.state = {
+                        ordenes: [],
+                        ordenActual: {
+                                cantidad: 0,
+                                elemento: "",
+                                precio: 0,
+                                observaciones: ""
                         }
+                }
         }
         onChangeHandler = e => {
-                console.log(e.target.value);
-
+                // console.log(e.target.value)
                 this.setState({
-                        cantidad: parseInt(e.target.value),
-                        elemento: e.target.name
+                        ordenActual:{
+                        [e.target.name]: e.target.value,
+                        }
                        // [e.target.number]: e.target.value
                 });
         }
 
         checkHandler = e => {
-                console.log(e.target.value)
+                // console.log(e.target.value)
                 this.setState({
-                        precio: parseInt(e.target.value)
+                        ordenActual: {
+                                precio: parseInt(e.target.value),
+                                elemento: e.target.name
+                        }
                 })
         }
 
-        submitHandler = (e) => {
+        submitHandler = () => {
                 console.log("agregando...", this.state)
                 localStorage.setItem('ordenes', JSON.stringify(this.state));
         };
 
+        confirmHandler = () => {
+                console.log("confirmando orden")
+                const orden = this.state.ordenActual;
+                // const newOrdenState = [orden];
+                // const ordenesActuales = this.state.ordenes;
+                this.setState({
+                        ordenes: [...this.state.ordenes, orden]
+                })
+        };
+
         render() {
+                console.log(this.state);
+                
     return (
         <>
         <Tabs defaultTab="vertical-tab-one" vertical>
@@ -279,7 +298,9 @@ class Sidebar extends Component {
       </div>
       
       </Tabs>
-      <Footer/>
+      <Footer 
+      onChangeHandler={this.onChangeHandler}
+      confirmHandler={this.confirmHandler}/>
       </>
     );
   }
