@@ -17,7 +17,7 @@ class Form extends React.Component {
         //this.props.agregarClientes(this.state.name);
     }
     onChange = e => {
-        console.log(e.target.name);
+        // console.log(e.target.name);
         this.setState({
             [e.target.name]: e.target.value,
             //[e.target.number]: e.target.value

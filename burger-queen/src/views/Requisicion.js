@@ -1,14 +1,12 @@
 import React from 'react';
-import Textips from '../components/textTips.js';
 import '../styles/textTips.css';
 
 class Requisiciones extends React.Component{
     render (){
         return (
             <div className="requisiciones">
-                <h2>Requisiciones</h2>
+                <h2 id="titulo">Requisiciones</h2>
 
-                <Textips texto=""/>
 
                 <table className="tabla">
                     <tr>
