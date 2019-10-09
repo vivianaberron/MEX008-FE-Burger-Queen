@@ -12,7 +12,7 @@ class Textips extends React.Component {
                     <div key={this.props.id} >
                         <div id="text">  
                             <label htmlFor={this.props.id}>{this.props.texto}</label>
-                            <input id={this.props.id} type="checkbox" name="acepto" />
+                            <input id={this.props.id} type="checkbox" name="acepto" className="checkbox" />
                         </div>
                     </div> 
             </div>        

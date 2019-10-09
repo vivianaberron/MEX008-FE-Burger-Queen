@@ -25,11 +25,12 @@
 
 }
 
-#checkbox{
+.checkbox{
 width: 30px;
 height: 30px;
 display: flex;
 justify-content: space-between;
+background-color: blueviolet;
 }
 
 .tabla{
@@ -37,15 +38,21 @@ justify-content: space-between;
     justify-content: flex-end;
     margin: auto;
     padding: 10px;
+    
 }
 .requisiciones{
     margin: auto;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+    /* justify-content: flex-start; */
     
 }
 .next{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     padding: 10px;
     margin: auto;
     display:flex;
@@ -58,5 +65,12 @@ justify-content: space-between;
     padding: 10px;
     margin: auto;
     height: 150%;
+    justify-content: flex-start;
+}
+.btn{
+    margin:auto;
+    padding: 10px;
+    display: flex;
+    /* flex-direction: column; */
     justify-content: flex-start;
 }
