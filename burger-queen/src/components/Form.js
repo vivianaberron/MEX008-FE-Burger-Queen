@@ -48,7 +48,6 @@ class Form extends React.Component {
                 <br />
                     <Button className="button"
                          size="lg"
-                        color="warning" 
                         type="submit"
                         onSubmit={this.onSubmit} block>
                           Registrar

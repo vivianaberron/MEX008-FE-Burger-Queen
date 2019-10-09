@@ -10,24 +10,24 @@ class Footer extends React.Component {
           <div className="Footer">
             <div className="Footer_header">
               <div>
-                <Label className="text-center">
-                    <h4 className="font-weight-blod">Observaciones</h4>
-                </Label><br />        
+                <Label>
+                    <h4 className="text-center font-weight-blod">Observaciones</h4>
+                </Label>       
               </div>
                 <InputGroup 
-                className="InputGroup" size="lg">
+                className="InputGroup">
                   <Input
                   type="text"
                   name="observaciones"
                   onChange={this.props.onChangeHandler}/></InputGroup> <br />
             </div>
-         
             <Button 
             className="btn btn-outline" 
             color="success" block
             onClick={this.props.confirmHandler}>
               
             Confirmar
+
             </Button>
           </div>
         );
