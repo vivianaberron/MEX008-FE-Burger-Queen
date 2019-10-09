@@ -3,7 +3,7 @@ import React from 'react';
 
 import '../styles/Footer.css';
 import { Button, Label, InputGroup, Input } from 'reactstrap';
-
+import { Link } from 'react-router-dom';
 class Footer extends React.Component {
     render () {
         return (
@@ -22,9 +22,11 @@ class Footer extends React.Component {
                   onChange={this.props.onChangeHandler}/></InputGroup> <br />
             </div>
             <Button 
-            className="btn btn-outline" 
+            className="btn_confirm_order" 
             color="success" block
             onClick={this.props.confirmHandler}>
+               
+
               
             Confirmar
 

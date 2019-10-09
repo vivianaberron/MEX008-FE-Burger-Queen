@@ -73,7 +73,7 @@ class Sidebar extends Component {
         confirmHandler = () => {
                 console.log("confirmando orden", this.state)
                 localStorage.setItem('ordenes', JSON.stringify(this.state));
-                //this.props.history.push('/TablaComanda');
+                this.props.history.push('/TablaComanda');
 
         };
 
