@@ -34,30 +34,6 @@ display: flex;
 justify-content: space-between;
 }
 
-.tabla{
-
-
-    /* display: block; 
-    justify-content: space-between; 
-    margin: 0;
-    padding: 10px; 
-    border: solid; 
-    background-color: pink; 
-    width: 50%;
-    height: 30%;
-    vertical-align: middle;  */
-    
-}
-.requisiciones{
-    margin: auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    height: 350px;
-    align-items: center;
-    /* justify-content: flex-start; */
-    
-}
 .next{
     width: 80px;
     height: 80px;

@@ -39,7 +39,7 @@ function App() {
         </header>     
       <Switch>
         <Route exact path="/" component={Login} />
-        <Layout>
+        <Layout> 
           <Route path="/Areas" component={Areas} />
           <Route path="/Home" component={Home} />
           <Route path="/Menu" component={Menu} />
