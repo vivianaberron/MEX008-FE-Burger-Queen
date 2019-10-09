@@ -23,13 +23,11 @@ class Areas extends React.Component {
           dropdownOpen: false
         };
       }
-
       toggle() {
         this.setState({
           dropdownOpen: !this.state.dropdownOpen
         });
       }
-
 
     render() {
 

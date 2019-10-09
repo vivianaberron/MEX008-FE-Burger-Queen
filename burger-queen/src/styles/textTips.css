@@ -11,11 +11,7 @@ label {
     width: auto;
     height: auto;
 }
-.TipsCocina{
-    padding: 20px;
-    margin: auto;
-    height: auto;
-}
+
 #text{
     width: auto;
     max-width: 500px;
@@ -29,6 +25,8 @@ label {
 
 #titulo{
     text-align: center; 
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 
@@ -37,49 +35,22 @@ width: 30px;
 height: 30px;
 display: flex;
 justify-content: space-between;
-background-color: blueviolet;
 }
 
-.tabla{
-    display: flex;
-    justify-content: flex-end;
-    margin: auto;
-    padding: 10px;
-    
-}
-.requisiciones{
-    margin: auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    height: 350px;
-    align-items: center;
-    /* justify-content: flex-start; */
-    
-}
 .next{
     width: 80px;
     height: 80px;
     padding: 10px;
     margin: auto;
     display:flex;
-   
+   margin-top: 80px;
 
 }
-.textoCocina{
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin: auto;
-    height: 150%;
-    justify-content: flex-start;
-}
-.btn {
-    margin:auto;
-    padding: 10px;
-    cursor: pointer;
-    display: flex;
-   
-    /* flex-direction: column; */
-    
-}
+
+.btn{
+    background-color: #45d431;
+         -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+         -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+         box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+       
+} 

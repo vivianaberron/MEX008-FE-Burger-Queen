@@ -2,7 +2,7 @@ import React from 'react';
 import Textips from '../components/textTips.js';
 import next from '../img/next.png';
 import { Link } from "react-router-dom";
-import '../styles/textTips.css';
+import '../styles/ListaIngredientes.css';
 
 class ListaIngredientes extends React.Component {
     constructor (props) {
@@ -20,7 +20,7 @@ class ListaIngredientes extends React.Component {
     render (){
      console.log(this.state.ingredientes);
         return (
-            <div className="TipsCocina">
+            <div className="Lista_Ingredientes">
                    
                         <div id="titulo">
                             <h2>Mise in Place</h2>

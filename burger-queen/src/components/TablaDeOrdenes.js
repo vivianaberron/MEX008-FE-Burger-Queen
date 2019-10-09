@@ -6,7 +6,7 @@ class TablaDeOrdenes extends React.Component{
         return(
             <div>
                 <div className="TablaCocina">
-                        <h2>{this.props.nameOrden}</h2>
+                        <h4>{this.props.nameOrden}</h4>
                         <p>{this.props.cantidad}</p>
                         <p>{this.props.orden}</p>
                     

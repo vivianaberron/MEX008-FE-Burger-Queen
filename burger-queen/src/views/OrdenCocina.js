@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import next from '../img/next.png';
-import '../styles/tabla.css';
+import '../styles/OrdenCocina.css';
 
 class OrdenCocina extends React.Component {
     constructor(props){
@@ -14,17 +14,17 @@ class OrdenCocina extends React.Component {
             elemento: ""
         }
     }
-        componentDidMount(){
-            const { name, number } = JSON.parse(localStorage.getItem('clientes'));
-            const { cantidad, elemento} = JSON.parse(localStorage.getItem('ordenes'));
-            this.setState({name, number,cantidad, elemento})
-            console.log(this.state);
+        // componentDidMount(){
+        //     const { name, number } = JSON.parse(localStorage.getItem('clientes'));
+        //     const { cantidad, elemento} = JSON.parse(localStorage.getItem('ordenes'));
+        //     this.setState({name, number,cantidad, elemento})
+        //     console.log(this.state);
             
-         }
+        //  }
     
     render () {
         return( 
-            <div>    
+            <div className="Orden_Cocina">    
                 {/* // state = JSON.parse(localStorage.getItem('clientes')); */}
                 
                 
