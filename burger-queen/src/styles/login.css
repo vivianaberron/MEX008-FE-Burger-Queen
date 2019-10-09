@@ -87,6 +87,9 @@
   box-shadow: none;
 }
 
+.btn-outline {
+  cursor: pointer;
+}
 .link {
   color:white;
   font-size: 22px;
@@ -100,5 +103,6 @@
 .link:hover {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
