@@ -24,7 +24,7 @@ handleSubmit = e => {
 
   render() {
   return ( 
-      <Form onSubmit={this.handleSubmit} className="App">
+      <Form onSubmit={this.handleSubmit} className="login-form">
         <div><img className="login_header" src={logodemonium} alt="Logo de la compañia"/></div>
         <h1 className="text-center">Inicia sesión</h1>
         <h2>
@@ -35,8 +35,8 @@ handleSubmit = e => {
           <Label className="text-center"></Label>
           <Input className="input" type="password" placeholder="Ingresa tu número de empleado"></Input>
         </FormGroup>
-        <Button className="btn" color="warning" block>
-          <Link to="/Areas">Iniciar</Link>
+        <Button className="boton" outline color="success" block>
+          <Link to="/Areas" className="link" >Iniciar</Link>
         </Button>
       </Form>
    );

@@ -27,7 +27,6 @@ class Areas extends React.Component {
             </div>
       
             <div className = "btn-areas">
-<<<<<<< HEAD
                 <Link to= "/TipsCocina">
                     
                     <input list= "cocina"  className="selec" color="warning" size="sm" block />
@@ -39,18 +38,6 @@ class Areas extends React.Component {
                         <option value="Bebidas"/>
 
                     </datalist>   
-=======
-            {/* <Buttons  className="btn btn-outline-secondary" text = "Cocina" /> */}
-
-               <Link to="/TipsCocina">
-                    <select name="Cocina"  className="btn-lg selec" color="warning">
-                        <option value="Plancha">COCINA</option>
-                        <option value="Plancha" >Plancha</option>
-                        <option value="Fría">Fría</option>
-                        <option value="Pizza">Pizza</option>
-                        <option value="Bebidas">Bebidas</option>
-                    </select>
->>>>>>> b1c2af2c952345dab18ad4b5dcc869bf7a2c0e12
                 </Link>
                 
                 

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
   .Home_header {
     margin: auto;
     padding: 50px;
@@ -15,154 +14,35 @@
     width: 70%;
     display: flex;
     margin: auto;
-    padding: 30px;
-    bottom: 30px;
+    padding: 40px;
+    bottom: 40px;
     border-top-width: 2rem;
     justify-content: center;
     align-items: center;
-=======
-.Container h3 {
-  font-size: 1rem;
-}
-.Home_header {
-  margin: auto;
-  padding: 50px;
-  /* bottom: 60px;
-  display: flex;
-  justify-content: center; */
-  text-align: center;
-}
-.Home_col1,
-.Home_col{
-  text-align: center;
-}
-.Home__col {
-  width: 70%;
-  display: flex;
-  margin: auto;
-  padding: 30px;
-  bottom: 30px;
-  border-top-width: 2rem;
-  justify-content: center;
-  align-items: center;
->>>>>>> b1c2af2c952345dab18ad4b5dcc869bf7a2c0e12
 
 }
 
-<<<<<<< HEAD
-  .menuLogo {
-      background-color: rgba(255, 247, 62, 0.93);
-      
-      display: inline-block;
+  .Home_logo {
+    height: 75%;  
+    margin: auto;
+    /*background:#2bf693;*/
+    background: rgb(233,241,232);
+background: radial-gradient(circle, rgba(233,241,232,1) 5%, rgba(43,246,147,1) 81%);
+    display: inline-block;
       border-width: 100%;
       border-radius: 6px;
       -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
       -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
       box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
   }
-  .Home_logo-Menu{
-    height: 75%;  
-    margin: auto;
-  }
-
-  .ordenLogo {
-    background-color: #E52D27;
-=======
-.menuLogo {
-    background-color: rgba(255, 247, 62, 0.93);
-    
->>>>>>> b1c2af2c952345dab18ad4b5dcc869bf7a2c0e12
-    display: inline-block;
-    border-width: 100%;
-    border-radius: 6px;
-    -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-    -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-    box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-}
-.Home_logo-Menu{
-  height: 75%;
-<<<<<<< HEAD
-  margin: 0.01% 0;
-=======
   
->>>>>>> b1c2af2c952345dab18ad4b5dcc869bf7a2c0e12
-  margin: auto;
-}
-
-.ordenLogo {
-  background-color: #E52D27;
-  display: inline-block;
-  border-width: 100%;
-  border-radius: 6px;
-  -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-}
-.Home_logo-Pendientes {
-width: 100%;
-height: 75%;
-
-margin: 0.01% 0;
-margin: auto;
-}
-
-.cuentasLogo {
-  background-color: #DB9225;
-  display: inline-block;
-  border-width: 100%;
-  border-radius: 6px;
-  -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-}
-.Home_logo-Cuentas {
-<<<<<<< HEAD
-  width: 100%;
-  height: 75%;
-  margin: 0.01% 0;
-  margin: auto;
-=======
-width: 100%;
-height: 75%;
-
-margin: 0.01% 0;
-margin: auto;
->>>>>>> b1c2af2c952345dab18ad4b5dcc869bf7a2c0e12
-}
-
-.encuestaLogo {
-<<<<<<< HEAD
-    background-color: #D3563A;;
-    display: inline-block;
-    border-width: 100%;
-    border-radius: 6px;
-    -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-    -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-    box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-=======
-  background-color: #D3563A;;
-  display: inline-block;
- 
-  border-width: 100%;
-  border-radius: 6px;
-  -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
->>>>>>> b1c2af2c952345dab18ad4b5dcc869bf7a2c0e12
-}
-.Home_logo-Encuesta {
-width: 100%;
-height: 75%;
-margin: 0.01% 0;
-margin: auto;
-}
 
 .text-center {
  padding: 20px;
  justify-content: center;
 
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 312px) {
  .Home__col {
    align-items: flex-start;
  }
