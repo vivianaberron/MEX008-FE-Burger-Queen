@@ -8,12 +8,12 @@ class Footer extends React.Component {
     render () {
         return (
           <div className="Footer">
-            <div className="Footer_header">
               <div>
                 <Label>
                     <h4 className="text-center font-weight-blod">Observaciones</h4>
                 </Label>       
               </div>
+
                 <InputGroup 
                 className="InputGroup">
                   <Input
@@ -29,6 +29,7 @@ class Footer extends React.Component {
             Confirmar
 
             </Button>
+
           </div>
         );
     }

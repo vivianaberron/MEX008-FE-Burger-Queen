@@ -40,7 +40,7 @@ class Sidebar extends Component {
                 }
         }
         onChangeHandler = e => {
-                console.log(e.target.name, e.target.value)
+                //console.log(e.target.name, e.target.value)
                 this.setState({
                         ordenActual:{...this.state.ordenActual,
                         [e.target.name]: e.target.value,
@@ -73,7 +73,7 @@ class Sidebar extends Component {
         confirmHandler = () => {
                 console.log("confirmando orden", this.state)
                 localStorage.setItem('ordenes', JSON.stringify(this.state));
-                //this.props.history.push('/TablaComanda');
+                this.props.history.push('/TablaComanda');
 
         };
 
@@ -84,29 +84,29 @@ class Sidebar extends Component {
         <div className="Sidebar">
         <Tabs defaultTab="vertical-tab-one" vertical className="menu-content">
         {/* Mobile */}
-         <div className="Sidebar_he"></div>
+         
          <div className="mobile_tabs btns-bar">
             <TabList>
-                <div id="promo_tab">
+                <div id="promo_tab" className="side-tabs">
                         <Tab tabFor="vertical-tab-promo" className="tab-btns">
                                 <img className="Sidebar_img" src={offer} alt="promo"/>
                         </Tab>
                 </div>
-                <div id="burger_tab">
+                <div id="burger_tab" className="side-tabs">
                         <Tab tabFor="vertical-tab-one">
                                 <img className="Sidebar_img" src={burger} alt="salads"/>
                         </Tab>
                  </div>
-                <div id="pizza_tab">
+                <div id="pizza_tab" className="side-tabs">
                         <Tab tabFor="vertical-tab-two"><img className="Sidebar_img" src={pizza} alt="salads"/></Tab>
                 </div>
-                <div id="salad_tab">
+                <div id="salad_tab" className="side-tabs">
                         <Tab tabFor="vertical-tab-three"><img className="Sidebar_img" src={salad} alt="Ensaladas"/></Tab>
                 </div>
-                <div id="Hot-dogs_tab">
+                <div id="Hot-dogs_tab" className="side-tabs">
                         <Tab tabFor="vertical-tab-four"><img className="Sidebar_img" src={hotdog} alt="Hot-dogs"/></Tab>
                 </div>
-                <div id="drinks_tab">
+                <div id="drinks_tab" className="side-tabs">
                         <Tab tabFor="vertical-tab-five"><img className="Sidebar_img" src={drinks} alt="Bebidas"/></Tab>
                 </div>
             </TabList>

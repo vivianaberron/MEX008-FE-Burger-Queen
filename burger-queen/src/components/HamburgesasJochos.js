@@ -20,6 +20,7 @@ const MenuEnsalada = React.forwardRef((props, ref) => {
                     <tr>
                         <td className="cant">
                             <Input 
+                            className="input-cant"
                             name="cantidad" 
                             type="number" 
                             placeholder="0" 
@@ -30,7 +31,7 @@ const MenuEnsalada = React.forwardRef((props, ref) => {
                             {props.name}
                         </td>
                         <td className="price">
-                            <Input
+                            <input
                             name={props.name} 
                             value={props.price} 
                             type="checkbox"
@@ -38,7 +39,7 @@ const MenuEnsalada = React.forwardRef((props, ref) => {
                             <label className="sidebar-labels">$ {props.price}</label>
                         </td>
                         <td className="combo">
-                            <Input
+                            <input
                             name={props.name} 
                             value={props.combo} 
                             type="checkbox" 
