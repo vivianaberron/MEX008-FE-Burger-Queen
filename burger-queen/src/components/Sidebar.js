@@ -91,22 +91,22 @@ class Sidebar extends Component {
          <div className="mobile_tabs">
         <TabList>
         <div id="promo_tab">
-          <Tab tabFor="vertical-tab-promo"><img className="Sidebar_img" src={offer} alt="promo"></img></Tab>
+          <Tab tabFor="vertical-tab-promo"><img className="Sidebar_img" src={offer} alt="promo"/></Tab>
           </div>
           <div id="burger_tab">
-          <Tab tabFor="vertical-tab-one"><img className="Sidebar_img" src={burger} alt="salads"></img></Tab>
+          <Tab tabFor="vertical-tab-one"><img className="Sidebar_img" src={burger} alt="salads"/></Tab>
           </div>
           <div id="pizza_tab">
-          <Tab tabFor="vertical-tab-two"><img className="Sidebar_img" src={pizza} alt="salads"></img></Tab>
+          <Tab tabFor="vertical-tab-two"><img className="Sidebar_img" src={pizza} alt="salads"/></Tab>
           </div>
           <div id="salad_tab">
-          <Tab tabFor="vertical-tab-three"><img className="Sidebar_img" src={salad} alt="Ensaladas"></img></Tab>
+          <Tab tabFor="vertical-tab-three"><img className="Sidebar_img" src={salad} alt="Ensaladas"/></Tab>
           </div>
           <div id="Hot-dogs_tab">
-          <Tab tabFor="vertical-tab-four"><img className="Sidebar_img" src={hotdog} alt="Hot-dogs"></img></Tab>
+          <Tab tabFor="vertical-tab-four"><img className="Sidebar_img" src={hotdog} alt="Hot-dogs"/></Tab>
           </div>
           <div id="drinks_tab">
-          <Tab tabFor="vertical-tab-five"><img className="Sidebar_img" src={drinks} alt="Bebidas"></img></Tab>
+          <Tab tabFor="vertical-tab-five"><img className="Sidebar_img" src={drinks} alt="Bebidas"/></Tab>
         </div>
         </TabList>
         </div>
