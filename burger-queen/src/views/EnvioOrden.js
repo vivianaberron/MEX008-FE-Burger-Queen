@@ -1,8 +1,7 @@
 import React from 'react';
-import Notificacion from '../components/Notificacion';
 import Buttons from '../components/Buttons';
 import "../styles/EnvioOrden.css";
-import tick from '../img/tick.png';
+
 import { Link } from 'react-router-dom';
 
 class EnvioOrden extends React.Component {

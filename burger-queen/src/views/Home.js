@@ -33,7 +33,7 @@ class Home extends React.Component {
             </div>
             </div>
 
-            <div className="row">
+            {/* <div className="row">
             <div className="Home_col col-6 col-md-6">
             <div className="cuentasLogo">
               <Link className="text" to="/Stepper">
@@ -50,7 +50,7 @@ class Home extends React.Component {
               </div>
               <h3 className="text-center">Encuesta</h3>
             </div>
-           </div>
+           </div> */}
           </div>
           <div id="exit_button_container">
             <Button id="exit_button" className="btn btn-outline" color="success" block>

@@ -39,7 +39,7 @@ class ListaDeOrdenes extends React.Component {
                             
 
                                 <div className="tiempo">
-                                    <TablaDeOrdenes time="7 min"/>  
+                                    <TablaDeOrdenes cantidad="7 min" />  
                                 </div>
                              </div>
                          </div>
