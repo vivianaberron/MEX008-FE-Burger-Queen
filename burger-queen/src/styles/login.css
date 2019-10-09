@@ -83,6 +83,8 @@
   -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
   box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
   justify-content: center;
+  border-color: none;
+  box-shadow: none;
 }
 
 .link {
