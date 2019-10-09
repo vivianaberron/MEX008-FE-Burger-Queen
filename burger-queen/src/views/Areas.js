@@ -1,14 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Buttons from '../components/Buttons';
-<<<<<<< HEAD
-import { Link } from 'react-router-dom';
+
+
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-=======
 import { Link, withRouter } from 'react-router-dom';
 
 
->>>>>>> b1c2af2c952345dab18ad4b5dcc869bf7a2c0e12
+
 
 
 
@@ -23,18 +22,16 @@ class Areas extends React.Component {
           dropdownOpen: false
         };
       }
-    
-<<<<<<< HEAD
       toggle() {
         this.setState({
           dropdownOpen: !this.state.dropdownOpen
         });
       }
-=======
+
     // onClick = () => {
     //     this.props.history.push('/TipsCocina');
     // }
->>>>>>> b1c2af2c952345dab18ad4b5dcc869bf7a2c0e12
+
 
     render() {
 
@@ -48,7 +45,6 @@ class Areas extends React.Component {
             </div>
       
             <div className = "btn-areas">
-<<<<<<< HEAD
                     
                
                 <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
@@ -72,10 +68,10 @@ class Areas extends React.Component {
 
                 
            </div>
-=======
+
             {/* <Buttons  className="btn btn-outline-secondary" text = "Cocina" /> */}
 
-               <Link to="/TipsCocina">
+               {/* <Link to="/TipsCocina">
                     <select name="Cocina"  className="btn-lg selec" color="warning">
                         <option value="Plancha">COCINA</option>
                         <option value="Plancha" >Plancha</option>
@@ -83,12 +79,10 @@ class Areas extends React.Component {
                         <option value="Pizza">Pizza</option>
                         <option value="Bebidas">Bebidas</option>
                     </select>
-                </Link>
+                </Link> */}
                 
                 
-            </div>    
->>>>>>> b1c2af2c952345dab18ad4b5dcc869bf7a2c0e12
-        </div>
+            </div>
         );
     }
 }
