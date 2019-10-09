@@ -1,3 +1,10 @@
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
 .conteiner{
     margin: 0%;
     padding: 10px;
@@ -67,10 +74,12 @@ background-color: blueviolet;
     height: 150%;
     justify-content: flex-start;
 }
-.btn{
+.btn {
     margin:auto;
     padding: 10px;
+    cursor: pointer;
     display: flex;
+   
     /* flex-direction: column; */
-    justify-content: flex-start;
+    
 }

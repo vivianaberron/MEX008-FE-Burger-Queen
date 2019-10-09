@@ -39,8 +39,8 @@ handleSubmit = e => {
         {/* <Button className="btn btn-outline" color="success" block>
           <Link to="/Areas" className="link">Iniciar</Link>
         </Button> */}
-        <Link to="/Areas" className="btn btn-outline" color="success">
-          <Button className="link">Iniciar</Button>
+        <Link to="/Areas" className="btn btn-outline"color="success">
+          <p className="link"> Iniciar </p>
         </Link>
 
       </Form>
