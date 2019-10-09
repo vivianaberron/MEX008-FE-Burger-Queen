@@ -36,7 +36,7 @@ handleSubmit = e => {
           <Input className="input" type="password" placeholder="Ingresa tu número de empleado"></Input>
         </FormGroup>
         <Button className="boton" outline color="success" block>
-          <Link to="/Areas" className="link" >Iniciar</Link>
+          <Link to="/Areas" className="link">Iniciar</Link>
         </Button>
       </Form>
    );

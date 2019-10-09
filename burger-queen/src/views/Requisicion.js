@@ -1,5 +1,9 @@
 import React from 'react';
 import '../styles/textTips.css';
+import { Link } from 'react-router-dom';
+import {Button} from 'reactstrap';
+
+
 
 class Requisiciones extends React.Component{
     render (){
@@ -29,8 +33,11 @@ class Requisiciones extends React.Component{
                     <td>Cebolla</td>
                     </tr>
 
+            
                 </table>
-
+                <Link to="/">
+                    <Button className="btn" color="primary" size="lg"   text = "Salir">Finalizar</Button>
+                </Link>    
             </div>
 
         );

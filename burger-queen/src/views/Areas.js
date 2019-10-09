@@ -1,19 +1,28 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Buttons from '../components/Buttons';
-import { Link, withRouter } from 'react-router-dom';
-
-
+import { Link } from 'react-router-dom';
+import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 
 
 //import '../components/styles/Areas.css';
 
 class Areas extends React.Component {
+    constructor(props) {
+        super(props);
     
-    // onClick = () => {
-    //     this.props.history.push('/TipsCocina');
-    // }
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+          dropdownOpen: false
+        };
+      }
+    
+      toggle() {
+        this.setState({
+          dropdownOpen: !this.state.dropdownOpen
+        });
+      }
 
     render() {
 
@@ -27,24 +36,25 @@ class Areas extends React.Component {
             </div>
       
             <div className = "btn-areas">
-                <Link to= "/TipsCocina">
-                    
-                    <input list= "cocina"  className="selec" color="warning" size="sm" block />
-                    <datalist id="cocina">
-                        <option value="COCINA"/>   
-                        <option value="Plancha"/>
-                        <option value="Fría"/>
-                        <option value="Pizza"/>
-                        <option value="Bebidas"/>
-
-                    </datalist>   
-                </Link>
-                
-                
-            </div>    
+    
+                <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                <DropdownToggle caret color="warning" size="lg">  
+                    COCINA 
+                </DropdownToggle>
+                    <DropdownMenu>
+                    <DropdownItem header>Cocina</DropdownItem>
+                    <Link to="/TipsCocina">    
+                        <DropdownItem >Plancha</DropdownItem>
+                    </Link>
+                    <DropdownItem >Fría</DropdownItem>
+                    <DropdownItem>Pizza</DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem>Bebidas</DropdownItem>
+                    </DropdownMenu>
+                </ButtonDropdown>
+                </div>
         </div>
-        )
+        ); 
     }
 }
-
-export default withRouter(Areas);
+export default Areas;
