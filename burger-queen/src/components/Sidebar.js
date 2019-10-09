@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import 'react-web-tabs/dist/react-web-tabs.css';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import '../styles/Sidebar.css';
-
-
 
 import HamburguesasData from '../Data/menu/hamburguesas.json';
 import PizzasData from '../Data/menu/pizzas.json';
@@ -32,59 +31,80 @@ class Sidebar extends Component {
         constructor(props){
                 super(props)
                 this.numberInputRef = React.createRef();
-                this.State = {
-                        cantidad: 0,
-                        elemento: "",
-                        precio: 0,
+                this.state = {
+                        ordenes: [],
+                        ordenActual: {
+                                cantidad: 0,
+                                elemento: "",
+                                precio: 0,
+                                observaciones: ""
                         }
+                }
         }
         onChangeHandler = e => {
-                console.log(e.target.value);
-
+                console.log(e.target.name, e.target.value)
                 this.setState({
-                        cantidad: parseInt(e.target.value),
-                        elemento: e.target.name
+                        ordenActual:{
+                        [e.target.name]: e.target.value,
+                        }
                        // [e.target.number]: e.target.value
                 });
         }
 
         checkHandler = e => {
-                console.log(e.target.value)
+                // console.log(e.target.value)
                 this.setState({
-                        precio: parseInt(e.target.value)
+                        ordenActual: {
+                                precio: parseInt(e.target.value),
+                                elemento: e.target.name
+                        }
                 })
         }
 
-        submitHandler = (e) => {
-                console.log("agregando...", this.state)
+        submitHandler = () => {
+                //console.log("agregando...", this.state)
+                const orden = this.state.ordenActual;
+                // const newOrdenState = [orden];
+                // const ordenesActuales = this.state.ordenes;
+                this.setState({
+                        ordenes: [...this.state.ordenes, orden]
+                })
+        };
+
+        confirmHandler = () => {
+                console.log("confirmando orden", this.state)
                 localStorage.setItem('ordenes', JSON.stringify(this.state));
+                this.props.history.push('/TablaComanda');
+
         };
 
         render() {
+                console.log(this.state);
+                
     return (
         <>
-        <Tabs defaultTab="vertical-tab-one" vertical>
+        <Tabs defaultTab="vertical-tab-one" vertical className="Sidebar">
         {/* Mobile */}
-
+         <div className="Sidebar_he"></div>
          <div className="mobile_tabs">
         <TabList>
         <div id="promo_tab">
-          <Tab tabFor="vertical-tab-promo"><img className="Sidebar_img" src={offer} alt="promo"></img></Tab>
+          <Tab tabFor="vertical-tab-promo"><img className="Sidebar_img" src={offer} alt="promo"/></Tab>
           </div>
           <div id="burger_tab">
-          <Tab tabFor="vertical-tab-one"><img className="Sidebar_img" src={burger} alt="salads"></img></Tab>
+          <Tab tabFor="vertical-tab-one"><img className="Sidebar_img" src={burger} alt="salads"/></Tab>
           </div>
           <div id="pizza_tab">
-          <Tab tabFor="vertical-tab-two"><img className="Sidebar_img" src={pizza} alt="salads"></img></Tab>
+          <Tab tabFor="vertical-tab-two"><img className="Sidebar_img" src={pizza} alt="salads"/></Tab>
           </div>
           <div id="salad_tab">
-          <Tab tabFor="vertical-tab-three"><img className="Sidebar_img" src={salad} alt="Ensaladas"></img></Tab>
+          <Tab tabFor="vertical-tab-three"><img className="Sidebar_img" src={salad} alt="Ensaladas"/></Tab>
           </div>
           <div id="Hot-dogs_tab">
-          <Tab tabFor="vertical-tab-four"><img className="Sidebar_img" src={hotdog} alt="Hot-dogs"></img></Tab>
+          <Tab tabFor="vertical-tab-four"><img className="Sidebar_img" src={hotdog} alt="Hot-dogs"/></Tab>
           </div>
           <div id="drinks_tab">
-          <Tab tabFor="vertical-tab-five"><img className="Sidebar_img" src={drinks} alt="Bebidas"></img></Tab>
+          <Tab tabFor="vertical-tab-five"><img className="Sidebar_img" src={drinks} alt="Bebidas"/></Tab>
         </div>
         </TabList>
         </div>
@@ -277,12 +297,16 @@ class Sidebar extends Component {
 
       </div>
       </div>
-      
       </Tabs>
-      <Footer/>
+
+      
+      <Footer className="footer"/>
+      onChangeHandler={this.onChangeHandler}
+      confirmHandler={this.confirmHandler}/>
+
       </>
     );
   }
 }
 
-export default Sidebar;
+export default withRouter(Sidebar);

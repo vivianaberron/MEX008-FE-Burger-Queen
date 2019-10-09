@@ -6,13 +6,25 @@ import {  Link  } from "react-router-dom";
 
 
 
-//comienza diseño con bootstrap
-
-
 class Login extends React.Component {
+//comienzo con la conexion con firebase
+handChange= e =>{
+  console.log({
+    no_empleado:e.target.no_empleado,
+  });
+};
+
+handleClick = e => {
+  console.log('Button was clicked');
+};
+handleSubmit = e => {
+  e.preventDefault ();
+  console.log('Form was submitted');
+};
+
   render() {
   return ( 
-      <Form className="App">
+      <Form onSubmit={this.handleSubmit} className="login-form">
         <div><img className="login_header" src={logodemonium} alt="Logo de la compañia"/></div>
         <h1 className="text-center">Inicia sesión</h1>
         <h2>
@@ -23,8 +35,8 @@ class Login extends React.Component {
           <Label className="text-center"></Label>
           <Input className="input" type="password" placeholder="Ingresa tu número de empleado"></Input>
         </FormGroup>
-        <Button className="btn" color="warning" block>
-          <Link to="/Areas">Iniciar</Link>
+        <Button className="btn btn-outline" color="success" block>
+          <Link to="/Areas" className="link">Iniciar</Link>
         </Button>
       </Form>
    );
