@@ -36,7 +36,7 @@ class Areas extends React.Component {
             <div className="Areas_hero"></div>
             <div className = "Areas_link">
                 <Link to="/Home" >
-                    <Buttons text="Servicio" className="btn btn-outline" color="success" block/>
+                    <Buttons id="btn_areas" text="Servicio" className="btn btn-outline" color="success" block/>
                 </Link>
             </div>
 

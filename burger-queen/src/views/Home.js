@@ -5,7 +5,7 @@ import menuClock from "../img/clock.png";
 import menuBill from '../img/bill.png'
 import menuSurvey from "../img/survey.png";
 import "../styles/Home.css";
-
+import { Button } from 'reactstrap';
 class Home extends React.Component {
   render() {
     return (
@@ -50,10 +50,14 @@ class Home extends React.Component {
               </div>
               <h3 className="text-center">Encuesta</h3>
             </div>
-            </div>
-        
-      </div>
-      </div>
+           </div>
+          </div>
+          <div id="exit_button_container">
+            <Button id="exit_button" className="btn btn-outline" color="success" block>
+            <Link to="/" className="exit_button_txt">Cerrar sesión</Link>
+            </Button>
+        </div>
+        </div>
     );
   }
 }

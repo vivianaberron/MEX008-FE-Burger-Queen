@@ -4,18 +4,16 @@ import 'react-web-tabs/dist/react-web-tabs.css';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import '../styles/Sidebar.css';
 
+
 import HamburguesasData from '../Data/menu/hamburguesas.json';
 import PizzasData from '../Data/menu/pizzas.json';
 //import PostresData from '../Data/menu/postres.json';
 import MalteadasData from '../Data/menu/malteadas.json';
 import EnsaladasData from '../Data/menu/ensaladas.json';
 import JochosData from '../Data/menu/jochos.json';
-
-
 import HamburguesasJochos from './HamburgesasJochos';
 import Pizzas from './Pizzas'
 import Ensaladas from './Ensaladas';
-
 import offer from '../img/offer.png';
 import burger from '../img/burger.png';
 import pizza from '../img/pizzaicon.png';
@@ -24,13 +22,13 @@ import hotdog from '../img/hot-dog.png';
 import drinks from '../img/lemonade.png';
 import Footer from '../components/Footer';
 
-import '../styles/Sidebar.css';
+
 
 
 class Sidebar extends Component {
         constructor(props){
                 super(props)
-                this.numberInputRef = React.createRef();
+                //this.numberInputRef = React.createRef();
                 this.state = {
                         ordenes: [],
                         ordenActual: {
@@ -44,7 +42,7 @@ class Sidebar extends Component {
         onChangeHandler = e => {
                 console.log(e.target.name, e.target.value)
                 this.setState({
-                        ordenActual:{
+                        ordenActual:{...this.state.ordenActual,
                         [e.target.name]: e.target.value,
                         }
                        // [e.target.number]: e.target.value
@@ -52,9 +50,10 @@ class Sidebar extends Component {
         }
 
         checkHandler = e => {
-                // console.log(e.target.value)
+                console.log(e.target.value)
                 this.setState({
                         ordenActual: {
+                                ...this.state.ordenActual,
                                 precio: parseInt(e.target.value),
                                 elemento: e.target.name
                         }
@@ -62,24 +61,24 @@ class Sidebar extends Component {
         }
 
         submitHandler = () => {
-                //console.log("agregando...", this.state)
                 const orden = this.state.ordenActual;
                 // const newOrdenState = [orden];
                 // const ordenesActuales = this.state.ordenes;
                 this.setState({
                         ordenes: [...this.state.ordenes, orden]
                 })
+                console.log("agregando...", this.state)
         };
 
         confirmHandler = () => {
                 console.log("confirmando orden", this.state)
                 localStorage.setItem('ordenes', JSON.stringify(this.state));
-                this.props.history.push('/TablaComanda');
+                //this.props.history.push('/TablaComanda');
 
         };
 
         render() {
-                console.log(this.state);
+                //console.log(this.state);
                 
     return (
         <>
@@ -300,7 +299,7 @@ class Sidebar extends Component {
       </Tabs>
 
       
-      <Footer className="footer"/>
+      <Footer className="footer"
       onChangeHandler={this.onChangeHandler}
       confirmHandler={this.confirmHandler}/>
 
