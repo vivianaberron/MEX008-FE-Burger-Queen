@@ -1,0 +1,21 @@
+[
+    {
+     "id": 1,
+     "name": "Fresa",
+     "price": 50,
+     "combo": null
+    },
+    {
+    "id": 2,
+    "name": "Chocomenta",
+    "price": 50,
+    "combo": null
+    },
+       
+    {
+    "id": 3,
+    "name": "Mazapán",
+    "price": 50,
+    "combo": null
+    }
+]

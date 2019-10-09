@@ -1,0 +1,37 @@
+[
+    {
+     "id": 1,
+     "name": "Jochoslaw",
+     "price": 50,
+     "combo": 65
+    },
+    
+    {
+    "id": 2,
+    "name": "Xoloescuintle",
+    "price": 65,
+    "combo": 80
+    },
+       
+    {
+    "id": 3,
+    "name": "Pit bull",
+    "price": 65,
+    "combo": 80
+    },
+    
+    {
+    "id": 4,
+    "name": "Hachiko",
+    "price": 70,
+    "combo": 85
+    },
+    
+    {
+    "id": 5,
+    "name": "Pastor alemán",
+    "price": 80,
+    "combo": 95
+    }
+
+]

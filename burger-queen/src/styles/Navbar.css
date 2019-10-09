@@ -1,0 +1,63 @@
+@media screen and (min-width:320px){
+  .Navbar {
+    width: 100%;
+    padding: 1em;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width:480px){
+  .Navbar {
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width:768px){
+  .Navbar {
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width:1024px){
+  .Navbar {
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.Navbar {
+  width: 100%;
+  padding: 0.5rem 0; 
+  background: #F8F8F8;
+  border:  shadow grey;
+  -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+  -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+  box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+}
+
+.Navbar__brand {
+  color: #0e0d0d;
+  display: flex;
+  align-items: center;
+}
+
+.Navbar__brand:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.Navbar__brand-logo {
+  margin-right: 1.5%;
+  width: 9%;
+  height: 9%;
+}
+
+.Navbar__brand-logoDmonuim {
+  margin: 0 33%;
+  width: 17%;
+  height: 17%;
+}
+
