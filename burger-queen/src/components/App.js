@@ -3,11 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
 import Layout from '../views/Layout';
-
 import Login from './Login';
 //import Tips from '../views/Tips';
-
-
 import Areas from '../views/Areas';
 import Home from '../views/Home';
 import Registro from '../views/Registro';
@@ -16,13 +13,7 @@ import Menu from '../views/Menu';
 import TablaComanda from '../views/TablaComanda';
 import EnvioOrden from '../views/EnvioOrden';
 import Promo from '../views/Promo';
-
 import IfOffLine from './ifOffline';
-
-
-
-
-
 import  TipsCocina from '../views/TipsCocina';
 import Limpieza from '../views/Limpieza';
 import Requisiciones from  '../views/Requisicion';
@@ -44,14 +35,10 @@ function App() {
           <Route path="/Home" component={Home} />
           <Route path="/Menu" component={Menu} />
           <Route path="/Sidebar" component={Sidebar} />
-
-
           <Route path="/Registro" component={Registro} />
           <Route path="/EnvioOrden" component={EnvioOrden} />
           <Route path="/TablaComanda" component={TablaComanda} />
-
           <Route path="/Promo" component={Promo} />
-
           <Route path="/TipsCocina" component={TipsCocina} />
           <Route path="/Limpieza" component={Limpieza} />
           <Route path="/Requisiciones" component={Requisiciones} />
