@@ -1,7 +1,7 @@
 import React from 'react';
 import Textips from '../components/textTips';
 import { Link } from 'react-router-dom';
-import Buttons from '../components/Buttons';
+//import Buttons from '../components/Buttons';
 
 
 class Tips  extends React.Component {
@@ -11,7 +11,7 @@ class Tips  extends React.Component {
             <Textips texto = 'Pregunta qué necesita'/>
             <Textips texto = 'Ofrece menú y bebida'/>
             <Link to="/Home">
-                <Buttons text="Empezar" />
+                {/* <Buttons text="Empezar" /> */}
             </Link>
       </div>
     }

@@ -1,7 +1,82 @@
+@media screen and (min-width:320px){
+    .Sidebar {
+        padding: 2em 1em;
+        width: 50%;
+        font-size: 10px;
+    }
+    .footer {
+        padding: 2em 1em;
+    }
 
+  }
+
+  @media screen and (min-width:480px){
+    .Sidebar {
+      padding: 1em;
+      height: 90%;
+      width: 90%;
+    }
+    .footer {
+        padding: 1em;
+    }
+  }
+  
+  @media screen and (min-width:768px){
+    .Sidebar{
+      padding: 2em;
+      height: 90%;
+      width: 90%;
+    }
+    .footer {
+        padding: 2em;
+    }
+  }
+  
+  @media screen and (min-width:1024px){
+    .Sidebar {
+      padding: 2em;
+      height: 100%;
+      width: 100%;
+    }
+    .footer {
+        padding: 2em;
+    }
+  }
+
+.Sidebar {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    padding: 2rem 0;
+    background-repeat: repeat;
+    margin-bottom: 1rem;
+    color:black;
+    font-size: 18px;
+   font-weight: bold;
+   letter-spacing: 1.5pt;
+   text-align: center;
+   justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    max-width: 500px;
+    padding: 0px;
+    margin: auto;
+    /*height: 100%;*/
+    justify-content: center;
+}
+
+.mobile_tabs{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1pt;
+    text-align: center;
+
+}
 .Sidebar_img {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 #promo_tab, #vertical-tab-promo {

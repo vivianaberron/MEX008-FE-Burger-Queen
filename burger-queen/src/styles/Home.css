@@ -1,109 +1,91 @@
-.Container h3 {
-  font-size: 1rem;
-}
-.Home_header {
-  margin: auto;
-  padding: 50px;
-  /* bottom: 60px;
-  display: flex;
-  justify-content: center; */
-  text-align: center;
-}
-.Home_col1,
-.Home_col{
-  text-align: center;
-}
-.Home__col {
-  width: 70%;
-  display: flex;
-  margin: auto;
-  padding: 30px;
-  bottom: 30px;
-  border-top-width: 2rem;
-  justify-content: center;
-  align-items: center;
-
+@media screen and (min-width:320px){
+  .Home {
+    padding: 10px;
+    max-width: 318px;
+    width: 50%;
+  }
 }
 
-.menuLogo {
-    background-color: rgba(255, 247, 62, 0.93);
-    
-    display: inline-block;
-    border-width: 100%;
-    border-radius: 6px;
-    -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-    -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-    box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-}
-.Home_logo-Menu{
-  height: 75%;
-  
-  margin: auto;
+@media screen and (min-width:480px){
+  .Home {
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.ordenLogo {
-  background-color: #E52D27;
-  display: inline-block;
-  border-width: 100%;
-  border-radius: 6px;
-  -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-}
-.Home_logo-Pendientes {
-width: 100%;
-height: 75%;
-
-margin: 0.01% 0;
-margin: auto;
+@media screen and (min-width:768px){
+  .Home {
+    padding: 2em;
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.cuentasLogo {
-  background-color: #DB9225;
-  display: inline-block;
-  border-width: 100%;
-  border-radius: 6px;
-  -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+@media screen and (min-width:1024px){
+  .Home {
+    padding: 2em;
+    height: 100%;
+    width: 100%;
+  }
 }
-.Home_logo-Cuentas {
-width: 100%;
-height: 75%;
-
-margin: 0.01% 0;
-margin: auto;
-}
-
-.encuestaLogo {
-  background-color: #D3563A;;
-  display: inline-block;
  
-  border-width: 100%;
-  border-radius: 6px;
-  -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+ 
+ .Home {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: auto;
+   height: 150%;
+    text-align: center;
+    
+ }
+ 
+ 
+ .Home_header {
+    margin: auto;
+    padding: 50px;
+    bottom: 60px;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+  }
+  .Home_col1,
+  .Home_col{
+    text-align: center;
+  }
+  .Home__col {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    padding: 40px;
+    bottom: 35px;
+    border-top-width: 2rem;
+    justify-content: center;
+    align-items: center;
+
 }
-.Home_logo-Encuesta {
-width: 100%;
-height: 75%;
-margin: 0.01% 0;
-margin: auto;
-}
+
+  .Home_logo {
+    height: 95%;  
+    margin: auto;
+    /*background:#2bf693;*/
+    background: rgb(233,241,232);
+     background: radial-gradient(circle, rgba(233,241,232,1) 5%, rgba(43,246,147,1) 81%);
+  
+      border-width: 100%;
+      border-radius: 6px;
+      -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+      -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+      box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+  }
+  
 
 .text-center {
- padding: 20px;
+ padding: 25px;
  justify-content: center;
 
 }
-@media screen and (min-width: 768px) {
- .Home__col {
-   align-items: flex-start;
- }
- .Container h3 {
-  font-size: 1.5rem;
-}
-}
+
 
   

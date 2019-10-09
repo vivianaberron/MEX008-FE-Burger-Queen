@@ -49,7 +49,7 @@ class OrdenCocina extends React.Component {
 
                                 <tr>
                                 <td>1</td>
-                                <td>Sobervia</td>
+                                <td>Soberbia</td>
                                 <td>Sin Cebolla</td>
                                 </tr>
 

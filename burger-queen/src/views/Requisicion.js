@@ -13,25 +13,27 @@ class Requisiciones extends React.Component{
 
 
                 <table className="tabla">
-                    <tr>
-                    <th>Cantidad</th>
-                    <th>Insumos</th>
-                    </tr>
+                    <tbody>
+                        <tr>
+                        <td><strong>Cantidad</strong></td>
+                        <td><strong>Insumos</strong></td>
+                        </tr>
 
-                    <tr>
-                    <td>3 pz</td>
-                    <td>Medallon Gula</td>
-                    </tr>
+                        <tr>
+                        <td>3 pz</td>
+                        <td>Medallon Gula</td>
+                        </tr>
 
-                    <tr>
-                    <td>200 gr</td>
-                    <td>Cacahuate</td>
-                    </tr>
+                        <tr>
+                        <td>200 gr</td>
+                        <td>Cacahuate</td>
+                        </tr>
 
-                    <tr>
-                    <td>8 kg</td>
-                    <td>Cebolla</td>
-                    </tr>
+                        <tr>
+                        <td>8 kg</td>
+                        <td>Cebolla</td>
+                        </tr>
+                    </tbody>
 
             
                 </table>
