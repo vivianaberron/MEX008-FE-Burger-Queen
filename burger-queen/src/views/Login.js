@@ -26,7 +26,7 @@ handleSubmit = e => {
   return ( 
       <Form onSubmit={this.handleSubmit} className="login-form">
         <div><img className="login_header" src={logodemonium} alt="Logo de la compañia"/></div>
-        <h1 className="text-center">Inicia sesión</h1>
+        <h1 className="text-center_login">Inicia sesión</h1>
         <h2>
           <span className="font-weight-blod">Ingresa tu No. D'Monium</span>
         </h2>
