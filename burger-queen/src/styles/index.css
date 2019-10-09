@@ -4,10 +4,7 @@
 @media screen and (min-width:1024px){}
 
 @media screen and (min-width: 320px) {
-  .Navbar {
-    display: flex;
-    height: auto;
-  }
+
   .App {
      display: initial;
   }
