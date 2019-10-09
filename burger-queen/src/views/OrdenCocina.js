@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import next from '../img/next.png';
-import '../styles/tabla.css';
+import '../styles/OrdenCocina.css';
 
 class OrdenCocina extends React.Component {
     constructor(props){
@@ -24,7 +24,7 @@ class OrdenCocina extends React.Component {
     
     render () {
         return( 
-            <div>    
+            <div className="Orden_Cocina">    
                 {/* // state = JSON.parse(localStorage.getItem('clientes')); */}
                 
                 

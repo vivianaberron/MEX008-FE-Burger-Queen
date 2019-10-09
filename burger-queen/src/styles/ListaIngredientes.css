@@ -31,7 +31,7 @@
   }
 
 
-.Tips_Cocina{
+.Lista_Ingredientes{
     width: 150%;
     max-width: 500px;
     padding: 45px;
@@ -48,19 +48,26 @@
     justify-content: center;
 }
 
-.checkbox{
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-  }
-  #text{
-    width: auto;
+/* .TipsCocina{
+    padding: 20px;
+    margin: auto;
+    height: auto;
+}
+.textoCocina{
+    width: 100%;
     max-width: 500px;
     padding: 10px;
     margin: auto;
     height: 150%;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 3px solid #848280;
+    justify-content: flex-start;
 }
+
+.next{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    margin: auto;
+    display:flex;
+   margin-top: 80px;
+
+} */

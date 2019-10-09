@@ -4,10 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Layout from '../views/Layout';
 
-import Login from './Login';
-
-
-import Login from './login';
+import Login from '../views/Login';
 
 //import Tips from '../views/Tips';
 import Areas from '../views/Areas';

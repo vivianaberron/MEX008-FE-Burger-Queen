@@ -1,6 +1,6 @@
 import React from 'react';
 import TablaDeOrdenes from '../components/TablaDeOrdenes.js';
-import '../styles/Cocina.css';
+import '../styles/ListaDeCocina.css';
 import { Link } from 'react-router-dom';
 import next from '../img/next.png';
 
@@ -21,7 +21,7 @@ class ListaDeOrdenes extends React.Component {
     render (){
     //  console.log(this.state.ingredientes);
         return (
-        <div className="conteiner">
+        <div className="Lista_cocina">
                 <div id="titulo">
                         <h2>ORDENES</h2>
                 </div>
@@ -36,12 +36,12 @@ class ListaDeOrdenes extends React.Component {
                                     <TablaDeOrdenes cantidad="1"/>
                                     <TablaDeOrdenes orden="Gula, Soberbia"/>
                                 </div>
-                            </div>
+                            
 
-                             <div className="tiempo">
-                                <TablaDeOrdenes time="7 min"/>  
+                                <div className="tiempo">
+                                    <TablaDeOrdenes time="7 min"/>  
+                                </div>
                              </div>
-                    
                          </div>
 
                 </div>           

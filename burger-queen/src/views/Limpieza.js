@@ -2,12 +2,13 @@ import React from 'react';
 import Textips from '../components/textTips.js';
 import { Link } from 'react-router-dom';
 import next from '../img/next.png';
+import '../styles/Limpieza.css'
 
 class Limpieza extends React.Component{
     render (){
         return (
-            <div>
-                <div className="limpeza">
+            <div className="Limpieza">
+                <div className="Seccion_limpieza">
                     <h2 id="titulo">Limpieza</h2>
 
                     <Textips texto="Plancha"/>
