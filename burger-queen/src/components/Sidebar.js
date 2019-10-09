@@ -276,9 +276,9 @@ class Sidebar extends Component {
       </div>
       </div>
       </Tabs>
-      <div className="footer">
-      <Footer/>
-      </div>
+      
+      <Footer className="footer"/>
+
       </>
     );
   }

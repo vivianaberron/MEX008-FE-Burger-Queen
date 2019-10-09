@@ -6,7 +6,7 @@ export default class IfOffLine extends React.Component {
         super(props)
         this.state= { onLine: navigator ? navigator.onLine : true }
     }
-    componentDisMount(){
+    componentDidMount(){
         if( ! window ) return
         window.addEventListener('onLine', this.goOnLine)
         window.addEventListener('onLine', this.goOffLine)
