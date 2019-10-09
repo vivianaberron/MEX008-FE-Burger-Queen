@@ -4,7 +4,6 @@ import menuLogo from "../img/menu.png";
 import menuClock from "../img/clock.png";
 import menuBill from '../img/bill.png'
 import menuSurvey from "../img/survey.png";
-
 import "../styles/Home.css";
 
 class Home extends React.Component {
@@ -33,7 +32,7 @@ class Home extends React.Component {
               <h3 className="text-center">Ordenes pendientes</h3>
             </div>
             </div>
-<div className="menu_columns">
+
             <div className="row">
             <div className="Home_col col-6 col-md-6">
             <div className="cuentasLogo">
@@ -52,7 +51,7 @@ class Home extends React.Component {
               <h3 className="text-center">Encuesta</h3>
             </div>
             </div>
-        </div>
+        
       </div>
       </div>
     );
