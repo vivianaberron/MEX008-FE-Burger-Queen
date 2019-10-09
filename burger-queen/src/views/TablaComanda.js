@@ -20,9 +20,9 @@ class TablaComanda extends React.Component {
 
     componentDidMount(){
          const { name, number} = JSON.parse(localStorage.getItem('clientes'));
-         const {cantidad, elemento, precio} = JSON.parse(localStorage.getItem('ordenes')).ordenActual;
+         const {cantidad, elemento, precio, observaciones} = JSON.parse(localStorage.getItem('ordenes')).ordenActual;
          console.log("ordenes", JSON.parse(localStorage.getItem('ordenes')).ordenActual.cantidad);
-         this.setState({name, number,cantidad, elemento, precio})
+         this.setState({name, number,cantidad, elemento, precio, observaciones})
       }
 
 

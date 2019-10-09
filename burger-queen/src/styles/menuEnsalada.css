@@ -9,17 +9,18 @@
 }
 
 .cant{
-    width: 15%;
+    width: 16%;
     height:2%;
-    font-size: x-small;
+  
 }
 .name{
-    width: 40%;
+    width: 100%;
     display: flex;
+    word-break: break-all
 }
 .price,
 .combo{
-    width: 18%;
+    width: 16%;
 }
 .add {
     width: 5%
