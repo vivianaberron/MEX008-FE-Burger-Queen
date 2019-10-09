@@ -22,33 +22,34 @@ class ListaDeOrdenes extends React.Component {
     //  console.log(this.state.ingredientes);
         return (
         <div className="conteiner">
-                    <div id="titulo">
+                <div id="titulo">
                         <h2>ORDENES</h2>
-                    </div>
-                    
-                    <div className="ingredientes">
-                    
-
-                    <div className="tabla">
-                        <div className="comensal">
-                        <TablaDeOrdenes nameOrden="Fabiola"/>
-                        </div>
-                        <div className="orden">
-                        <TablaDeOrdenes cantidad="1"/>
-                        <TablaDeOrdenes orden="Gula, Soberbia"/>
-                        </div>
-                    </div>
-
-                    <div className="tiempo">
-                        <TablaDeOrdenes time="7 min"/>  
-                    </div>
-                
                 </div>
+                <div className="conteinerOrden"> 
+                        <div className="ingredientes">
+                        
+                            <div className="tabla">
+                                <div className="comensal">
+                                    <TablaDeOrdenes nameOrden="Fabiola"/>
+                                </div>
+                                <div className="orden">
+                                    <TablaDeOrdenes cantidad="1"/>
+                                    <TablaDeOrdenes orden="Gula, Soberbia"/>
+                                </div>
+                            </div>
+
+                             <div className="tiempo">
+                                <TablaDeOrdenes time="7 min"/>  
+                             </div>
+                    
+                         </div>
+
+                </div>           
                 <div className="Boton-siguiente">
-                        <Link className="boton" to="/Limpieza">
+                    <Link className="boton" to="/Limpieza">
                             <img className="next" src={next} alt="Boton siguiente"/>
-                        </Link>
-                </div>
+                    </Link>
+                </div> 
         </div>      
     )
   }

@@ -14,13 +14,13 @@ class OrdenCocina extends React.Component {
             elemento: ""
         }
     }
-        componentDidMount(){
-            const { name, number } = JSON.parse(localStorage.getItem('clientes'));
-            const { cantidad, elemento} = JSON.parse(localStorage.getItem('ordenes'));
-            this.setState({name, number,cantidad, elemento})
-            console.log(this.state);
+        // componentDidMount(){
+        //     const { name, number } = JSON.parse(localStorage.getItem('clientes'));
+        //     const { cantidad, elemento} = JSON.parse(localStorage.getItem('ordenes'));
+        //     this.setState({name, number,cantidad, elemento})
+        //     console.log(this.state);
             
-         }
+        //  }
     
     render () {
         return( 

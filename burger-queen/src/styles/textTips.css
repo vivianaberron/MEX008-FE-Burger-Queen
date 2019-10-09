@@ -22,6 +22,8 @@
 
 #titulo{
     text-align: center; 
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 
@@ -30,14 +32,20 @@ width: 30px;
 height: 30px;
 display: flex;
 justify-content: space-between;
-background-color: blueviolet;
 }
 
 .tabla{
-    display: flex;
-    justify-content: flex-end;
-    margin: auto;
-    padding: 10px;
+
+
+    /* display: block; 
+    justify-content: space-between; 
+    margin: 0;
+    padding: 10px; 
+    border: solid; 
+    background-color: pink; 
+    width: 50%;
+    height: 30%;
+    vertical-align: middle;  */
     
 }
 .requisiciones{
@@ -56,7 +64,7 @@ background-color: blueviolet;
     padding: 10px;
     margin: auto;
     display:flex;
-   
+   margin-top: 80px;
 
 }
 .textoCocina{
@@ -68,9 +76,9 @@ background-color: blueviolet;
     justify-content: flex-start;
 }
 .btn{
-    margin:auto;
-    padding: 10px;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: flex-start;
+    background-color: #45d431;
+         -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+         -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+         box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+       
 }

@@ -14,8 +14,8 @@ class Requisiciones extends React.Component{
 
                 <table className="tabla">
                     <tr>
-                    <td><strong>Cantidad</strong></td>
-                    <td><strong>Insumos</strong></td>
+                    <th>Cantidad</th>
+                    <th>Insumos</th>
                     </tr>
 
                     <tr>
@@ -36,7 +36,7 @@ class Requisiciones extends React.Component{
             
                 </table>
                 <Link to="/">
-                    <Button className="btn" color="primary" size="lg"   text = "Salir">Finalizar</Button>
+                    <Button className="btn"  size="lg"   text = "Salir">Finalizar</Button>
                 </Link>    
             </div>
 
