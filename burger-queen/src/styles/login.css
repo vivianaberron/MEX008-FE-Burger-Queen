@@ -68,6 +68,9 @@
 .input {
   padding: 15px;
   display: flex;
+  width: 70%;
+  height: 30%;
+  margin: 0 auto;
   justify-content: center;
   -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
   -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
@@ -87,9 +90,15 @@
 .link {
   color:white;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 1.5pt;
   text-align: center;
   justify-content: center;
+  margin: 0 auto;
+}
+
+.link:hover {
+  color: white;
+  text-decoration: none;
 }
 
