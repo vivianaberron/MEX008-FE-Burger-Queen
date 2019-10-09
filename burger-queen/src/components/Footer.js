@@ -14,11 +14,17 @@ class Footer extends React.Component {
                     <h4 className="font-weight-blod">Observaciones</h4>
                 </Label><br />        
               </div>
-                <InputGroup className="InputGroup" size="lg" type="text"><Input/></InputGroup> <br />
+                <InputGroup 
+                className="InputGroup" size="lg">
+                  <Input
+                  type="text"
+                  name="observaciones"
+                  onChange={this.props.onChangeHandler}/></InputGroup> <br />
             </div>
          
             <Button className="btn btn-outline" color="success" block>
               <Link to="/TablaComanda"> Confirmar</Link>
+
             </Button>
           </div>
         );

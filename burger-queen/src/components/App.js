@@ -3,8 +3,11 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
 import Layout from '../views/Layout';
+
 import Login from './Login';
-import Tips from '../views/Tips';
+//import Tips from '../views/Tips';
+
+
 import Areas from '../views/Areas';
 import Home from '../views/Home';
 import Registro from '../views/Registro';
@@ -12,9 +15,10 @@ import Sidebar from './Sidebar';
 import Menu from '../views/Menu';
 import TablaComanda from '../views/TablaComanda';
 import EnvioOrden from '../views/EnvioOrden';
-
 import Promo from '../views/Promo';
+
 import IfOffLine from './ifOffline';
+
 
 
 
@@ -27,8 +31,6 @@ import OrdenCocina from '../views/OrdenCocina';
 import ListaDeOrdenes from '../views/ListaDeOrdenes';
 
 
-
-
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -39,7 +41,6 @@ function App() {
         <Route exact path="/" component={Login} />
         <Layout>
           <Route path="/Areas" component={Areas} />
-          <Route path="/Tips" component={Tips} />
           <Route path="/Home" component={Home} />
           <Route path="/Menu" component={Menu} />
           <Route path="/Sidebar" component={Sidebar} />
