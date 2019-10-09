@@ -1,12 +1,36 @@
+@media screen and (min-width:320px){
+    .Areas {
+      padding: 10px;
+      max-width: 318px;
+      width: 50%;
+    }
+  }
+  
+  @media screen and (min-width:480px){
+    .Areas {
+      padding: 1em;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width:768px){
+    .Areas {
+      padding: 2em;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width:1024px){
+    .Areas {
+      padding: 2em;
+      height: 100%;
+      width: 100%;
+    }
+  }
 
-.btn-areas {
-    border: 1px;
-    border-color: black;
-    border-style: solid;
-    width: max-content;
-    border-radius: 5px;
-    margin: 15px auto;
-}
+
 .Areas {
     /*width: 100%;*/
     max-width: 100%;
@@ -14,5 +38,22 @@
     margin: auto;
    /* height: 150%;*/
     text-align: center;
+}
+
+.Areas_hero{
+    width: 100%;
+    padding: 2rem 0;
+    background-repeat: repeat;
+    margin-bottom: 1rem;
+}
+
+.Areas_Dropdown{
+    padding: 35px;
+    margin: auto;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-size: 22px;
 }
 

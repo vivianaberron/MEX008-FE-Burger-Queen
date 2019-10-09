@@ -3,10 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Buttons from '../components/Buttons';
 import { Link } from 'react-router-dom';
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-
-
-
-//import '../components/styles/Areas.css';
+import '../styles/Areas.css';
 
 class Areas extends React.Component {
     constructor(props) {
@@ -27,19 +24,17 @@ class Areas extends React.Component {
     render() {
 
         return (
-        <div className="areas-container">
-          
-            <div className = "btn-areas">
+        <div className="Areas">
+            <div className="Areas_hero"></div>
+            <div className = "Areas_link">
                 <Link to="/Home" >
-                    <Buttons text = "Servicio" className="btn" color="warning" block/>
+                    <Buttons text="Servicio" className="btn btn-outline" color="success" block/>
                 </Link>
             </div>
-      
-            <div className = "btn-areas">
-    
-                <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                <DropdownToggle caret color="warning" size="lg">  
-                    COCINA 
+            <div className= "Areas_container">
+                <ButtonDropdown className="Areas_Dropdown" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                <DropdownToggle caret className="btn btn-outline" color="success" size="lg">  
+                    Cocina 
                 </DropdownToggle>
                     <DropdownMenu>
                     <DropdownItem header>Cocina</DropdownItem>
