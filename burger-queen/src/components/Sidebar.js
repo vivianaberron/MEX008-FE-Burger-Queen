@@ -5,22 +5,22 @@ import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import '../styles/Sidebar.css';
 
 
-import HamburguesasData from '../Data/menu/hamburguesas.json';
-import PizzasData from '../Data/menu/pizzas.json';
-//import PostresData from '../Data/menu/postres.json';
-import MalteadasData from '../Data/menu/malteadas.json';
-import EnsaladasData from '../Data/menu/ensaladas.json';
 import JochosData from '../Data/menu/jochos.json';
-import HamburguesasJochos from './HamburgesasJochos';
+import Footer from '../components/Footer';
 import Pizzas from './Pizzas'
 import Ensaladas from './Ensaladas';
+import HamburguesasData from '../Data/menu/hamburguesas.json';
+//import PostresData from '../Data/menu/postres.json';
+import EnsaladasData from '../Data/menu/ensaladas.json';
+import HamburguesasJochos from './HamburgesasJochos';
+import MalteadasData from '../Data/menu/malteadas.json';
+import PizzasData from '../Data/menu/pizzas.json';
 import offer from '../img/offer.png';
 import burger from '../img/burger.png';
 import pizza from '../img/pizzaicon.png';
 import salad from '../img/salad.png';
 import hotdog from '../img/hot-dog.png';
 import drinks from '../img/lemonade.png';
-import Footer from '../components/Footer';
 
 
 
@@ -81,34 +81,38 @@ class Sidebar extends Component {
                 //console.log(this.state);
                 
     return (
-        <>
-        <Tabs defaultTab="vertical-tab-one" vertical className="Sidebar">
+        <div className="Sidebar">
+        <Tabs defaultTab="vertical-tab-one" vertical className="menu-content">
         {/* Mobile */}
          <div className="Sidebar_he"></div>
-         <div className="mobile_tabs">
-        <TabList>
-        <div id="promo_tab">
-          <Tab tabFor="vertical-tab-promo"><img className="Sidebar_img" src={offer} alt="promo"/></Tab>
-          </div>
-          <div id="burger_tab">
-          <Tab tabFor="vertical-tab-one"><img className="Sidebar_img" src={burger} alt="salads"/></Tab>
-          </div>
-          <div id="pizza_tab">
-          <Tab tabFor="vertical-tab-two"><img className="Sidebar_img" src={pizza} alt="salads"/></Tab>
-          </div>
-          <div id="salad_tab">
-          <Tab tabFor="vertical-tab-three"><img className="Sidebar_img" src={salad} alt="Ensaladas"/></Tab>
-          </div>
-          <div id="Hot-dogs_tab">
-          <Tab tabFor="vertical-tab-four"><img className="Sidebar_img" src={hotdog} alt="Hot-dogs"/></Tab>
-          </div>
-          <div id="drinks_tab">
-          <Tab tabFor="vertical-tab-five"><img className="Sidebar_img" src={drinks} alt="Bebidas"/></Tab>
-        </div>
-        </TabList>
+         <div className="mobile_tabs btns-bar">
+            <TabList>
+                <div id="promo_tab">
+                        <Tab tabFor="vertical-tab-promo" className="tab-btns">
+                                <img className="Sidebar_img" src={offer} alt="promo"/>
+                        </Tab>
+                </div>
+                <div id="burger_tab">
+                        <Tab tabFor="vertical-tab-one">
+                                <img className="Sidebar_img" src={burger} alt="salads"/>
+                        </Tab>
+                 </div>
+                <div id="pizza_tab">
+                        <Tab tabFor="vertical-tab-two"><img className="Sidebar_img" src={pizza} alt="salads"/></Tab>
+                </div>
+                <div id="salad_tab">
+                        <Tab tabFor="vertical-tab-three"><img className="Sidebar_img" src={salad} alt="Ensaladas"/></Tab>
+                </div>
+                <div id="Hot-dogs_tab">
+                        <Tab tabFor="vertical-tab-four"><img className="Sidebar_img" src={hotdog} alt="Hot-dogs"/></Tab>
+                </div>
+                <div id="drinks_tab">
+                        <Tab tabFor="vertical-tab-five"><img className="Sidebar_img" src={drinks} alt="Bebidas"/></Tab>
+                </div>
+            </TabList>
         </div>
 
-        <div className="mobile_tabs">
+        <div className="mobile_tabs menu-content">
         <TabPanel tabId="vertical-tab-promo">
         <div className="promo">
                 <figure>
@@ -226,7 +230,7 @@ class Sidebar extends Component {
           <Tab tabFor="vertical-tab-five"><img className="Sidebar_img" src={drinks} alt="Bebidas"></img>Bebidas</Tab>
         </div>
         </TabList>
-        <div className="desktop_tabs">
+        <div className="desktop_tabs menu-content">
         <TabPanel tabId="vertical-tab-promo">
         <div className="promo">
         <figure>
@@ -303,7 +307,7 @@ class Sidebar extends Component {
       onChangeHandler={this.onChangeHandler}
       confirmHandler={this.confirmHandler}/>
 
-      </>
+      </div>
     );
   }
 }
