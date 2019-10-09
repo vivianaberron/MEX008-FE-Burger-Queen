@@ -7,8 +7,8 @@ import { Button } from 'reactstrap';
 class Buttons extends React.Component {
     render() {
         return (
-            <div className="Areas">
-                <Button className="btn-lg" color="warning" block>
+            <div className="Buttons_Areas">
+                <Button className="btn btn-outline" color="success" block>
                     {this.props.text}
                 </Button>
             </div>

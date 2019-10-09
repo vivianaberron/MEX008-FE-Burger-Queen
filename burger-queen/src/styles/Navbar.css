@@ -1,19 +1,37 @@
+@media screen and (min-width:320px){
+  .Navbar {
+    width: 100%;
+    padding: 1em;
+    height: 100%;
+  }
+}
 
-/* diseño de la barra de navegación*/
+@media screen and (min-width:480px){
+  .Navbar {
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width:768px){
+  .Navbar {
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width:1024px){
+  .Navbar {
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+  }
+}
 
 .Navbar {
-  display: flex;
-  width: 100vw;
-  padding: 0.5rem 0;
-  /*width: 100%;*/
-  /* margin: 0.01% 0; */
-  /*display: flex;
-  height: auto;
-  justify-content: center;
-  flex: 1;
-  flex-wrap: wrap;*/
+  width: 100%;
+  padding: 0.5rem 0; 
   background: #F8F8F8;
-  /*background-color:  rgb(228, 163, 23);*/
   border:  shadow grey;
   -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
   -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);

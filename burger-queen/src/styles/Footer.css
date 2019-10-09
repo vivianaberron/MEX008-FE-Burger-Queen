@@ -1,22 +1,59 @@
+@media screen and (min-width:320px){
+  .Footer {
+    padding: 2em 1em;
+    /*height: 100%;
+    width: 100%;*/
+  }
+}
+
+@media screen and (min-width:480px){
+  .Footer {
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:768px){
+  .Footer{
+    padding: 2em;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .Footer {
+    padding: 2em;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.Footer {
+  width: 100%;
+  max-width: 380px;
+  padding: 15px;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
 .Registro_header {
     margin: auto;
-    padding: 50px;
-    bottom: 60px;
+    /*padding: 50px;
+    bottom: 60px;*/
     display: flex;
     justify-content: center;
     text-align: center;
   }
 
-  .Footer {
-    /*width: 150%;*/
-    max-width: 100%;
-    padding: 20px;
-    margin: auto;
-    height: 150%;
-    text-align: center;
-  }
-
   .InputGroup {
+    display: flex;
+    margin: 0 auto;
+    width: 60vw;
+    height: 2rem;
     -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
     -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
     box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
@@ -26,5 +63,15 @@
     padding: 20px;
     bottom: 20px;
     justify-content: center;
+    font-weight: bold;
+  }
+ 
+  .btn_confirm_order {
+    width: 45vw;
+    height: 3.5rem;
+    color: white;
   }
 
+  #link {
+    color: white;
+  }
