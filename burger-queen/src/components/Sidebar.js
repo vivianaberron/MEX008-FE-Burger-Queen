@@ -300,7 +300,7 @@ class Sidebar extends Component {
       </Tabs>
 
       
-      <Footer className="footer"/>
+      <Footer className="footer"
       onChangeHandler={this.onChangeHandler}
       confirmHandler={this.confirmHandler}/>
 
