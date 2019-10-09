@@ -16,7 +16,7 @@ class Footer extends React.Component {
                 <InputGroup className="InputGroup" size="lg" type="text"><Input/></InputGroup> <br />
             </div>
          
-            <Button className="btn-lg" color="warning" block>
+            <Button className="btn btn-outline" color="success" block>
               <Link to="/TablaComanda"> Confirmar</Link>
             </Button>
           </div>

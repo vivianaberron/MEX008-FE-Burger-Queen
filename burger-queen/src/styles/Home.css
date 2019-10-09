@@ -38,7 +38,7 @@
     margin: auto;
    height: 150%;
     text-align: center;
-    background-color: blueviolet;
+    
  }
  
  
@@ -49,7 +49,6 @@
     display: flex;
     justify-content: center; 
     text-align: center;
-  
   }
   .Home_col1,
   .Home_col{

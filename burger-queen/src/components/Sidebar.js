@@ -3,8 +3,6 @@ import 'react-web-tabs/dist/react-web-tabs.css';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import '../styles/Sidebar.css';
 
-
-
 import HamburguesasData from '../Data/menu/hamburguesas.json';
 import PizzasData from '../Data/menu/pizzas.json';
 //import PostresData from '../Data/menu/postres.json';
@@ -63,9 +61,9 @@ class Sidebar extends Component {
         render() {
     return (
         <>
-        <Tabs defaultTab="vertical-tab-one" vertical>
+        <Tabs defaultTab="vertical-tab-one" vertical className="Sidebar">
         {/* Mobile */}
-
+         <div className="Sidebar_he"></div>
          <div className="mobile_tabs">
         <TabList>
         <div id="promo_tab">
@@ -277,9 +275,10 @@ class Sidebar extends Component {
 
       </div>
       </div>
-      
       </Tabs>
+      <div className="footer">
       <Footer/>
+      </div>
       </>
     );
   }
