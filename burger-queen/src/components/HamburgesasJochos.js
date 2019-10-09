@@ -35,7 +35,7 @@ const MenuEnsalada = React.forwardRef((props, ref) => {
                             value={props.price} 
                             type="checkbox"
                             onClick={props.checkHandler}/>
-                            <label>$ {props.price}</label>
+                            <label className="sidebar-labels">$ {props.price}</label>
                         </td>
                         <td className="combo">
                             <Input
@@ -44,7 +44,7 @@ const MenuEnsalada = React.forwardRef((props, ref) => {
                             type="checkbox" 
                             onClick={props.checkHandler}
                                 />
-                                <label>$ {props.combo}</label>
+                                <label className="sidebar-labels">$ {props.combo}</label>
                         </td>
                         <td className="add">
                             <button type="submit" onClick={props.submitHandler}>

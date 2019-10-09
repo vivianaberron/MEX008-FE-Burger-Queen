@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import menuLogo from "../img/menu.png";
 import menuClock from "../img/clock.png";
-import menuBill from '../img/bill.png'
-import menuSurvey from "../img/survey.png";
+//import menuBill from '../img/bill.png'
+//import menuSurvey from "../img/survey.png";
 import "../styles/Home.css";
 import { Button } from 'reactstrap';
 class Home extends React.Component {

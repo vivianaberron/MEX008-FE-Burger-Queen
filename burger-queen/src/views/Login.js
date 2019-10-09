@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/login.css';
 import logodemonium from '../img/logodemonium.png';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap'; // componente de botones de red social
+import { Form, FormGroup, Label, Input } from 'reactstrap'; // componente de botones de red social
 import {  Link  } from "react-router-dom";
 
 
