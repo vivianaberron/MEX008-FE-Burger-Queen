@@ -2,23 +2,39 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
-import Login from './login';//para logearse con firebase
 import Layout from '../views/Layout'; // para el siseño de nuestra pagina
-import Areas from '../views/Areas';
+import Login from './login';//para logearse con firebase
 import Tips from '../views/Tips';
+import Areas from '../views/Areas';
 import Home from '../views/Home';
-import Menu from '../views/Menu';
 import Registro from '../views/Registro';
+import Sidebar from './Sidebar';
+import Menu from '../views/Menu';
+import TablaComanda from '../views/TablaComanda';
 import EnvioOrden from '../views/EnvioOrden';
 
 import Promo from '../views/Promo';
+import IfOffLine from './ifOffline';
+
+
+//import Footer from './Footer';
+
+import  TipsCocina from '../views/TipsCocina';
+import Limpieza from '../views/Limpieza';
+import Requisiciones from  '../views/Requisicion';
+import ListaIngredientes from '../views/ListaIngredientes';
+import OrdenCocina from '../views/OrdenCocina';
+import ListaDeOrdenes from '../views/ListaDeOrdenes';
 
 
 
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <header>
+        <IfOffLine>offLine</IfOffLine>
+        </header>     
       <Switch>
         <Route exact path="/" component={Login} />
         <Layout>
@@ -26,12 +42,21 @@ function App() {
           <Route path="/Tips" component={Tips} />
           <Route path="/Home" component={Home} />
           <Route path="/Menu" component={Menu} />
+          <Route path="/Sidebar" component={Sidebar} />
+
 
           <Route path="/Registro" component={Registro} />
           <Route path="/EnvioOrden" component={EnvioOrden} />
+          <Route path="/TablaComanda" component={TablaComanda} />
 
           <Route path="/Promo" component={Promo} />
 
+          <Route path="/TipsCocina" component={TipsCocina} />
+          <Route path="/Limpieza" component={Limpieza} />
+          <Route path="/Requisiciones" component={Requisiciones} />
+          <Route path="/ListaIngredientes"  component={ListaIngredientes} />
+          <Route path="/OrdenCocina" component={OrdenCocina}/>
+          <Route path="/ListaDeOrdenes" component={ListaDeOrdenes}/>
         </Layout>
       </Switch>
     </BrowserRouter>

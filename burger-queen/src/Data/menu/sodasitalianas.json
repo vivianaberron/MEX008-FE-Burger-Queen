@@ -1,0 +1,42 @@
+[
+    {
+     "id": 1,
+     "name": "Piña & Coco",
+     "price": 45,
+     "combo": null
+    },
+    {
+    "id": 2,
+    "name": "Limón & Jícama",
+    "price": 45,
+    "combo": null
+    },
+       
+    {
+    "id": 3,
+    "name": "Maracuyá",
+    "price": 45,
+    "combo": null
+    },
+
+    {
+    "id": 4,
+    "name": "Fresa & Albahaca",
+    "price": 45,
+    "combo": null
+    },
+
+    {
+    "id": 5,
+    "name": "Manzana verde",
+    "price": 45,
+    "combo": null
+    },
+
+    {
+    "id": 6,
+     "name": "Mango",
+    "price": 45,
+    "combo": null
+    }
+]

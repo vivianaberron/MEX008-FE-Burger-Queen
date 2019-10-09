@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Delirium",
+        "price": 50
+    },
+    {
+        "id": 2,
+        "name": "Paraíso Perdido",
+        "price": 70
+    }
+]
