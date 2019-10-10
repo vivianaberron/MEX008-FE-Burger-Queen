@@ -2,7 +2,7 @@
   .login-form {
     padding: 10px;
     max-width: 318px;
-    width: 50%;
+  
   }
 }
 
@@ -10,7 +10,7 @@
   .login-form {
     padding: 1em;
     height: 100%;
-    width: 100%;
+   
   }
 }
 
@@ -18,7 +18,7 @@
   .login-form {
     padding: 2em;
     height: 100%;
-    width: 100%;
+    
   }
 }
 
@@ -26,13 +26,12 @@
   .login-form {
     padding: 2em;
     height: 100%;
-    width: 100%;
+   
   }
 }
 
 .login-form {
   width: 150%;
-  max-width: 500px;
   padding: 45px;
   margin: auto;
   margin-top: 5%;
@@ -105,4 +104,3 @@
   text-decoration: none;
   cursor: pointer;
 }
-

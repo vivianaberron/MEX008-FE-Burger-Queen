@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/login.css';
 import logodemonium from '../img/logodemonium.png';
-import { Form, FormGroup, Label, Input } from 'reactstrap'; // componente de botones de red social
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap'; // componente de botones de red social
 import {  Link  } from "react-router-dom";
 
 
@@ -30,19 +30,16 @@ handleSubmit = e => {
         <h2>
           <span className="font-weight-blod">Ingresa tu No. D'Monium</span>
         </h2>
-
         <FormGroup className="form">
           <Label className="text-center"></Label>
           <Input className="input" type="password" placeholder="Ingresa tu número de empleado"></Input>
         </FormGroup>
-
         {/* <Button className="btn btn-outline" color="success" block>
           <Link to="/Areas" className="link">Iniciar</Link>
         </Button> */}
         <Link to="/Areas" className="btn btn-outline"color="success">
           <p className="link"> Iniciar </p>
         </Link>
-
       </Form>
    );
  }
