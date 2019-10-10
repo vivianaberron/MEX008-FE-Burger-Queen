@@ -20,12 +20,10 @@ class EnvioOrden extends React.Component {
             
             <div>
             <Link to="/Sidebar">
-
-            <Buttons text = "Continuar con la orden" />
-
+                <Buttons text = "Continuar con la orden" />
             </Link>
             <Link to="/Home">
-            <Buttons text = "Menu principal" />
+                <Buttons text = "Menu principal" />
             </Link>
             </div>
         </div>
