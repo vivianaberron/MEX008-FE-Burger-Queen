@@ -1,8 +1,8 @@
-@media screen and (min-width:320px){
-  .login-form {
+/* @media screen and (min-width:320px){ */
+  /* .login-form {
     padding: 10px;
     max-width: 318px;
-    width: 50%;
+    
   }
 }
 
@@ -28,15 +28,17 @@
     height: 100%;
     width: 100%;
   }
+} */
+.login-container {
+  height: 100vh
 }
-
-.login-form {
-  width: 150%;
-  max-width: 500px;
-  padding: 45px;
-  margin: auto;
-  margin-top: 5%;
-  height: 150%;
+.login-form-login {
+  /* width: 150%; */
+  /* max-width: 500px; */
+  /* padding: 45px; */
+  /* margin: auto; */
+  /* margin-top: 5%;
+  height: 150%; */
   text-align: center;
   background: #ffffff;
   -webkit-box-shadow: 0px 6px 79px 7px rgba(0,0,0,0.75);
@@ -45,6 +47,7 @@
   border-radius: 8px 8px 8px 8px;
   overflow: hidden;
   justify-content: center;
+  height: 100%
 }
 
 .login_header {
@@ -74,7 +77,7 @@
   justify-content: center;
   -webkit-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
   -moz-box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
-  box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1);
+  box-shadow: 6px 6px 9px 1px rgba(207, 199, 207, 1)
 }
 
 .boton {
@@ -87,8 +90,9 @@
   box-shadow: none;
 }
 
-.btn-outline {
+.btn-outline-login {
   cursor: pointer;
+  width: 50%
 }
 .link {
   color:white;

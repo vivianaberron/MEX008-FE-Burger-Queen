@@ -1,9 +1,4 @@
 @media screen and (min-width:320px){
-  .Buttons_Areas {
-    padding: 2em 1em;
-    /*height: 100%;
-    width: 100%;*/
-  }
     .btn {
       font-size: 14px;
       display: inline;
@@ -11,7 +6,7 @@
 }
 @media screen and (min-width:480px){
   .Buttons_Areas {
-    padding: 1em;
+    
     height: 100%;
     width: 100%;
   }
@@ -19,25 +14,25 @@
 
 @media screen and (min-width:768px){
   .Buttons_Areas {
-    padding: 2em;
+    
     height: 100%;
     width: 100%;
   }
 }
 @media screen and (min-width:1024px){
   .Buttons_Areas {
-    padding: 2em;
+    
     height: 100%;
     width: 100%;
   }
 }
 
-.Buttons_Areas{
+.Buttons_Areas1{
   width: 100%;
   max-width: 500px;
-  padding: 35px;
   margin: auto;
   justify-content: center;
+  padding: 15px
 }
 
 .btn {
